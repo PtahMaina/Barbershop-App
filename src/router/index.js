@@ -6,6 +6,8 @@ import SignUp from '../views/SignUp.vue'
 import Services from '../views/Services.vue'
 // import Story from '../views/Story.vue'
 import Contact from '../views/Contact.vue'
+import Profile from '../views/Profile.vue'
+
 // import { from } from 'core-js/core/array'
 
 // const  = () => import("../views/Story.vue")
@@ -24,6 +26,14 @@ const routes = [
     // this generates a separate chunk (Story.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: Login
+  },
+  {
+    path: '/Profile',
+    name: 'Profile',
+    // route level code-splitting
+    // this generates a separate chunk (Story.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Profile
   },
   {
     path: '/SignUp',

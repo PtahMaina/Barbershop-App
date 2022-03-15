@@ -10,11 +10,14 @@
  
     <router-link @click="toggleNav" to="/">Home</router-link>
 
-    <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
-    <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'SignUp'}">Sign Up</router-link>
+    <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
+    <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'SignUp'}">Sign Up</router-link>
+   
     <router-link v-if="!currentUser"  @click="toggleNav" :to="{ name: 'Services'}">Services</router-link>
+     <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/BMW_logo_%28gray%29.svg" alt="" srcset=""> -->
     <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Story'}">Story</router-link>
     <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
+    <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile'}">Profile</router-link>
     <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
 </nav>    
 <button id="nav-btn" @click="toggleNav">
@@ -54,7 +57,8 @@ export default {
     
     display:flex;
     justify-content: center;
-    gap: 20px;      
+    gap: 50px; 
+         
 }
 #nav{
     z-index: 100;
@@ -63,7 +67,7 @@ export default {
     left: 0;
     width: 100%;
     height: 75px;
-    background: white;
+    background: transparent;
     /* box-shadow:8px 8px 15px #e4e4e4; */
 
     
@@ -128,5 +132,6 @@ img{
         left: 189px;
         top: 100px;
 }
+
 }
 </style>

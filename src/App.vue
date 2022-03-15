@@ -15,7 +15,7 @@ export default {
 
 <style>
 
-@import url( "http://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cuprum&family=Poppins:wght@100&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -24,35 +24,40 @@ export default {
   /* background-color:#f5f5f5; */
   /* overflow-x: hidden; */
   /* width:100vw; */
+  background-color: black;
+  color: white;
 }
 
 #app {
-  font-family: "Nunito",sans-serif;
+  font-family: 'Abel', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color:  #012966;
   
+  
 }
 
 #nav {
   padding: 30px;
+  
 }
 
 #nav a {
   font-weight: bold;
-  color: #012966;
+  color: white;
   text-decoration:none;
+  background: transparent;
 }
 
 #nav a.router-link-exact-active {
-  color: #00bfff;
+  color: #b68345;
   text-decoration: none;
 }
 
 .btn {
   font-weight: bold;
-  color: #012966;
+  color: white;
   text-decoration:none; 
   margin-top: -7px;
 }

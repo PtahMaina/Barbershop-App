@@ -10,13 +10,13 @@
  
     <router-link @click="toggleNav" to="/">Home</router-link>
 
-    <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
-    <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'SignUp'}">Sign Up</router-link>
+    <!-- <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'SignUp'}">Sign Up</router-link> -->
    
-    <router-link v-if="!currentUser"  @click="toggleNav" :to="{ name: 'Services'}">Services</router-link>
+    <router-link   @click="toggleNav" :to="{ name: 'Services'}">Services</router-link>
      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/BMW_logo_%28gray%29.svg" alt="" srcset=""> -->
-    <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Story'}">Story</router-link>
-    <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
+    <router-link  @click="toggleNav" :to="{ name: 'Story'}">Story</router-link>
+    <router-link @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
+    <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
     <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile'}">Profile</router-link>
     <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
 </nav>    
@@ -111,6 +111,7 @@ img{
         align-items: center;
         transition:left 0.7s linear;
         gap: 40px;
+        background: black;
     }
     #nav.active{
         left:0;

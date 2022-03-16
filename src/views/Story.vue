@@ -9,6 +9,22 @@
             <div class="col-12 p-5">
                  <h1>Meet The Team</h1>
                  <!-- pics of babers -->
+            
+                     <img src="https://i.postimg.cc/1tXgNbV3/naaim.jpg" alt="">
+                 
+                
+                     <img src="https://i.postimg.cc/kgCvtXJM/owner.jpg" alt="">
+                 
+                
+                     <img src="https://i.postimg.cc/L6tzRKzc/yaaseen.jpg" alt="">
+                 
+                
+                    <img src="https://i.postimg.cc/d3MyP4DQ/nadeem1.jpg" alt="">
+                 
+                 
+                 
+                
+                 
             </div>
         </div>
         
@@ -34,5 +50,12 @@ export default {
 }
 h5{
     padding-top: 50px;
+}
+
+img{
+    width:300px;
+    height:350px;
+    object-fit:cover;
+    padding:5px
 }
 </style>

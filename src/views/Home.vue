@@ -3,13 +3,17 @@
 
   <div class="imageContainer">
     <div class="center">
-      <!-- <h1>Gents BarberShop</h1> -->
+      <h1 style="font-size:50px">"Masters of Barbering"</h1>
+      <h3>Lets Your Hair Do The Talking...</h3>
        <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn">BOOK NOW</button></h1></router-link>
     </div>
   </div>
+    <div class="info">
+      <h1 class="energy d-flex justify-content-center" style="font-weight: bold;color:#b18044">THE ENERGY</h1>
+      <h5 class="paragraph">Here at The Urban Shave Barber Shop, we specialize in every barber specialty. We provide our customers with the best services possible. Our team of executives and well-informed barbers work to help you achieve your delighted look. We flourish on good music, mindful conversations, and enhancing relations in our community.</h5>
 
-  <h1 style="font-weight: bold;color:#b18044">THE VIBE</h1>
-
+    </div>
+  
   
 
   
@@ -44,8 +48,18 @@ img{
    background: transparent;
 }
 
-h1{
+h1,h3{
   background: transparent;
 }
+.info {
+  padding-top:50px;
+}
 
+.info h5{
+  display:flex;
+  text-align: center;
+  padding-right: 170px;
+  padding-left: 170px;
+  padding-top:50px;
+}
 </style>

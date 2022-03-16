@@ -1,7 +1,7 @@
 <template>
 
 
-<h1 class="headin d-flex justify-content-center"><span  style="color:#1e90ff;">Contact Us</span> </h1>
+  <h1 class="head">CONTACT US</h1>
   <div class="containe d-flex justify-content-center" id="contact">
 
     <div class="row">
@@ -80,7 +80,9 @@ export default {
 </script>
 
 <style scoped>
- 
+ .head{
+    padding-top:100px;
+}
 textarea#message.form-control {
     height: 120px;
 }

@@ -4,6 +4,7 @@ import Story from '../views/Story.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
 import Services from '../views/Services.vue'
+import BookingForm from '../views/BookingForm'
 // import Story from '../views/Story.vue'
 import Contact from '../views/Contact.vue'
 import Profile from '../views/Profile.vue'
@@ -50,6 +51,14 @@ const routes = [
     // this generates a separate chunk (Story.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: Services
+  },
+  {
+    path: '/BookingForm',
+    name: 'BookingForm',
+    // route level code-splitting
+    // this generates a separate chunk (Story.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: BookingForm
   },
   {
     path: '/Story',

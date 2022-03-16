@@ -75,7 +75,7 @@ export default {
         .max(40, "Must be maximum 40 characters!"),
      phone_number: yup
         .string()
-        .required("Password is required!")
+        .required("Phone Number is required!")
         // .min(6, "Must be at least 6 characters!")
         // .max(40, "Must be maximum 40 characters!"),
     });
@@ -93,7 +93,7 @@ export default {
   },
   mounted() {
     if (this.loggedIn) {
-      this.$router.push("/Profile");
+      this.$router.push("/Login");
     }
   },
   methods: {
@@ -142,16 +142,13 @@ body {
 }
 
 #forgot-pass {
-  /* color: #2dbd6e; */
-  /* font-family: "Raleway", sans-serif; */
+  
   font-size: 10pt;
   margin-top: 3px;
   text-align: right;
 }
 #card {
-  /* background: #fbfbfb; */
-  /* border-radius: 8px; */
-  /* box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65); */
+
   height: 650px;
   margin: 6rem auto 8.1rem auto;
   width: 330px;
@@ -160,26 +157,24 @@ body {
   padding: 12px 44px;
 }
 #card-title {
-  /* font-family: "Raleway Thin", sans-serif; */
-  /* letter-spacing: 4px; */
+ 
   padding-bottom: 23px;
   padding-top: 13px;
   text-align: center;
 }
 #signup {
-  /* color: #2dbd6e; */
-  /* font-family: "Raleway", sans-serif; */
+ 
   font-size: 10pt;
   margin-top: 16px;
   text-align: center;
 }
 #submit-btn {
-/* background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e); */
+
   border: none;
-  /* border-radius: 21px; */
-  box-shadow: 0px 1px 8px #1e90ff;
+
+
   cursor: pointer;
-  /* color: white; */
+
   
   height: 42.3px;
   margin: 0 auto;
@@ -196,12 +191,12 @@ body {
   flex-direction: column;
 }
 .form-border {
-  background:#1e90ff;
+  background:#b68345;
   height: 1px;
   width: 100%;
 }
 .form-content {
-  /* background: #fbfbfb; */
+  
   border: none;
   outline: none;
   padding-top: 14px;
@@ -226,7 +221,7 @@ h1.headin{
   padding: none;
   margin-bottom:50px;
 }
-/* contact */
+
 #success-message {
   opacity: 0;
 }
@@ -243,36 +238,33 @@ h1.headin{
   padding: 25px;
   font-size: 30px;
   font-weight: 300;
-  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+
 }
 
 .form-group .form-control {
-   display: block;
-    border-radius: 0;
+    display: block;
+    border-radius: 0.25rem;
     width: 100%;
     height: 48px;
     padding: 10px 24px;
     font-size: 15px;
     font-weight: 400;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     line-height: 1.6;
     color: #333;
     background-color: #fff;
     background-image: none;
-    border: solid 1px #9dd8e0;
-    -webkit-box-shadow: none;
-    /* box-shadow: none; */
-     box-shadow:8px 8px 15px #e4e4e4;
+    border: solid 1px #b68345;
+ 
+  
 }
 
 
 .form-group .form-control:hover {
-	border: solid 1px#1e90ff;
+	border: solid 1px#b68345;
 }
 
-/* textarea {
-  resize: none;
-} */
+
 
 .btn-mod.btn-large {
     height: auto;
@@ -283,8 +275,8 @@ h1.headin{
 
 .btn-mod.btn-border {
     color: #fff;
-    border: 1px solid #1e90ff;
-    background: #1e90ff;
+    border: 1px solid #b68345;
+    background: #b68345;
 }
 
 .btn-mod, a.btn-mod {
@@ -334,16 +326,13 @@ h1.headin{
     padding: 80px;
   }
 }
-/* .call{
-  margin-left: 35%;
-} */
+
 
 .fas{
   display:flex;
   justify-content: center;
   font-size:35px;
-  /* padding-bottom:10px; */
-  /* color:#2c3e50; */
+
   
 }
 
@@ -356,7 +345,7 @@ h1.headin{
 .call-me-1{
   display:flex;
   justify-content: center;
-  /* padding-top: 10px; */
+
 }
 .call-holder{
   padding-top: 15px;
@@ -374,7 +363,7 @@ h1.headin{
 .btn{
     
     padding: 25px 43px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 
     
 

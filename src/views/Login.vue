@@ -113,9 +113,7 @@ export default {
 }
 
 #card {
-  /* background: #fbfbfb; */
-  /* border-radius: 8px; */
-  /* box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65); */
+
   height: 460px;
   margin: 6rem auto 8.1rem auto;
   width: 330px;
@@ -124,19 +122,17 @@ export default {
   padding: 12px ;
 }
 #card-title {
-  /* font-family: "Raleway Thin", sans-serif; */
-  /* letter-spacing: 4px; */
+
   padding-bottom: 23px;
   padding-top: 13px;
   text-align: center;
 }
 #submit-btn {
-  /* background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e); */
+  
   border: none;
-  /* border-radius: 21px; */
-  box-shadow: 0px 1px 8px #1e90ff;
+ 
   cursor: pointer;
-  /* color: white; */
+  
   
   height: 42.3px;
   margin: 0 auto;
@@ -158,7 +154,7 @@ export default {
   width: 100%;
 }
 .form-content {
-  /* background: #fbfbfb; */
+
   border: none;
   outline: none;
   padding-top: 14px;
@@ -206,31 +202,27 @@ h1.headin{
 
 .form-group .form-control {
    display: block;
-    border-radius: 0;
+ 
     width: 100%;
     height: 48px;
     padding: 10px 24px;
     font-size: 15px;
     font-weight: 400;
-    border-radius: 25px;
+ 
     line-height: 1.6;
     color: #333;
     background-color: #fff;
     background-image: none;
-    border: solid 1px #9dd8e0;
-    -webkit-box-shadow: none;
-    /* box-shadow: none; */
-     box-shadow:8px 8px 15px #e4e4e4;
+    border: solid 1px #b68345;
+    
+
 }
 
 
 .form-group .form-control:hover {
-	border: solid 1px#1e90ff;
+	border: solid 1px#b68345;
 }
 
-/* textarea {
-  resize: none;
-} */
 
 .btn-mod.btn-large {
     height: auto;
@@ -241,8 +233,8 @@ h1.headin{
 
 .btn-mod.btn-border {
     color: #fff;
-    border: 1px solid #1e90ff;
-    background: #1e90ff;
+    /* border: 1px solid #1e90ff; */
+    background: #b68345;
 }
 
 .btn-mod, a.btn-mod {
@@ -332,7 +324,7 @@ h1.headin{
 .btn{
     
     padding: 25px 43px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 
     
 

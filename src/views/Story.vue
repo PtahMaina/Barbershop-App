@@ -1,0 +1,38 @@
+<template>
+
+    <h1 class="head">OUR STORY</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h5>Established in 2022 The Urban Shave Barbershop is a full-service barbershop that is dedicated to providing exponential customer service to our clients alongside trendy haircuts with specified grooming. Our shop is a client-driven relaxing atmosphere in which we want every person who walks through the door feeling delighted upon leaving after giving them what they were looking for. We take great pride in our craft and know what to deliver to one and every client, due to Vancouver being a very diverse city we have people coming through our doors from the ages of one getting that first cut up to the eldest clients that have come in up to 100. In addition to haircuts, the shop offers all the traditional barbershop services including Straight-razor shaves, Beard trims, Beard Fades, Old School Razor Skin Fades, Classic Cut, Buzz Cut. </h5>
+            </div>
+            <div class="col-12 p-5">
+                 <h1>Meet The Team</h1>
+                 <!-- pics of babers -->
+            </div>
+        </div>
+        
+       
+    </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+.head{
+    padding-top:100px;
+    
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+}
+h5{
+    padding-top: 50px;
+}
+</style>

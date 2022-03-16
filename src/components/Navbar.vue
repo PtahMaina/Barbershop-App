@@ -13,7 +13,7 @@
     <!-- <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'SignUp'}">Sign Up</router-link> -->
    
     <router-link   @click="toggleNav" :to="{ name: 'Services'}">Services</router-link>
-     <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/BMW_logo_%28gray%29.svg" alt="" srcset=""> -->
+     <!-- <img src="https://i.postimg.cc/FHp8F29C/LOGO-BABERSHOP-removebg-preview.png" alt="" srcset=""> -->
     <router-link  @click="toggleNav" :to="{ name: 'Story'}">Story</router-link>
     <router-link @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
     <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
@@ -73,7 +73,9 @@ export default {
     
 }
 
-
+img{
+    background: transparent;
+}
 #nav-btn{
     position: fixed;
     top: 10px;

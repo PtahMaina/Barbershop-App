@@ -3,13 +3,13 @@
 <main>
   <router-view :key="$route.fullPath"/>
  </main>
- <!-- <Footer /> -->
+ <Footer />
 </template>
 <script>
 import Navbar from "./components/Navbar.vue";
-// import Footer from "./components/Footer.vue";
+import Footer from "./components/Footer.vue";
 export default {
-  components: { Navbar } 
+  components: { Navbar, Footer } 
   };
 </script>
 

@@ -18,10 +18,11 @@
     <router-link @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
     <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
     <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile'}">Profile</router-link>
+     <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'AdminDashBoard'}">DashBoard</router-link>
     <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
 </nav>    
 <button id="nav-btn" @click="toggleNav">
-    <i class="fa fa-bars"></i>
+    <i style="font-size:20px" class="fas fa-bars"></i>
 </button>    
 
 </template>
@@ -80,8 +81,8 @@ img{
     position: fixed;
     top: 10px;
     right: 30px;
-    background: #f5f5f5;
-    box-shadow:8px 8px 15px #e4e4e4;
+    background: transparent;
+    /* box-shadow:8px 8px 15px #e4e4e4; */
     padding: 10px;
     border-radius: 50%;
     height: 50px;

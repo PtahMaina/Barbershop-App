@@ -1,6 +1,6 @@
 <template>
 
-    <h1 class="head">OUR STORY</h1>
+    <h1 class="head" style="font-weight: bold;color:#b18044">OUR STORY</h1>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -67,6 +67,10 @@ export default {
   color: white;
     max-width: 800px; 
   margin: 0 auto; 
+}
+.image:hover{
+       transform: scale(1.1);
+  transition:.5s;
 }
 .image .centered {
   position: absolute;

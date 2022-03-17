@@ -1,5 +1,5 @@
 <template>
-  <h1 class="head">SERVICES</h1>
+  <h1 class="head" style="font-weight: bold;color:#b18044">SERVICES</h1>
     <div class="container d-flex justify-content-center">
        <div class="row">
            <!-- <h1>HAIR</h1> -->

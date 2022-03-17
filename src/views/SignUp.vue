@@ -2,7 +2,7 @@
     <div id="card">
     <div id="card-content">
       <div id="card-title">
-        <h1>SIGN UP</h1>
+        <h1 style="font-weight: bold;color:#b18044">SIGN UP</h1>
  
       </div>
       <Form @submit="handleRegister" :validation-schema="schema">

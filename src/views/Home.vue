@@ -8,11 +8,28 @@
        <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn">BOOK NOW</button></h1></router-link>
     </div>
   </div>
-    <div class="info">
+    <div class="spirit">
       <h1 class="energy d-flex justify-content-center" style="font-weight: bold;color:#b18044">THE ENERGY</h1>
       <h5 class="paragraph">Here at The Urban Shave Barber Shop, we specialize in every barber specialty. We provide our customers with the best services possible. Our team of executives and well-informed barbers work to help you achieve your delighted look. We flourish on good music, mindful conversations, and enhancing relations in our community.</h5>
-
     </div>
+  <div class="info p-5">
+    <div class="row">
+      <div class="col">
+        <h1 style="font-weight: bold;color:#b18044">HOURS</h1>
+        <h6>Tues-Fri 9:00am-6:00pm</h6>
+        <h6>Sat 9:00am-3:00pm</h6>
+        <h6>Closed Sun & Mon</h6>
+      </div>
+      <div class="col">
+        <h1 style="font-weight: bold;color:#b18044">CONTACT US</h1>
+        <h6>0761621649</h6>
+      </div>
+      <div class="col">
+        <h1 style="font-weight: bold;color:#b18044">LOCATION</h1>
+        <h6>18 Chukker Road, Kenwyn, Cape Town 7780</h6>
+      </div>
+    </div>
+    </div>  
   
   
 
@@ -30,7 +47,10 @@ export default {
 
 
 <style scoped>
-
+.info{
+  display:flex;
+  justify-content:center;
+}
 img{
     width: 100%;
     height:100vh;
@@ -51,11 +71,11 @@ img{
 h1,h3{
   background: transparent;
 }
-.info {
+.spirit {
   padding-top:50px;
 }
 
-.info h5{
+.spirit h5{
   display:flex;
   text-align: center;
   padding-right: 170px;

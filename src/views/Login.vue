@@ -2,7 +2,7 @@
     <div id="card">
     <div id="card-content">
       <div id="card-title">
-        <h1>LOGIN</h1>
+        <h1 style="font-weight: bold;color:#b18044">LOGIN</h1>
         </div>
       <Form @submit="handleLogin" :validation-schema="schema">
  
@@ -81,8 +81,14 @@ export default {
     handleLogin(user) {
       this.loading = true;
       this.$store.dispatch("auth/login", user).then(
-        () => {
-          this.$router.push("/Profile");
+        (data) => {
+          if(data.role === 'admin'){
+              this.$router.push("/AdminDashBoard");
+          }
+          else{
+            this.$router.push("/Profile");
+          }
+          
         },
         (error) => {
           this.loading = false;
@@ -288,32 +294,6 @@ h1.headin{
   margin-left: 35%;
 } */
 
-.fas{
-  display:flex;
-  justify-content: center;
-  font-size:35px;
-  /* padding-bottom:10px; */
-  /* color:#2c3e50; */
-  
-}
-
-.call-me{
-  display:flex;
-  justify-content: center;
-  color:#9dd8e0;
-}
-
-.call-me-1{
-  display:flex;
-  justify-content: center;
-  /* padding-top: 10px; */
-}
-.call-holder{
-  padding-top: 15px;
-}
-.fas{
-  color:#1e90ff;
-}
 .b{
   display:flex;
   justify-content: space-around;

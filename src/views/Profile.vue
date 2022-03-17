@@ -1,7 +1,7 @@
 <template>
  
   <div class="container">
-  <h1 class="jumbotron">PROFILE</h1>
+  <h1 class="jumbotron" style="font-weight: bold;color:#b18044">PROFILE</h1>
     
    
     <div class="row p-5">
@@ -22,7 +22,7 @@
           <li><span class="pro-title"> FULLNAME </span> <span class="pro-detail">{{ currentUser.customername }}</span></li>
           <li><span class="pro-title"> TOKEN </span> <span class="pro-detail">{{ currentUser.accessToken.substring(0, 20) }} ...{{ currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}</span></li>
           <li><span class="pro-title"> USER ID </span> <span class="pro-detail">{{ currentUser._id }}</span></li>
-          
+          <li><span class="pro-title"> PHONE </span> <span class="pro-detail">{{ currentUser.phone_number }}</span></li>
         </ul>
         <div class="buttons">
           <button class="btn">EDIT</button>

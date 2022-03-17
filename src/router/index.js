@@ -5,13 +5,12 @@ import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
 import Services from '../views/Services.vue'
 import BookingForm from '../views/BookingForm'
-// import Story from '../views/Story.vue'
+import AdminDashBoard from '../views/AdminDashBoard.vue'
+
 import Contact from '../views/Contact.vue'
 import Profile from '../views/Profile.vue'
 
-// import { from } from 'core-js/core/array'
 
-// const  = () => import("../views/Story.vue")
 const routes = [
   {
     path: '/',
@@ -23,57 +22,49 @@ const routes = [
   {
     path: '/Login',
     name: 'Login',
-    // route level code-splitting
-    // this generates a separate chunk (Story.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+ 
     component: Login
   },
   {
     path: '/Profile',
     name: 'Profile',
-    // route level code-splitting
-    // this generates a separate chunk (Story.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: Profile
   },
   {
     path: '/SignUp',
     name: 'SignUp',
-    // route level code-splitting
-    // this generates a separate chunk (Story.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: SignUp
   },
   {
     path: '/Services',
     name: 'Services',
-    // route level code-splitting
-    // this generates a separate chunk (Story.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: Services
   },
   {
     path: '/BookingForm',
     name: 'BookingForm',
-    // route level code-splitting
-    // this generates a separate chunk (Story.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: BookingForm
+  },
+  {
+    path: '/AdminDashBoard',
+    name: 'AdminDashBoard',
+
+    component: AdminDashBoard
   },
   {
     path: '/Story',
     name: 'Story',
-    // route level code-splitting
-    // this generates a separate chunk (Story.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: Story
   },
   {
     path: '/Contact',
     name: 'Contact',
-    // route level code-splitting
-    // this generates a separate chunk (Story.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: Contact
   },
 

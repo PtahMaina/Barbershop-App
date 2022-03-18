@@ -19,9 +19,9 @@
         <ul class="admin-profile">
 
           <li><span class="pro-title"> EMAIL </span> <span class="pro-detail">{{ currentUser.email}}</span></li>
-          <li><span class="pro-title"> FULLNAME </span> <span class="pro-detail">{{ currentUser.customername }}</span></li>
-          <li><span class="pro-title"> TOKEN </span> <span class="pro-detail">{{ currentUser.accessToken.substring(0, 20) }} ...{{ currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}</span></li>
-          <li><span class="pro-title"> USER ID </span> <span class="pro-detail">{{ currentUser._id }}</span></li>
+          <li><span class="pro-title"> NAME </span> <span class="pro-detail">{{ currentUser.customername }}</span></li>
+          <!-- <li><span class="pro-title"> TOKEN </span> <span class="pro-detail">{{ currentUser.accessToken.substring(0, 20) }} ...{{ currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}</span></li> -->
+          <!-- <li><span class="pro-title"> USER ID </span> <span class="pro-detail">{{ currentUser._id }}</span></li> -->
           <li><span class="pro-title"> PHONE </span> <span class="pro-detail">{{ currentUser.phone_number }}</span></li>
         </ul>
         <div class="buttons">
@@ -131,7 +131,7 @@ img{
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  border: 2px solid #b68345;
+  /* border: 4px solid #b68345; */
 }
 
 </style>

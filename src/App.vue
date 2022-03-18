@@ -40,7 +40,7 @@ export default {
          showForm: false,
         title:"COLOUR",
         price: 100,
-        discription:"If you looking to col-6our your hair then we offer semi-permanent or permanent col-6our.",
+        discription:"If you looking to col-6our your hair then we offer semi-permanent or permanent colour.",
       },
         {
           showForm: false,

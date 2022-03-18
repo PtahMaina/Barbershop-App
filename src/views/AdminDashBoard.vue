@@ -4,7 +4,17 @@
 
 <script>
 export default {
-
+      computed: {
+    currentUser() {
+      return this.$store.state.auth.user;
+    },
+   
+  },
+  created() {
+    if (this.currentUser.role !== "admin") {
+      this.$router.push("/Profile")  
+    }
+  }
 }
 </script>
 

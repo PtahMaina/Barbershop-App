@@ -1,7 +1,7 @@
 <template>
     <h1 class="head" style="font-weight: bold;color:#b18044">CONTACT US</h1>
-    <div class="contaner">
-      <div class="row">
+    <div class="containe d-flex justify-content-center" id="contact">
+    
         
           <form @submit.prevent="handleSubmit" id="contact-form" name="myForm" class="form"  role="form">
 
@@ -28,7 +28,7 @@
             </form>
       
        
-      </div>
+ 
     </div>
 </template>
 
@@ -78,7 +78,7 @@ export default {
   align-items: left;
   display: flex;
   flex-direction: column;
-}
+} 
 
 
 
@@ -88,19 +88,19 @@ textarea#message.form-control {
 }
 
 
-
-
 .containe {
   display:flex;
   padding: none;
   margin-bottom:50px;
 }
+
+
 /* contact */
 
-
+/* 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
   padding: 0 20% 0 20%;
-}
+} */
 
 .margin-top-25 {
   margin-top: 25px;

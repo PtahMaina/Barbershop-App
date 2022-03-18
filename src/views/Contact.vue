@@ -8,7 +8,6 @@
                 <div class="form-group">
                     <label class="form-label" id="nameLabel" for="name"></label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" tabindex="1"  required v-model="name">
-                    
                 </div>
 
                 <div class="form-group">
@@ -60,7 +59,7 @@ export default {
 })
   .then((response) => response.json())
   .then((json) => alert(json.msg))
-  .catch((error) => alert(error.msg));
+  .catch((e) => alert(e.msg));
     }
   }
 }

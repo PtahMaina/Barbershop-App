@@ -50,7 +50,7 @@ export default {
       },
         {
           showForm: false,
-        title:" BASIC BEARD TRIM & SHAPE",
+        title:"BEARD TRIM & SHAPE",
         price: 100,
         discription:"If you looking to col-6our your hair then we offer semi-permanent or permanent col-6our.",
       },

@@ -18,7 +18,7 @@
     <router-link @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
     <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
     <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile'}">Profile</router-link>
-     <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'AdminDashBoard'}">DashBoard</router-link>
+     <!-- <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'AdminDashBoard'}">DashBoard</router-link> -->
     <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
 </nav>    
 <button id="nav-btn" @click="toggleNav">

@@ -33,7 +33,11 @@
                 </div>
 
                 <div class=" b text-center margin-top-25">
-                    <button class="btn btn-mod btn-border btn-large">SIGN UP</button>
+                    <button class="btn btn-mod btn-border btn-large">
+                       <span v-show="!loading">SIGN UP</span>
+                      <span v-show="loading"><Loader/></span>
+
+                    </button>
 
                 </div>
           <div class="signUp">
@@ -47,6 +51,7 @@
 </template>
 
 <script>
+import Loader from "../components/Loader.vue"
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 export default {
@@ -55,6 +60,7 @@ export default {
     Form,
     Field,
     ErrorMessage,
+    Loader,
   },
   data() {
     const schema = yup.object().shape({

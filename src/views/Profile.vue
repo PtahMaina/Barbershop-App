@@ -24,20 +24,52 @@
           <!-- <li><span class="pro-title"> USER ID </span> <span class="pro-detail">{{ currentUser._id }}</span></li> -->
           <li><span class="pro-title"> PHONE </span> <span class="pro-detail">{{ currentUser.phone_number }}</span></li>
         </ul>
-        <div class="buttons">
-          <button class="btn">EDIT</button>
-        <button class="btn">DELETE</button>
-        </div>
+    
         
       </div>
+          <div class="buttons">
+          <button class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">EDIT</button>
+        <button class="btn" id="delete">DELETE</button>
+        </div>
     </div>
 
-      
+      <!-- <h1>MY BOOKINGS</h1> -->
     </div>
   
  
     
   </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit your Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Email:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Phone:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </template>
 <script>
 export default {
@@ -52,6 +84,14 @@ export default {
       this.$router.push("/Login");
     }
   },
+  data() {
+    return {
+      
+    }
+  },
+  methods: {
+    
+  }
 };
 </script>
 
@@ -79,15 +119,15 @@ export default {
     display: grid;
     justify-content: center;
     flex-wrap: wrap;
-    /* padding-left: 30px;
-    padding-bottom: 40px; */
-}
+  }
 .about-profile{
   padding-top: 10px;
+ display:flex;
+ justify-content: center;
 }
 .about-profile li{
     display: flex;
-    /* justify-content:space-between; */
+    /* justify-content:space-around; */
     width:300px;
     padding-top: 20px;
 }
@@ -98,6 +138,7 @@ export default {
     width: 120px;
     display: inline-block;
     margin-bottom: 5px;
+ 
     
 }
 

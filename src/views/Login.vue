@@ -21,7 +21,11 @@
                 </div>
                 <div class="form-group">
                 <div class=" b text-center margin-top-25">
-                    <button class="btn btn-mod btn-border btn-large">LOGIN</button>
+                    <button class="btn btn-mod btn-border btn-large" :disabled="loading">
+                      <span v-show="!loading">LOGIN</span>
+                      <span v-show="loading"><Loader/></span>
+
+                    </button>
 
                 </div>
                 </div>
@@ -44,6 +48,7 @@
 </template>
 
 <script>
+import Loader from "../components/Loader.vue"
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 
@@ -53,6 +58,7 @@ export default {
     Form,
     Field,
     ErrorMessage,
+    Loader,
   },
   data() {
     const schema = yup.object().shape({
@@ -83,9 +89,11 @@ export default {
       this.$store.dispatch("auth/login", user).then(
         (data) => {
           if(data.role === 'admin'){
+              this.loading = false;
               this.$router.push("/AdminDashBoard");
           }
           else{
+            this.loading = false;
             this.$router.push("/Profile");
           }
           

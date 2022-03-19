@@ -6,6 +6,7 @@
            <div class="col-6"  v-for="(service,i) of services" :key="service.title" >
                 <div class="content">
                    <router-link style="text-decoration: none" @click="toggleBookingForm(i)" :to="{ name: 'BookingForm'}">
+                     <!-- <div class="image">     <img class="img" :src="service.img" /></div> -->
                      <div class="title" style="font-size:30px"><span style="color:#b68345">{{service.title}}</span> | R{{service.price}}</div>
                     <div class="discription">{{service.discription}}</div>
                    </router-link>
@@ -75,4 +76,9 @@ export default {
   transition:.5s;
 }
 
+.img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
 </style>

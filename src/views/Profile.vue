@@ -6,7 +6,7 @@
     
    
     <div class="row p-5">
-      <div class="col-12">
+      <div class="col">
          <img src="https://i.postimg.cc/q7zMKRBh/blank-profile-picture-973460-640.png" alt="">
       <div class="picInfo">
       <h6>{{ currentUser.customername }}</h6>
@@ -14,23 +14,25 @@
      <div  class="picInfo">
       <h6>{{ currentUser.email}}</h6>
     </div>
+     <div class="buttons p-5">
+          <button class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">EDIT</button>
+          <button class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">DELETE</button>
+     </div>
     </div>
-    <div class="col-12">
+    <div class="col">
       <div class="about-profile">   
         <ul class="admin-profile">
 
           <li><span class="pro-title"> EMAIL </span> <span class="pro-detail">{{ currentUser.email}}</span></li>
           <li><span class="pro-title"> NAME </span> <span class="pro-detail">{{ currentUser.customername }}</span></li>
-          <!-- <li><span class="pro-title"> TOKEN </span> <span class="pro-detail">{{ currentUser.accessToken.substring(0, 20) }} ...{{ currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}</span></li> -->
-          <!-- <li><span class="pro-title"> USER ID </span> <span class="pro-detail">{{ currentUser.userId }}</span></li> -->
           <li><span class="pro-title"> PHONE </span> <span class="pro-detail">{{ currentUser.phone_number }}</span></li>
         </ul>
     
         
       </div>
-          <div class="buttons">
-          <button class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">EDIT</button>
-        <button class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">DELETE</button>
+          <div class="col">
+           
+         
         </div>
     </div>
 
@@ -169,10 +171,10 @@ export default {
 </script>
 
 <style scoped>
-.buttons{
+/* .buttons{
   display: flex;
   padding-top: 20px;
-}
+} */
 .container {
     /* display:;
     justify-content:center; */
@@ -219,9 +221,6 @@ export default {
     
 }
 
-.pro-title{
-    margin-left: -183px;
-}
 
 .about-profile .pro-title:after {
     position: absolute;
@@ -253,4 +252,25 @@ img{
   /* border: 4px solid #b68345; */
 }
 
+.border{
+    border-top: 1px solid;
+    width: 100px;
+    display:inline-flex;
+    justify-content: center;
+}
+/* 
+@media only screen and (max-width: 500px) {
+  .about-profile{
+   padding-top: 50px;
+   padding-left: 350px;
+   padding-right: 100px;
+  }
+  .buttons{
+     padding-left: 100px;
+  }
+  img{
+    width: 150px;
+    height: 0px;
+  }
+} */
 </style>

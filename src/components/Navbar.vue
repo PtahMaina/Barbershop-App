@@ -142,12 +142,12 @@ img{
  
 }
 
-@media only screen and (max-width: 494px) {
+/* @media only screen and (max-width: 494px) {
      .navbar-brand {
         position: absolute;
         left: 189px;
         top: 100px;
 }
 
-}
+} */
 </style>

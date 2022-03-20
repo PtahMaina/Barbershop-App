@@ -7,7 +7,7 @@
        <h3  style="color:;font-size:20px;"> 
          <span class="blink" ><span class="blink-hard" style="font-size:20px;background: transparent;">Lets Your Hair Do The Talking...</span></span> </h3>
     
-       <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn">BOOK NOW</button></h1></router-link>
+       <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn btn-outline-light">BOOK NOW</button></h1></router-link>
     </div>
   </div>
     <div class="spirit">
@@ -23,17 +23,17 @@
     </div>
   <div class="container pt-5">
     <div class="row">
-      <div class="col-6">
+      <div class="col">
         <h2 style="font-weight: bold;color:#b18044">HOURS</h2>
         <h6>Tues-Fri 9:00am-6:00pm</h6>
         <h6>Sat 9:00am-3:00pm</h6>
         <h6>Closed Sun & Mon</h6>
       </div>
-      <div class="col-6">
+      <div class="col">
         <h2 style="font-weight: bold;color:#b18044">CONTACT US</h2>
         <h6>0761621649</h6>
       </div>
-      <div class="col-6">
+      <div class="col">
         <h2 style="font-weight: bold;color:#b18044">LOCATION</h2>
         <h6>18 Chukker Road, Kenwyn, Cape Town 7780</h6>
       </div>
@@ -112,8 +112,7 @@ h1,h3{
     text-align: center;
     white-space: pre-wrap;
     padding-top: 50px;
-
-  
 }
+
 
 </style>

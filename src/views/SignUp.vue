@@ -35,7 +35,7 @@
 
                 <div class=" b text-center margin-top-25">
                     <button class="btn btn-mod btn-border btn-large">
-                       <span v-show="!loading">SIGN UP</span>
+                       <span class="sign" v-show="!loading">SIGN UP</span>
                       <span v-show="loading"><Loader/></span>
 
                     </button>
@@ -188,6 +188,10 @@ body {
   margin-top: 50px;
   transition: 0.25s;
   width: 100%;
+}
+.sign{
+  
+  background: transparent;
 }
 #submit-btn:hover {
   box-shadow: 0px 1px 18px #1e90ff;

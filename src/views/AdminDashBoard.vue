@@ -2,7 +2,9 @@
   <h1 class="head" style="font-weight: bold;color:#b18044">DASHBOARD</h1>
   <div class="border"></div>
   <div class="container">
-    <h1>CUSTOMERS</h1>
+    <div class="row">
+      <div class="col-6">
+         <h1>CUSTOMERS</h1>
       <div v-for="customer in customers" :key="customer.id" class="customer">
           <div class="content">
            <div class="name">{{customer.customername}}</div>
@@ -11,10 +13,10 @@
           </div>
 
       </div>
-      <h1>BARBERS</h1>
-      <div>
-
       </div>
+    </div>
+   
+      
   </div>
 </template>
 

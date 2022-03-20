@@ -1,5 +1,6 @@
 <template>
   <h1 class="head" style="font-weight: bold;color:#b18044">SERVICES</h1>
+  <div class="border"></div>
     <div class="container d-flex justify-content-center">
        <div class="row">
            <!-- <h1>HAIR</h1> -->
@@ -80,5 +81,17 @@ export default {
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+.border{
+    border-top: 1px solid;
+    width: 100px;
+    display:inline-flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+   .content{
+     font-size:15px;
+   }
+  
 }
 </style>

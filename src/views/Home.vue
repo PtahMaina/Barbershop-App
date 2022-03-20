@@ -3,29 +3,38 @@
 
   <div class="imageContainer">
     <div class="center">
-      <h1 style="font-size:50px">"Masters of Barbering"</h1>
-      <h3>Lets Your Hair Do The Talking...</h3>
+      <h1 style="font-size:50px;font-weight: 400;">"Masters of Barbering"</h1>
+       <h3  style="color:;font-size:20px;"> 
+         <span class="blink" ><span class="blink-hard" style="font-size:20px;background: transparent;">Lets Your Hair Do The Talking...</span></span> </h3>
+    
        <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn">BOOK NOW</button></h1></router-link>
     </div>
   </div>
     <div class="spirit">
       <h1 class="energy d-flex justify-content-center" style="font-weight: bold;color:#b18044">THE ENERGY</h1>
-      <h5 class="paragraph">Here at The Urban Shave Barber Shop, we specialize in every barber specialty. We provide our customers with the best services possible. Our team of executives and well-informed barbers work to help you achieve your delighted look. We flourish on good music, mindful conversations, and enhancing relations in our community.</h5>
+      <div class="paragraph">
+        <p>Here at The Urban Shave Barber Shop, we specialize in every barber specialty.
+        We provide our customers with the best services possible.
+        Our team of executives and well-informed barbers work to help you achieve your delighted look. 
+        We flourish on good music, mindful conversations, and enhancing relations in our community.
+        </p>   
+      </div>
+      <!-- <div class="border"></div> -->
     </div>
-  <div class="info p-5">
+  <div class="container pt-5">
     <div class="row">
-      <div class="col">
-        <h1 style="font-weight: bold;color:#b18044">HOURS</h1>
+      <div class="col-6">
+        <h2 style="font-weight: bold;color:#b18044">HOURS</h2>
         <h6>Tues-Fri 9:00am-6:00pm</h6>
         <h6>Sat 9:00am-3:00pm</h6>
         <h6>Closed Sun & Mon</h6>
       </div>
-      <div class="col">
-        <h1 style="font-weight: bold;color:#b18044">CONTACT US</h1>
+      <div class="col-6">
+        <h2 style="font-weight: bold;color:#b18044">CONTACT US</h2>
         <h6>0761621649</h6>
       </div>
-      <div class="col">
-        <h1 style="font-weight: bold;color:#b18044">LOCATION</h1>
+      <div class="col-6">
+        <h2 style="font-weight: bold;color:#b18044">LOCATION</h2>
         <h6>18 Chukker Road, Kenwyn, Cape Town 7780</h6>
       </div>
     </div>
@@ -47,9 +56,25 @@ export default {
 
 
 <style scoped>
-.info{
-  display:flex;
-  justify-content:center;
+
+.blink-hard {
+  animation: pulse 4s infinite;
+  
+}
+
+.blink{
+  background: transparent;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0;
+  }
+}
+
+.container {
+  display:grid;
+  justify-content: center;
+
 }
 img{
     width: 100%;
@@ -60,6 +85,12 @@ img{
     filter: brightness(0.5);
 }
 
+/* .border{
+  display: inline-flex;
+  justify-content:center;
+  border: 1px solid;
+  width: 300px
+} */
 .center {
    position: absolute;
    top: 50%;
@@ -75,11 +106,14 @@ h1,h3{
   padding-top:50px;
 }
 
-.spirit h5{
-  display:flex;
-  text-align: center;
-  padding-right: 170px;
-  padding-left: 170px;
-  padding-top:50px;
+.paragraph p{
+    font-size:22px;
+    font-weight: 400;
+    text-align: center;
+    white-space: pre-wrap;
+    padding-top: 50px;
+
+  
 }
+
 </style>

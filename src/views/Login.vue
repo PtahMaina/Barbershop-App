@@ -3,6 +3,7 @@
     <div id="card-content">
       <div id="card-title">
         <h1 style="font-weight: bold;color:#b18044">LOGIN</h1>
+        <div class="border"></div>
         </div>
       <Form @submit="handleLogin" :validation-schema="schema">
  
@@ -22,7 +23,7 @@
                 <div class="form-group">
                 <div class=" b text-center margin-top-25">
                     <button class="btn btn-mod btn-border btn-large" :disabled="loading">
-                      <span v-show="!loading">LOGIN</span>
+                      <span class="log" v-show="!loading">LOGIN</span>
                       <span v-show="loading"><Loader/></span>
 
                     </button>
@@ -125,7 +126,9 @@ export default {
 .signUp{
     padding-top: 30px;
 }
-
+.log{
+  background: transparent;
+}
 #card {
 
   height: 460px;

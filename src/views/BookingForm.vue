@@ -1,5 +1,6 @@
 <template>
    <h1 class="head" style="font-weight: bold;color:#b18044">BOOKING</h1>
+   <div class="border"></div>
           <div class="container" v-for="service of services" :key="service.title">
             
             <div class="row" v-if="service.showForm">
@@ -111,4 +112,11 @@ export default {
 .btn{
   margin-top:30px;
 }
+.border{
+    border-top: 1px solid;
+    width: 100px;
+    display:inline-flex;
+    justify-content: center;
+}
+
 </style>

@@ -3,6 +3,7 @@
     <div id="card-content">
       <div id="card-title">
         <h1 style="font-weight: bold;color:#b18044">SIGN UP</h1>
+        <div class="border"></div>
  
       </div>
       <Form @submit="handleRegister" :validation-schema="schema">
@@ -383,5 +384,11 @@ h1.headin{
     h1.headin{
     padding-top:50px;
 }
+}
+.border{
+    border-top: 1px solid;
+    width: 100px;
+    display:inline-flex;
+    justify-content: center;
 }
 </style>

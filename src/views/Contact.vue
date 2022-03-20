@@ -1,5 +1,6 @@
 <template>
     <h1 class="head" style="font-weight: bold;color:#b18044">CONTACT US</h1>
+    <div class="border"></div>
     <div class="containe d-flex justify-content-center" id="contact">
     
         
@@ -181,4 +182,10 @@ textarea#message.form-control {
   
 }
 
+.border{
+    border-top: 1px solid;
+    width: 100px;
+    display:inline-flex;
+    justify-content: center;
+}
 </style>

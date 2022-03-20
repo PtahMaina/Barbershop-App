@@ -1,10 +1,11 @@
 <template>
 
     <h1 class="head" style="font-weight: bold;color:#b18044">OUR STORY</h1>
+    <div class="border"></div>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h5>Established in 2022 The Urban Shave Barbershop is a full-service barbershop that is dedicated to providing exponential customer service to our clients alongside trendy haircuts with specified grooming. Our shop is a client-driven relaxing atmosphere in which we want every person who walks through the door feeling delighted upon leaving after giving them what they were looking for. We take great pride in our craft and know what to deliver to one and every client, due to Vancouver being a very diverse city we have people coming through our doors from the ages of one getting that first cut up to the eldest clients that have come in up to 100. In addition to haircuts, the shop offers all the traditional barbershop services including Straight-razor shaves, Beard trims, Beard Fades, Old School Razor Skin Fades, Classic Cut, Buzz Cut. </h5>
+                <h5 style="font-size:22px;font-weight: 400;text-align: center;white-space: pre-wrap;">Established in 2022 The Urban Shave Barbershop is a full-service barbershop that is dedicated to providing exponential customer service to our clients alongside trendy haircuts with specified grooming. Our shop is a client-driven relaxing atmosphere in which we want every person who walks through the door feeling delighted upon leaving after giving them what they were looking for. We take great pride in our craft and know what to deliver to one and every client, due to Vancouver being a very diverse city we have people coming through our doors from the ages of one getting that first cut up to the eldest clients that have come in up to 100. In addition to haircuts, the shop offers all the traditional barbershop services including Straight-razor shaves, Beard trims, Beard Fades, Old School Razor Skin Fades, Classic Cut, Buzz Cut. </h5>
             </div>
    
     <h1 class="p-5">Meet The Team</h1>
@@ -94,5 +95,20 @@ img{
     height:350px;
     object-fit:cover;
     /* padding:5px */
+}
+
+@media only screen and (max-width: 500px) {
+   img{
+    width:200px;
+    height:250px;
+    object-fit:cover;
+    padding:5px
+}
+}
+.border{
+    border-top: 1px solid;
+    width: 100px;
+    display:inline-flex;
+    justify-content: center;
 }
 </style>

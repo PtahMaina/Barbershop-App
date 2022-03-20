@@ -2,18 +2,18 @@
 
 <!-- https://i.postimg.cc/0jT0TT91/download.png -->
 <nav id="nav" class="links" :class="{ active: isActive}">
-    <!-- <div class="container">
+
         <a class="navbar-brand" href="/">
-              <img src="https://i.postimg.cc/0jT0TT91/download.png" alt="">
+     <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" srcset="">
+
         </a>   
-    </div> -->
+
  
     <router-link @click="toggleNav" to="/">Home</router-link>
 
     <!-- <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'SignUp'}">Sign Up</router-link> -->
    
     <router-link   @click="toggleNav" :to="{ name: 'Services'}">Services</router-link>
-     <!-- <img src="https://i.postimg.cc/FHp8F29C/LOGO-BABERSHOP-removebg-preview.png" alt="" srcset=""> -->
     <router-link  @click="toggleNav" :to="{ name: 'Story'}">Story</router-link>
     <router-link @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
     <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
@@ -106,12 +106,14 @@ img{
 .navbar-brand {
     position: absolute;
     left: 15px;
-    top: 5.5px;
+    top: -10px;
+    background: transparent;
 }
 
 img{
-    height:55px;
-    width:55px;
+    height:100px;
+    width:100px;
+    object-fit:cover;
 }
 @media screen and (max-width:700px) {
     #nav{

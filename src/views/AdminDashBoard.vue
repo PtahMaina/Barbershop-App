@@ -58,4 +58,10 @@ export default {
     display:inline-flex;
     justify-content: center;
 }
+
+/* .customer{
+  border: 1px solid;
+  width: 200px;
+  height: 200px;
+} */
 </style>

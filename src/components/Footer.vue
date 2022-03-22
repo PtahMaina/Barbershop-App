@@ -30,7 +30,9 @@ export default {
 
 <style scoped>
 
-
+/* *{
+    background: #b68345;
+} */
 
 .p{
     padding-top: 100px;
@@ -40,10 +42,6 @@ export default {
     
    
 }
-
-
-
-
 
 
 

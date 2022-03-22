@@ -42,7 +42,7 @@
  
     <!-- edit modal -->
   </div>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" v-if="this.currentUser" >
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" v-if="currentUser" >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -53,21 +53,21 @@
         <form >
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="recipient-name" required v-model="updatedUser.customername">
+            <input type="text" class="form-control" id="recipient-name"  v-model="updatedUser.customername">
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Email:</label>
-            <input type="text" class="form-control" id="recipient-name" required v-model="updatedUser.email">
+            <input type="text" class="form-control" id="recipient-name"  v-model="updatedUser.email">
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Phone:</label>
-            <input type="text" class="form-control" id="recipient-name" required v-model="updatedUser.phone_number">
+            <input type="text" class="form-control" id="recipient-name"  v-model="updatedUser.phone_number">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" @click.prevent="updatedUser(userId)" >SAVE</button>
+        <button type="button" class="btn btn-primary" @click.prevent="updateUser(this.currentUser._id)" >SAVE</button>
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@
 
 
 <!-- delete modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" v-if="currentUser">
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" v-if="this.currentUser">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -87,7 +87,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" @click.prevent="deleteUser(userId)">YES</button>
+        <button type="button" class="btn btn-primary" @click.prevent="deleteUser(this.currentUser._id)">YES</button>
       </div>
     </div>
   </div>
@@ -119,9 +119,9 @@ export default {
     }
   },
   methods: {
-    async updatedUser(userId) {
+    async updateUser(customerId) {
        try {
-      fetch(`${url}${userId}`,{
+      fetch(`${url}${customerId}`,{
         method: "PATCH",
         body: JSON.stringify({
            email: this.updatedUser.email,
@@ -131,7 +131,7 @@ export default {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${
-            JSON.parse(localStorage.getItem("customer")).access
+            JSON.parse(localStorage.getItem("customer")).accessToken
           }`,
         },
       })
@@ -142,27 +142,27 @@ export default {
         this.$router.push("/Login")
       });
     } catch (err) {
-      console.error(error)
+      console.error(err)
       }
     },
-    async deleteUser(userId){
+    async deleteUser(customerId){
       const headers = {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${
-            JSON.parse(localStorage.getItem("customer")).access
+            JSON.parse(localStorage.getItem("customer")).accessToken
           }`,
           },
       };
-      const new_url = `${url}${userId}`;
+      const new_url = `${url}${customerId}`;
       try {
         await axios.delete(new_url, headers, this.currentUser).then(() => {
           alert("Profile has been deleted successfully");
           this.$store.dispatch("auth/logout");
           this.$router.push("/Login")
         });
-      } catch(error) {
-        console.error(error);
+      } catch(err) {
+        console.error(err);
       }
     },
    

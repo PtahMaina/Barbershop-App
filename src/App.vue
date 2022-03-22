@@ -123,8 +123,4 @@ export default {
   margin-top: -7px;
 }
 
-
-#foot {
-  background: white;
-}
 </style>

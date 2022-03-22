@@ -3,10 +3,10 @@
 <!-- https://i.postimg.cc/0jT0TT91/download.png -->
 <nav id="nav" class="links" :class="{ active: isActive}">
 
-        <a class="navbar-brand" href="/">
+        <router-link class="navbar-brand"  @click="toggleNav"  to="/">
      <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" srcset="">
 
-        </a>   
+        </router-link>   
 
  
     <router-link @click="toggleNav" to="/">Home</router-link>

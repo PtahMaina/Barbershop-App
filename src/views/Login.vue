@@ -10,8 +10,8 @@
         <div class="form-group">
                     <label class="form-label" id="nameLabel" for="name"></label>
                     <!-- <Field type="text" class="form-control" id="name" name="customername"  tabindex="1" /> -->
-                    <Field name="customername" type="text" class="form-control" placeholder="Username" />
-                    <ErrorMessage name="customername" class="error-feedback" />
+                    <Field name="email" type="text" class="form-control" placeholder="Email" />
+                    <ErrorMessage name="email" class="error-feedback" />
                     
                 </div>
                 <div class="form-group">
@@ -63,7 +63,7 @@ export default {
   },
   data() {
     const schema = yup.object().shape({
-    customername: yup.string().required("username is required"),
+    email: yup.string().required("username is required"),
     password: yup.string().required("Password is required")
     });
     return {

@@ -16,7 +16,7 @@ export default {
         showForm: false,
         title:"CLASSIC CUT",
         price: 100,
-        img:"https://i.postimg.cc/vBm9Fy82/Anthony-Flattop-56a610235f9b58b7d0dfbd57.jpg",
+        img:"",
         discription:"Relax while your barber achieves your tailored look. If you’re looking for a bald fade or if your hair is currently longer than earlobe length please book from our other options.",
       },
        {
@@ -129,5 +129,10 @@ export default {
   text-decoration:none; 
   margin-top: -7px;
 }
+
+.btn:hover{
+  color: #b68345;
+}
+
 
 </style>

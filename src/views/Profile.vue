@@ -66,8 +66,8 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" @click.prevent="updateUser()" >SAVE</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn" @click.prevent="updateUser()" >SAVE</button>
       </div>
     </div>
   </div>
@@ -86,8 +86,8 @@
        Are you sure you want to delete you account?
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" @click.prevent="deleteUser()">YES</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn" @click.prevent="deleteUser()">YES</button>
       </div>
     </div>
   </div>

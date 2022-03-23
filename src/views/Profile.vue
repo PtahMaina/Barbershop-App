@@ -87,7 +87,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" @click.prevent="deleteUser(this.currentUser._id)">YES</button>
+        <button type="button" class="btn btn-primary" @click.prevent="deleteUser()">YES</button>
       </div>
     </div>
   </div>
@@ -145,7 +145,7 @@ export default {
       console.error(err)
       }
     },
-    async deleteUser(customerId){
+    async deleteUser(){
       const headers = {
         headers: {
           'Content-Type': 'application/json',
@@ -154,7 +154,7 @@ export default {
           }`,
           },
       };
-      const new_url = `${url}${customerId}`;
+      const new_url = `${url}`;
       try {
         await axios.delete(new_url, headers, this.currentUser).then(() => {
           alert("Profile has been deleted successfully");

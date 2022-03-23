@@ -29,6 +29,11 @@
                           <option value="session3">Session 3</option>
                           <option value="session4">Session 4</option>
                           <option value="session5">Session 5</option>
+                          <option value="session6">Session 6</option>
+                          <option value="session7">Session 7</option>
+                          <option value="session8">Session 8</option>
+                          <option value="session9">Session 9</option>
+                          <option value="session10">Session 10</option>
                       </select>
                 </div>
                 <button class="btn">submit</button>

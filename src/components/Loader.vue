@@ -1,20 +1,22 @@
 <template>
-<RingLoader :color="white"/>
+<ClipLoader :color="white"/>
 </template>
 
 <script>
-import RingLoader from "vue-spinner/src/RingLoader.vue"
+import ClipLoader from "vue-spinner/src/ClipLoader.vue"
 export default {
     name: "Loader",
     props: {
         color: "",
     },
     components: {
-        RingLoader,
+        ClipLoader,
     }
 }
 </script>
 
-<style>
-
+<style scoped>
+    *{
+        background: transparent;
+    }
 </style>

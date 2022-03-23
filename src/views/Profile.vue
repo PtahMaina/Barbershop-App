@@ -67,7 +67,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" @click.prevent="updateUser(this.currentUser._id)" >SAVE</button>
+        <button type="button" class="btn btn-primary" @click.prevent="updateUser()" >SAVE</button>
       </div>
     </div>
   </div>
@@ -119,9 +119,9 @@ export default {
     }
   },
   methods: {
-    async updateUser(customerId) {
+    async updateUser() {
        try {
-      fetch(`${url}${customerId}`,{
+      fetch(`${url}`,{
         method: "PATCH",
         body: JSON.stringify({
            email: this.updatedUser.email,

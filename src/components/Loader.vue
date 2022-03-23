@@ -1,16 +1,16 @@
 <template>
-<RotateLoader :color="white"/>
+<RingLoader :color="white"/>
 </template>
 
 <script>
-import RotateLoader from "vue-spinner/src/RotateLoader.vue"
+import RingLoader from "vue-spinner/src/RingLoader.vue"
 export default {
     name: "Loader",
     props: {
         color: "",
     },
     components: {
-        RotateLoader,
+        RingLoader,
     }
 }
 </script>

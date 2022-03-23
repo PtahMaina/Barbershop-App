@@ -17,6 +17,7 @@
                         <option value="yaaseen">Yaaseen</option>
                         <option value="muneeb">Muneeb</option>
                         <option value="naaim">Naaim</option>
+                        <option value="nadeem">Nadeem</option>
                       
                     </select>
                 </div>
@@ -79,7 +80,7 @@ export default {
   },
 })
   .then((response) => response.json())
-  .then((json) => alert("Thanks your booking has been processed"))
+  .then((json) => alert({msg: "Thanks your booking has been processed", json}))
   .catch((error) => alert(error.msg));
     }
   }

@@ -99,10 +99,10 @@ img{
 
 @media only screen and (max-width: 500px) {
    img{
-    width:200px;
-    height:250px;
+    width:250px;
+    height:350px;
     object-fit:cover;
-    padding:5px
+    padding:10px
 }
 }
 .border{

@@ -80,7 +80,7 @@ export default {
   },
 })
   .then((response) => response.json())
-  .then((json) => alert({msg: "Thanks your booking has been processed", json}))
+  .then((json) => alert( "Thanks your booking has been processed"))
   .catch((error) => alert(error.msg));
     }
   }

@@ -114,5 +114,23 @@ h1,h3{
     padding-top: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+ .row{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   
+ }
+ .col{
+   padding: 10px;
+ }
+ .paragraph p{
+    font-size:22px;
+    font-weight: 400;
+    text-align: center;
+    white-space: pre-wrap;
+    padding-top: 50px;
+}
+}
 
 </style>

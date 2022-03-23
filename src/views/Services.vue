@@ -4,7 +4,7 @@
     <div class="container d-flex justify-content-center">
        <div class="row">
            <!-- <h1>HAIR</h1> -->
-           <div class="col-6"  v-for="(service,i) of services" :key="service.title" >
+           <div class="col d-flex justify-content-center"  v-for="(service,i) of services" :key="service.title" >
                 <div class="content">
                    <router-link style="text-decoration: none" @click="toggleBookingForm(i)" :to="{ name: 'BookingForm'}">
                      <!-- <div class="image">     <img class="img" :src="service.img" /></div> -->
@@ -90,8 +90,10 @@ export default {
 }
 @media only screen and (max-width: 500px) {
    .content{
-     font-size:15px;
+      font-size:15px;
+     
    }
-  
+
 }
+
 </style>

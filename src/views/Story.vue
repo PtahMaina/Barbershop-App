@@ -19,7 +19,7 @@
     <div class="col">
          <div class="image">
             <img  src="https://i.postimg.cc/kgCvtXJM/owner.jpg" alt="">
-            <h6 class="centered">M.Muneeb Davids, Owner</h6>
+            <h6 class="centered">M.Muneeb Davids, Owner/Barber</h6>
         </div>
     </div>        
                      

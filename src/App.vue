@@ -22,14 +22,14 @@ export default {
        {
          showForm: false,
         title:"SKIN FADE",
-        price: 100,
+        price: 90,
         img:"",
         discription:"Also known as a bald fade or a zero fade, this service requires a little extra time. Hair is faded from skin or “0” length to your desired length on top.",
       },
        {
          showForm: false,
         title:"SCISSOR CUT",
-        price: 100,
+        price: 70,
         discription:"Scissors all round or complete re-style.Washed and styled.",
       },
        {
@@ -49,23 +49,30 @@ export default {
         {
           showForm: false,
         title:"HEAD SHAVE",
-        price: 100,
+        price: 50,
         img:"",
         discription:"Experience a traditional hot towel shave with a straight razor and warm shaving cream that will leave your face smooth to the touch.",
       },
         {
           showForm: false,
         title:"BEARD TRIM & SHAPE",
-        price: 100,
+        price: 95,
         img:"",
         discription:"If you looking to col-6our your hair then we offer semi-permanent or permanent col-6our.",
       },
          {
            showForm: false,
-        title:"  HOT TOWEL TRIM AND SHAPE",
-        price: 100,
+        title:"HOT TOWEL TRIM AND SHAPE",
+        price: 85,
         img:"",
         discription:"Relax while your beard is trimmed or shaped with a razor or clipper. ",
+      },
+        {
+           showForm: false,
+        title:"BUZZ",
+        price: 100,
+        img:"",
+        discription:"Ask for a buzz cut if you're looking for a no-nonsense low maintenance look at a uniform length as close as you'd like.",
       },
     ]
     }

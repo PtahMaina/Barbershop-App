@@ -1,0 +1,166 @@
+[debug] [2022-03-24T20:46:40.696Z] ----------------------------------------------------------------------
+[debug] [2022-03-24T20:46:40.698Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\davim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-24T20:46:40.699Z] CLI Version:   10.2.0
+[debug] [2022-03-24T20:46:40.699Z] Platform:      win32
+[debug] [2022-03-24T20:46:40.699Z] Node Version:  v16.13.2
+[debug] [2022-03-24T20:46:40.700Z] Time:          Thu Mar 24 2022 22:46:40 GMT+0200 (South Africa Standard Time)
+[debug] [2022-03-24T20:46:40.701Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-24T20:46:40.763Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-24T20:46:40.764Z] > authorizing via signed-in user (davimuneeb785@gmail.com)
+[debug] [2022-03-24T20:46:40.764Z] [iam] checking project the-urban-shave for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-24T20:46:40.766Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions [none]
+[debug] [2022-03-24T20:46:40.766Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-24T20:46:43.088Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions 200
+[debug] [2022-03-24T20:46:43.089Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-24T20:46:43.092Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-urban-shave [none]
+[debug] [2022-03-24T20:46:43.992Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-urban-shave 200
+[debug] [2022-03-24T20:46:43.993Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-urban-shave {"projectId":"the-urban-shave","projectNumber":"301289493873","displayName":"The Urban Shave","name":"projects/the-urban-shave","resources":{"hostingSite":"the-urban-shave"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'the-urban-shave'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-24T20:46:44.011Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-03-24T20:46:44.012Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-24T20:46:44.663Z] <<< HTTP RESPONSE 200 {"date":"Thu, 24 Mar 2022 20:46:44 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-24T20:46:44.704Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/the-urban-shave/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-03-24T20:46:47.385Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 24 Mar 2022 20:46:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-24T20:46:47.386Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-03-24T20:46:47.392Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 24 Mar 2022 20:46:46 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/the-urban-shave/versions",
+        "path": "/v1beta1/sites/the-urban-shave/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/the-urban-shave/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2022-03-24T20:47:05.550Z] ----------------------------------------------------------------------
+[debug] [2022-03-24T20:47:05.552Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\davim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-24T20:47:05.553Z] CLI Version:   10.2.0
+[debug] [2022-03-24T20:47:05.553Z] Platform:      win32
+[debug] [2022-03-24T20:47:05.553Z] Node Version:  v16.13.2
+[debug] [2022-03-24T20:47:05.554Z] Time:          Thu Mar 24 2022 22:47:05 GMT+0200 (South Africa Standard Time)
+[debug] [2022-03-24T20:47:05.555Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-24T20:47:05.627Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-24T20:47:05.627Z] > authorizing via signed-in user (davimuneeb785@gmail.com)
+[debug] [2022-03-24T20:47:05.628Z] [iam] checking project the-urban-shave for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-24T20:47:05.630Z] > refreshing access token with scopes: []
+[debug] [2022-03-24T20:47:05.631Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-24T20:47:06.388Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 24 Mar 2022 20:47:05 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-24T20:47:06.471Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions [none]
+[debug] [2022-03-24T20:47:06.472Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-24T20:47:09.321Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions 200
+[debug] [2022-03-24T20:47:09.321Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-urban-shave:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-24T20:47:09.325Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-urban-shave [none]
+[debug] [2022-03-24T20:47:10.123Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-urban-shave 200
+[debug] [2022-03-24T20:47:10.124Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-urban-shave {"projectId":"the-urban-shave","projectNumber":"301289493873","displayName":"The Urban Shave","name":"projects/the-urban-shave","resources":{"hostingSite":"the-urban-shave"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'the-urban-shave'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-24T20:47:10.150Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-03-24T20:47:10.151Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-24T20:47:10.882Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Thu, 24 Mar 2022 20:47:10 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-24T20:47:10.949Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/the-urban-shave/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-03-24T20:47:13.310Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 24 Mar 2022 20:47:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-24T20:47:13.311Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-03-24T20:47:13.321Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 24 Mar 2022 20:47:12 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/the-urban-shave/versions",
+        "path": "/v1beta1/sites/the-urban-shave/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/the-urban-shave/versions"
+      },
+      "method": "POST"
+    }
+  }
+}

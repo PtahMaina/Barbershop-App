@@ -27,8 +27,9 @@
         <div v-for="customer in customers" :key="customer.id">
       <div class="client" > 
         <div class="client_content" style="font-weight: 400;color:black">
-           {{customer.customername}}
-           {{customer.email}}
+           <div class="cname"> <h6 style="font-weight: bold;color:black"> Name:</h6> {{customer.customername}}</div>
+           <div class="email"> <h6 style="font-weight: bold;color:black"> Email:</h6> {{customer.email}}</div>
+           <div class="crole"> <h6 style="font-weight: bold;color:black"> Role:</h6> {{customer.role}}</div>
            <i class="fas fa-edit" style="font-size:20px;color:white;"></i>
            <i class="fas fa-trash" style="font-size:20px;color:white;"></i>
            <!-- <h6>Employee</h6> -->
@@ -70,8 +71,8 @@
   </div>
 
 
- <!-- edit  -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  >
+ <!-- edit barber -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" v-if="this.currentUser" >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -82,21 +83,21 @@
         <form >
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Barber Name:</label>
-            <input type="text" class="form-control" id="recipient-name" >
+            <input type="text" class="form-control" id="recipient-name" v-model="updatedBarber.barberName" >
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary"  >SAVE</button>
+        <button type="button" class="btn btn-primary" @click.prevent="updateBarber()" >SAVE</button>
       </div>
     </div>
   </div>
 </div>
 
 
-<!-- delete modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+<!-- delete modal barber -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  v-if="this.currentUser">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -108,7 +109,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" >YES</button>
+        <button type="button" class="btn btn-primary"  @click.prevent="deleteBarber()" >YES</button>
       </div>
     </div>
   </div>
@@ -116,11 +117,16 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
    data(){
             return {
                 customers:[],
                 barbers:[],
+                updatedBarber:{
+                  barberName:"",
+                }
+                
             }
         },
         mounted(){
@@ -145,6 +151,54 @@ export default {
     if (this.currentUser.role !== "admin") {
       this.$router.push("/Profile")  
     }
+  },
+  methods:{
+      async updateBarber() {
+       try {
+      fetch('https://barber-shopbackend.herokuapp.com/barbers/',{
+        method: "PUT",
+        body: JSON.stringify({
+          barberName: this.updatedBarber.barberName,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${
+            JSON.parse(localStorage.getItem("customer")).accessToken
+          }`,
+        },
+      })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        if(data.message) return alert(data.message)
+        alert("Barber Name Updated!");
+        this.$store.dispatch("auth/logout");
+        // this.$router.push("/Login")
+      });
+    } catch (err) {
+      console.error(err)
+      }
+    },
+       async deleteBarber(){
+      const headers = {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${
+            JSON.parse(localStorage.getItem("customer")).accessToken
+          }`,
+          },
+      };
+      const new_url = "https://barber-shopbackend.herokuapp.com/barbers/";
+      try {21
+        await axios.delete(new_url, headers, this.currentUser).then(() => {
+          alert("Profile has been deleted successfully");
+          this.$store.dispatch("auth/logout");
+          this.$router.push("/Login")
+        });
+      } catch(err) {
+        console.error(err);
+      }
+    },
   }
 }
 </script>
@@ -235,6 +289,14 @@ table,tr,td,th{
   padding: 0.5em;
   
 }
+.cname, h6{
+  background: transparent;
+}
+.email{
+   background: transparent;
+}
 
-
+.crole{
+  background: transparent;
+}
 </style>

@@ -37,11 +37,8 @@
             
         </div>
         <div class="signUp">
-            
-             <h6> Don't have an account yet?<router-link :to="{ name: 'SignUp'}"> Sign Up</router-link></h6>
+             <h6> Don't have an account yet?<router-link :to="{ name: 'SignUp'}">Sign Up</router-link></h6>
         </div>
-        
-       
       </Form>
     </div>
   </div>

@@ -37,10 +37,13 @@
                     <button class="btn btn-mod btn-border btn-large">
                        <span class="sign" v-show="!loading">SIGN UP</span>
                       <span v-show="loading"><Loader/></span>
-
                     </button>
-
                 </div>
+                <div class="form-group">
+                  <div v-if="errorMessage" class="alert alert-danger" role="alert">
+                      {{errorMessage}}
+                  </div>
+               </div>
           <div class="signUp">
               <h6> Already have an account?   <router-link :to="{ name: 'Login'}">Login</router-link></h6>      
           </div>
@@ -89,8 +92,8 @@ export default {
     return {
       successful: false,
       loading: false,
-      message: "",
       schema,
+      errorMessage: "Email already in use!",
     };
   },
   computed: {
@@ -105,7 +108,7 @@ export default {
   },
   methods: {
     handleRegister(user) {
-      this.message = "";
+      this.errorMessage = "";
       this.successful = false;
       this.loading = true;
       this.$store.dispatch("auth/register", user).then(
@@ -113,18 +116,10 @@ export default {
           this.message = data.message;
           this.successful = true;
           this.loading = false;
-        },
-        (error) => {
-          this.message =
-            (error.response &&
-              error.response.data &&
-              error.response.data.message) ||
-            error.message ||
-            error.toString();
-          this.successful = false;
-          this.loading = false;
         }
-      );
+      ).catch((error) => {
+             error = this.errorMessage;
+      });
     },
   },
 };

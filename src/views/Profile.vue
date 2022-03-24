@@ -31,7 +31,7 @@
         
       </div>
           <div class="col">
-           
+          
          
         </div>
     </div>
@@ -137,7 +137,7 @@ export default {
       })
       .then((res) => res.json())
       .then(() => {
-        alert("your profile has benn updated!");
+        alert("Your profile has been updated!");
         this.$store.dispatch("auth/logout");
         this.$router.push("/Login")
       });

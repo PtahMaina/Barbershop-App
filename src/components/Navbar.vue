@@ -104,7 +104,7 @@ img{
 }
 
 .navbar-brand {
-    position: absolute;
+    position: fixed;
     left: 15px;
     top: -10px;
     background: transparent;
@@ -139,7 +139,7 @@ img{
 
         
     }
- 
+
 }
 
 /* @media only screen and (max-width: 494px) {

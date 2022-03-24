@@ -5,10 +5,10 @@
 
         <router-link class="navbar-brand"  @click="toggleNav"  to="/">
      <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" srcset="">
-
+        
         </router-link>   
 
- 
+    
     <router-link @click="toggleNav" to="/">Home</router-link>
 
     <!-- <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'SignUp'}">Sign Up</router-link> -->
@@ -20,6 +20,12 @@
     <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile'}">Profile</router-link>
      <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}">DashBoard</router-link>
     <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
+    <a href="https://www.facebook.com/The-URBAN-SHAVE-102006302468680"><i style="color:white;" class="fab fb fa-facebook-f"></i></a> 
+    <a href="instagram.com/theurbanshave2022/"><i  style="color:white;" class="fab in fa-instagram"></i></a>
+ 
+ 
+
+    
 </nav>    
 <button id="nav-btn" @click="toggleNav">
     <i style="font-size:20px" class="fas fa-bars"></i>
@@ -63,7 +69,22 @@ export default {
 </script>
 
 <style scoped>
-
+.fb{
+    position: absolute;
+    right: 200px;
+    padding-top: 3px;
+    padding-left: 10px;
+     font-size: 20px;
+    background: transparent;
+}
+.in{
+    position: absolute;
+    right: 170px;
+    padding-top: 3px;
+    padding-left: 10px;
+     font-size: 20px;
+    background: transparent;
+}
 .links{
     
     display:flex;
@@ -139,6 +160,26 @@ img{
 
         
     }
+    .fb{
+    position: absolute;
+    /* right: 200px; */
+    /* padding-top: 3px; */
+    top: 100px;
+    left: 165px;
+    font-size: 20px;
+    padding-left: 10px;
+    background: transparent;
+}
+.in{
+    position: absolute;
+    /* right: 170px; */
+    /* padding-top: 3px; */
+     top: 100px;
+     left: 190px;
+     font-size: 20px;
+    padding-left: 10px;
+    background: transparent;
+}
 
 }
 

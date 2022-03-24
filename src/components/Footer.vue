@@ -5,7 +5,7 @@
         <div class="footer">
         <h6 class="p fw-bold ">© <span style="font-size:13.5px;">2022 </span><span style="color:#b18044">The Urban Shave</span> </h6>
         <p>18 Chukker Road, Kenwyn, Cape Town 7780</p>
-        
+        <i style="color:white;" class="fab fa-facebook-f"></i>
         <div class="col">
             <router-link style="text-decoration: none; color:white" :to="{ name: 'Services'}"><button class="btn" >Services</button> </router-link>
              <router-link style="text-decoration: none; color:white" :to="{ name: 'Story'}"><button class="btn">Story</button> </router-link>

@@ -10,8 +10,8 @@
           <div class="barberName" > 
             <div class="name" style="font-weight:bold;color:black;font-size:20px;">
               {{barber.barberName}}
-              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;color:#b18044;"></i></button>
-              <button class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash" style="font-size:20px;color:#b18044;"></i></button>
+              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;color:black;"></i></button>
+              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash" style="font-size:20px;color:black;"></i></button>
             </div>
           </div>
         </div>
@@ -25,8 +25,8 @@
                 <div class="cname"> <h6 style="font-weight: bold;color:black"> Name:</h6> {{customer.customername}}</div>
                 <div class="email"> <h6 style="font-weight: bold;color:black"> Email:</h6> {{customer.email}}</div>
                 <div class="crole"> <h6 style="font-weight: bold;color:black"> Role:</h6> {{customer.role}}</div>
-                <i class="fas fa-edit" style="font-size:20px;color:white;"></i>
-                <i class="fas fa-trash" style="font-size:20px;color:white;"></i>
+                <!-- <i class="fas fa-edit" style="font-size:20px;color:white;"></i>
+                <i class="fas fa-trash" style="font-size:20px;color:white;"></i> -->
               </div>
             </div>
         </div>
@@ -148,7 +148,7 @@ export default {
       console.error(err)
       }
     },
-       async deleteBarber(){
+      async deleteBarber(){
       const headers = {
         headers: {
           'Content-Type': 'application/json',
@@ -157,12 +157,12 @@ export default {
           }`,
           },
       };
-      const new_url = "https://barber-shopbackend.herokuapp.com/barbers/";
-      try {21
-        await axios.delete(new_url, headers, this.currentUser).then(() => {
-          alert("Profile has been deleted successfully");
+      const new_url ="https://barber-shopbackend.herokuapp.com/barbers/";
+      try {
+        await axios.delete(new_url + this.barberToEdit, headers, this.currentUser).then(() => {
+          alert("Barber has been deleted successfully");
           this.$store.dispatch("auth/logout");
-          this.$router.push("/Login")
+          // this.$router.push("/Login")
         });
       } catch(err) {
         console.error(err);

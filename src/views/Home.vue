@@ -3,9 +3,8 @@
 
   <div class="imageContainer">
     <div class="center">
-      <h1 style="font-size:50px;font-weight: 400;">"Masters of Barbering"</h1>
-       <h3  style="color:;font-size:20px;"> 
-         <span class="blink" ><span class="blink-hard" style="font-size:20px;background: transparent;">Lets Your Hair Do The Talking...</span></span> </h3>
+      <h1 style="font-size:70px;font-weight: 500;">"Masters of Barbering"</h1>
+       <h3  style="color:;font-size:25px;">Lets Your Hair Do The Talking... </h3>
     
        <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn btn-outline-light">BOOK NOW</button></h1></router-link>
     </div>

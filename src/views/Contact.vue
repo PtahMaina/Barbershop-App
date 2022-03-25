@@ -92,7 +92,9 @@ textarea#message.form-control {
 .containe {
   display:flex;
   padding: none;
-  margin-bottom:50px;
+  /* margin-bottom:100px; */
+  margin-top: 100px;
+  height:100vh;
 }
 
 

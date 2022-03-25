@@ -121,6 +121,7 @@ export default {
 #nav a.router-link-exact-active {
   color: #b68345;
   text-decoration: none;
+  
 }
 
 .btn {

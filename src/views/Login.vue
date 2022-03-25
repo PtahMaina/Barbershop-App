@@ -278,11 +278,10 @@ h1.headin{
 }
 
 .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
-    color: white;
-    border-color:#9dd8e0 ;
-    background:#9dd8e0;
-    outline: none;
+   color: black;
+    border-color:white ;
     
+    outline: none;
 }
 
 @media only screen and (max-width: 500px) {

@@ -212,9 +212,9 @@ body {
   
   background: transparent;
 }
-#submit-btn:hover {
+/* #submit-btn:hover {
   box-shadow: 0px 1px 18px #1e90ff;
-}
+} */
 .form {
   align-items: left;
   display: flex;
@@ -314,7 +314,7 @@ h1.headin{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 4px 13px;
-    color: #fff;
+    /* color: #fff; */
     background: rgba(34,34,34, .9);
     border: 1px solid transparent;
     font-size: 11px;
@@ -336,9 +336,9 @@ h1.headin{
 }
 
 .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
-    color: white;
-    border-color:#9dd8e0 ;
-    background:#9dd8e0;
+    color: black;
+    border-color:white ;
+    
     outline: none;
     
 }

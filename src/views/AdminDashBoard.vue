@@ -8,11 +8,12 @@
         <h1>Barbers</h1>
         <div v-for="barber in barbers" :key="barber.id">
           <div class="barberName" > 
-            <div class="name" style="font-weight:bold;color:black;font-size:20px;">
+            <div class="name" style="color:#b18044;font-size:20px;">
               {{barber.barberName}}
-              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;color:black;"></i></button>
-              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash" style="font-size:20px;color:black;"></i></button>
+              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;color:white;"></i></button>
+              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash-alt" style="font-size:20px;color:white;"></i></button>
             </div>
+
           </div>
         </div>
       </div>
@@ -21,10 +22,10 @@
           <h1>Registered Users</h1>
           <div v-for="customer in customers" :key="customer.id">
             <div class="client" > 
-              <div class="client_content" style="font-weight: 400;color:black">
-                <div class="cname"> <h6 style="font-weight: bold;color:black"> Name:</h6> {{customer.customername}}</div>
-                <div class="email"> <h6 style="font-weight: bold;color:black"> Email:</h6> {{customer.email}}</div>
-                <div class="crole"> <h6 style="font-weight: bold;color:black"> Role:</h6> {{customer.role}}</div>
+              <div class="client_content" style="font-weight: 400;color:#b18044">
+                <div class="cname"> <h6 style="font-weight: bold;color:#b18044"> Name:</h6> {{customer.customername}}</div>
+                <div class="email"> <h6 style="font-weight: bold;color:#b18044"> Email:</h6> {{customer.email}}</div>
+                <div class="crole"> <h6 style="font-weight: bold;color:#b18044"> Role:</h6> {{customer.role}}</div>
                 <!-- <i class="fas fa-edit" style="font-size:20px;color:white;"></i>
                 <i class="fas fa-trash" style="font-size:20px;color:white;"></i> -->
               </div>
@@ -53,7 +54,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">CLOSE</button>
         <button type="button" class="btn btn-primary" @click.prevent="updateBarber()" >SAVE</button>
       </div>
     </div>
@@ -73,8 +74,8 @@
        Are you sure you want to delete this employee?
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary"  @click.prevent="deleteBarber()" >YES</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn btn-danger"  @click.prevent="deleteBarber()" >YES</button>
       </div>
     </div>
   </div>
@@ -142,7 +143,8 @@ export default {
         if(data.message) return alert(data.message)
         alert("Barber Name Updated!");
         this.$store.dispatch("auth/logout");
-        // this.$router.push("/Login")
+        this.$router.go()
+        this.$router.push("/AdminDashboard")
       });
     } catch (err) {
       console.error(err)
@@ -162,7 +164,8 @@ export default {
         await axios.delete(new_url + this.barberToEdit, headers, this.currentUser).then(() => {
           alert("Barber has been deleted successfully");
           this.$store.dispatch("auth/logout");
-          // this.$router.push("/Login")
+          this.$router.go()
+        this.$router.push("/AdminDashboard")
         });
       } catch(err) {
         console.error(err);
@@ -175,6 +178,7 @@ export default {
 <style scoped>
 .fas{
   background: transparent;
+  /* padding-right: 30px; */
 }
 .head{
     padding-top:100px;
@@ -235,16 +239,16 @@ table,tr,td,th{
   /* border: solid 1.5px white; */
   padding: 0.5em;
   margin-bottom: 20px;
-  background: white;
-  border-radius:3px;
+  border:1px solid white;
+  border-radius:7px;
   margin-right: 5px;
 }
 .client{
   /* border: solid 1.5px white; */
   padding: 0.5em;
   margin-bottom: 20px;
-  background: #b68345;
-  border-radius:3px;
+  border:1px solid #b68345;
+  border-radius:7px;
   margin-right: 5px;
   height: auto;
 }

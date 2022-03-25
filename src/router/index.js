@@ -6,7 +6,7 @@ import SignUp from '../views/SignUp.vue'
 import Services from '../views/Services.vue'
 import BookingForm from '../views/BookingForm'
 import AdminDashBoard from '../views/AdminDashBoard.vue'
-
+import Success from '../views/Success.vue'
 import Contact from '../views/Contact.vue'
 import Profile from '../views/Profile.vue'
 
@@ -66,6 +66,12 @@ const routes = [
     name: 'Contact',
 
     component: Contact
+  },
+  {
+    path: '/Success',
+    name: 'Success',
+
+    component: Success
   },
 
   

@@ -103,7 +103,7 @@ export default {
   },
   mounted() {
     if (this.loggedIn) {
-      this.$router.push("/Login");
+      this.$router.push("/Success");
     }
   },
   methods: {
@@ -116,6 +116,7 @@ export default {
           this.message = data.message;
           this.successful = true;
           this.loading = false;
+          this.$router.push("/Success");
         },
         (error) => {
           this.message =

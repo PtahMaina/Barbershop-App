@@ -21,7 +21,7 @@
      <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}">DashBoard</router-link>
     <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
     <a href="https://www.facebook.com/The-URBAN-SHAVE-102006302468680"  target="_blank"><i style="color:white;" class="fab fb fa-facebook-f"></i></a> 
-    <a href="https://www.instagram.com/theurbanshave2022/" target="_blank"><i  style="color:white;" class="fab in fa-instagram"></i></a>
+    <a href="https://www.instagram.com/theurbanshave2022/"  target="_blank"><i  style="color:white;" class="fab in fa-instagram"></i></a>
  
  
 
@@ -85,6 +85,7 @@ export default {
      font-size: 20px;
     background: transparent;
 }
+
 .links{
     
     display:flex;
@@ -165,7 +166,7 @@ img{
     /* right: 200px; */
     /* padding-top: 3px; */
     top: 100px;
-    left: 165px;
+    left: 140px;
     font-size: 20px;
     padding-left: 10px;
     background: transparent;
@@ -175,7 +176,7 @@ img{
     /* right: 170px; */
     /* padding-top: 3px; */
      top: 100px;
-     left: 190px;
+     left: 200px;
      font-size: 20px;
     padding-left: 10px;
     background: transparent;

@@ -10,7 +10,7 @@
           <div class="barberName" > 
             <div class="name" style="font-weight:bold;color:black;font-size:20px;">
               {{barber.barberName}}
-              <button class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;color:#b18044;"></i></button>
+              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;color:#b18044;"></i></button>
               <button class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash" style="font-size:20px;color:#b18044;"></i></button>
             </div>
           </div>
@@ -90,7 +90,8 @@ export default {
                 barbers:[],
                 updatedBarber:{
                   barberName:"",
-                }
+                },
+                barberToEdit: ''
                 
             }
         },
@@ -118,9 +119,12 @@ export default {
     }
   },
   methods:{
+      changeBarberToEdit(barber){
+        this.barberToEdit = barber
+      },
       async updateBarber() {
        try {
-      fetch('https://barber-shopbackend.herokuapp.com/barbers/',{
+      fetch(`https://barber-shopbackend.herokuapp.com/barbers/${this.barberToEdit}`,{
         method: "PUT",
         body: JSON.stringify({
           barberName: this.updatedBarber.barberName,

@@ -18,7 +18,7 @@
     <router-link @click="toggleNav" :to="{ name: 'Contact'}">Contact Us</router-link>
     <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login'}">Login</router-link>
     <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile'}">Profile</router-link>
-     <router-link class="showAdmin"  v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}">DashBoard</router-link>
+     <router-link v-if="!showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}">DashBoard</router-link>
     <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
     <a href="https://www.facebook.com/The-URBAN-SHAVE-102006302468680"  target="_blank"><i style="color:white;" class="fab fb fa-facebook-f"></i></a> 
     <a href="https://www.instagram.com/theurbanshave2022/" target="_blank"><i  style="color:white;" class="fab in fa-instagram"></i></a>
@@ -61,7 +61,6 @@ export default {
           if(this.currentUser.role == 'admin'){
               this.showAdmin = true;
           }else{
-            //   $('.showAdmin').css('visibility', 'hidden');
               this.showAdmin = false;
           }
       }

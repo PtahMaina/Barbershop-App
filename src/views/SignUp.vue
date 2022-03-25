@@ -40,8 +40,8 @@
                     </button>
                 </div>
                 <div class="form-group">
-                  <div v-if="errorMessage" class="alert alert-danger" role="alert">
-                      {{errorMessage}}
+                  <div v-if="message" class="alert alert-danger" role="alert">
+                      {{message}}
                   </div>
                </div>
           <div class="signUp">
@@ -93,7 +93,7 @@ export default {
       successful: false,
       loading: false,
       schema,
-      errorMessage: "Email already in use!",
+      message: "",
     };
   },
   computed: {
@@ -107,8 +107,8 @@ export default {
     }
   },
   methods: {
-    handleRegister(user) {
-      this.errorMessage = "";
+      handleRegister(user) {
+      this.message = "";
       this.successful = false;
       this.loading = true;
       this.$store.dispatch("auth/register", user).then(
@@ -116,12 +116,34 @@ export default {
           this.message = data.message;
           this.successful = true;
           this.loading = false;
-           this.$router.push("/");
+        },
+        (error) => {
+          this.message =
+            (error.response &&
+              error.response.data &&
+              error.response.data.message) ||
+            error.message ||
+            error.toString();
+          this.successful = false;
+          this.loading = false;
         }
-      ).catch((error) => {
-             error = this.errorMessage;
-      });
+      );
     },
+    // handleRegister(user) {
+    //   this.errorMessage = "";
+    //   this.successful = false;
+    //   this.loading = true;
+    //   this.$store.dispatch("auth/register", user).then(
+    //     (data) => {
+    //       this.message = data.message;
+    //       this.successful = true;
+    //       this.loading = false;
+    //        this.$router.push("/");
+    //     }
+    //   ).catch((error) => {
+    //          error = this.errorMessage;
+    //   });
+    // },
   },
 };
 </script>

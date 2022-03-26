@@ -27,7 +27,6 @@
                       <span v-show="loading"><Loader/></span>
 
                     </button>
-
                 </div>
                 </div>
                 <div class="form-group">

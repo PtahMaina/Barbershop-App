@@ -24,16 +24,16 @@
                     <div class="form-group col">
                     <label for="sessions" > <span style="font-size:20px;color:#b68345">Choose a session:</span> </label>
                       <select id="sessions" name="sessions" required v-model="sessionNumber">>
-                          <option value="session1">Session 1</option>
-                          <option value="session2">Session 2</option>
-                          <option value="session3">Session 3</option>
-                          <option value="session4">Session 4</option>
-                          <option value="session5">Session 5</option>
-                          <option value="session6">Session 6</option>
-                          <option value="session7">Session 7</option>
-                          <option value="session8">Session 8</option>
-                          <option value="session9">Session 9</option>
-                          <option value="session10">Session 10</option>
+                          <option value="session1">Session 1 - 9:00am-10:00am</option>
+                          <option value="session2">Session 2 - 10:00am-11:00am</option>
+                          <option value="session3">Session 3 - 11:00am-12:00am</option>
+                          <option value="session4">Session 4 - 12:00am-1:00pm</option>
+                          <option value="session5">Session 5 - 1:00pm-2:00pm</option>
+                          <option value="session6">Session 6 - 2:00pm-3:00pm</option>
+                          <option value="session7">Session 7 - 3:00pm-4:00pm</option>
+                          <option value="session8">Session 8 - 4:00pm-5:00pm</option>
+                          <option value="session9">Session 9 - 5:00pm-6:00pm</option>
+                          <!-- <option value="session10">Session 10 6:00am-6:00pm</option> -->
                       </select>
                 </div>
                 <button class="btn">submit</button>

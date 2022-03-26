@@ -24,8 +24,8 @@
     <div class="row">
       <div class="col">
         <h2 style="font-weight: bold;color:#b18044">HOURS</h2>
-        <h6>Tues-Fri 9:00am-6:00pm</h6>
-        <h6>Sat 9:00am-3:00pm</h6>
+        <h6>Tues-Saturday 9:00am-6:00pm</h6>
+        <!-- <h6>Sat 9:00am-3:00p</h6> -->
         <h6>Closed Sun & Mon</h6>
       </div>
       <div class="col">

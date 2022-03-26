@@ -10,8 +10,8 @@
           <div class="barberName" > 
             <div class="name" style="color:#b18044;font-size:20px;">
               {{barber.barberName}}
-              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;color:white;"></i></button>
-              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash-alt" style="font-size:20px;color:white;"></i></button>
+              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fas fa-edit" style="font-size:20px;"></i></button>
+              <button @click="changeBarberToEdit(barber.barberName)" class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash-alt" style="font-size:20px;"></i></button>
             </div>
 
           </div>
@@ -179,6 +179,9 @@ export default {
 .fas{
   background: transparent;
   /* padding-right: 30px; */
+}
+.fas:hover{
+  color: #b18044;
 }
 .head{
     padding-top:100px;

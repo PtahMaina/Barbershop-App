@@ -136,4 +136,8 @@ font-family: 'Oswald', sans-serif;
 }
 
 
+.maxWidth{
+  max-width:1220px
+}
+
 </style>

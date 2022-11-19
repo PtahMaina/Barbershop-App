@@ -1,7 +1,7 @@
 <template>
-  <nav id="nav" class="sticky top-0 z-50" :class="{ active: isActive }">
-    <div class="sticky top-0 grid items-center justify-center grid-cols-3 p-2 px-3">
-        <div class="flex">
+  <nav id="nav" class="sticky top-0 z-50 " :class="{ active: isActive }">
+    <div class="sticky top-0 grid items-center justify-center grid-cols-3 p-2 mx-auto maxWidth">
+        <div class="flex items-center justify-start">
             <router-link class="navbar-brand" @click="toggleNav" to="/">
             <!-- <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/> -->
             <h1>Logo</h1>
@@ -17,8 +17,9 @@
             <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-black no-underline">Profile</router-link>
             <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}" class="text-black no-underline">DashBoard</router-link>
         </div>
-        <div>
-            <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="">BOOK NOW</button></h1></router-link>
+
+        <div class="flex items-center justify-end">
+            <router-link :to="{ name: 'Login'}" > <h1 style="font-weight: bold;"><button class="">BOOK NOW</button></h1></router-link>
         </div>
         <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
 

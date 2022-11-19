@@ -10,11 +10,22 @@
        <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn btn-outline-light">BOOK NOW</button></h1></router-link>
     </div>
   </div>
-  <div class="-mt-10">
+  <div class="flex flex-col w-full gap-10 bg-blue-400 -mt-28 h-72 maxWidth">
     <h1>Why you should pay us a vist</h1>
+    <div class="grid grid-cols-3">
+      <div>
+        <h1>Quality</h1>
+      </div>
+      <div>
+        <h1> Comfort</h1>
+        </div>
+      <div>
+        <h1>Good prices </h1>
+      </div>
+    </div>
   </div>
 
-    <div class="flex flex-col mt-10 ">
+    <div class="flex flex-col w-full bg-blue-300 sectionHeight maxWidth">
       <div class="flex flex-col">
         <h1 class="">Our services</h1>
         <h1>Our core focus</h1>
@@ -37,6 +48,43 @@
         <p>Description</p>
       </div>
       </div>
+    </div>
+
+    <div class="w-full h-full maxWidth">
+      <h1>Our Gallery</h1>
+      <div class="grid grid-cols-3 gap-4">
+          <div class="bg-red-300">
+            1
+            <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="w-80">
+          </div>
+
+          <div class="bg-red-300">
+            2
+              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt=""  class="w-80">
+          </div>
+
+          <div class="bg-red-300">
+            3
+              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="w-80">
+          </div>
+
+          <div class="bg-red-300">
+            4
+              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="w-80">
+          </div>
+
+          <div class="bg-red-300">
+            5
+              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="w-80">
+          </div>
+
+          <div class="bg-red-300">
+            6
+              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="w-80">
+          </div>
+      </div>
+
+      
     </div>
 
 </div>
@@ -99,6 +147,10 @@ export default {
 
 .bannerOverlay{
    height: 647px;
+}
+
+.sectionHeight{
+  height: 500px;
 }
 
 /* 

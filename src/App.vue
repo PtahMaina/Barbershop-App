@@ -1,9 +1,9 @@
 <template>
-<Navbar />
 <main>
+<Navbar />
   <router-view :key="$route.fullPath" :services="services" />
- </main>
  <Footer />
+ </main>
 </template>
 <script>
 import Navbar from "./components/Navbar.vue";
@@ -119,21 +119,25 @@ font-family: 'Oswald', sans-serif;
 } */
 
 #nav a.router-link-exact-active {
-  color: #b68345;
+  color: #0C6CB9;
   text-decoration: none;
   
 }
 
 .btn {
-  font-weight: bold;
+  /* font-weight: bold; */
   /* color: white; */
   text-decoration:none; 
   margin-top: -7px;
 }
 
 .btn:hover{
-  color: #b68345;
+  color: #0C6CB9;
 }
 
+
+.maxWidth{
+  max-width:1220px
+}
 
 </style>

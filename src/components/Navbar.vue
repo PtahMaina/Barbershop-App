@@ -1,6 +1,6 @@
 <template>
-  <nav id="nav" class="h-10" :class="{ active: isActive }">
-    <div class="grid grid-cols-3 items-center justify-center p-2 px-3">
+  <nav id="nav" class="sticky top-0 z-50" :class="{ active: isActive }">
+    <div class="sticky top-0 grid items-center justify-center grid-cols-3 p-2 px-3">
         <div class="flex">
             <router-link class="navbar-brand" @click="toggleNav" to="/">
             <!-- <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/> -->
@@ -8,7 +8,7 @@
             </router-link>
         </div>
 
-        <div class="no-underline flex gap-10 items-center justify-center">
+        <div class="flex items-center justify-center gap-10 no-underline">
             <router-link @click="toggleNav" to="/" class="text-black no-underline" >Home</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-black no-underline">Services</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-black no-underline">Story</router-link>
@@ -144,6 +144,7 @@ img {
     transition: left 0.7s linear;
     gap: 40px;
     background: black;
+    z-index: 20;
   }
   #nav.active {
     left: 0;

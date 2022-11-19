@@ -1,18 +1,51 @@
 <template>
-  <!-- <img src="https://gentlemen-barberclubs.de/images/big/3.jpg" alt=""> -->
-  <div>
-    
+<div class="flex flex-col items-center justify-center">
+  <div class="relative top-0">
+  <img src="https://i.postimg.cc/yY98bncV/Group-1.png" alt="" class="relative top-0 object-cover w-screen banner">
   </div>
-<!-- 
-  <div class="imageContainer">
-    <div class="center">
-      <h1 style="font-size:70px;font-weight: 500;">"Masters of Barbering"</h1>
-       <h3  style="color:;font-size:25px;">Lets Your Hair Do The Talking... </h3>
-    
+  <div class="relative flex items-center justify bottom-96">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="text-white">Masters of Barbering</h1>
+       <h3 class="text-white">Lets Your Hair Do The Talking...</h3>
        <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="btn btn-outline-light">BOOK NOW</button></h1></router-link>
     </div>
   </div>
-    <div class="spirit">
+  <div class="-mt-10">
+    <h1>Why you should pay us a vist</h1>
+  </div>
+
+    <div class="flex flex-col mt-10 ">
+      <div class="flex flex-col">
+        <h1 class="">Our services</h1>
+        <h1>Our core focus</h1>
+      </div>
+      <div class="grid grid-cols-4 mt-5">
+      <div>
+        <h1>Men's Haircut</h1>
+        <p>Description</p>
+      </div>
+      <div>
+        <h1>Treatment</h1>
+        <p>Description</p>
+      </div>
+      <div>
+        <h1>Beard Trim</h1>
+        <p>Description</p>
+      </div>
+      <div>
+        <h1>Wash</h1>
+        <p>Description</p>
+      </div>
+      </div>
+    </div>
+
+</div>
+ 
+
+  <!-- <img src="https://gentlemen-barberclubs.de/images/big/3.jpg" alt=""> -->
+ 
+ 
+    <!-- <div class="spirit">
       <h1 class="energy d-flex justify-content-center" style="font-weight: bold;color:#b18044">THE ENERGY</h1>
       <div class="paragraph">
         <p>Here at The Urban Shave Barber Shop, we specialize in every barber specialty.
@@ -22,8 +55,8 @@
         </p>   
       </div>
       <div class="border"></div>
-    </div>
-  <div class="container pt-5">
+    </div> -->
+  <!-- <div class="container pt-5">
     <div class="row">
       <div class="col">
         <h2 style="font-weight: bold;color:#b18044">HOURS</h2>
@@ -58,6 +91,16 @@ export default {
 
 
 <style scoped>
+
+
+.banner{
+  height: 650px;
+}
+
+.bannerOverlay{
+   height: 647px;
+}
+
 /* 
 .blink-hard {
   animation: pulse 4s infinite;

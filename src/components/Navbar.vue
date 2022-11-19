@@ -1,6 +1,6 @@
 <template>
   <nav id="nav" class="sticky top-0 z-50 " :class="{ active: isActive }">
-    <div class="sticky top-0 grid items-center justify-center grid-cols-3 p-2 mx-auto maxWidth">
+    <div class="grid items-center justify-center grid-cols-3 p-2 mx-auto maxWidth">
         <div class="flex items-center justify-start">
             <router-link class="navbar-brand" @click="toggleNav" to="/">
             <!-- <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/> -->

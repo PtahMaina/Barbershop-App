@@ -1,20 +1,21 @@
 <template>
   <nav id="nav" class="h-10" :class="{ active: isActive }">
-    <div class="grid grid-cols-3 items-center justify-center bg-red-500 px-3">
+    <div class="grid grid-cols-3 items-center justify-center p-2 px-3">
         <div class="flex">
             <router-link class="navbar-brand" @click="toggleNav" to="/">
-            <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/>
+            <!-- <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/> -->
+            <h1>Logo</h1>
             </router-link>
         </div>
 
-        <div class="text-black no-underline flex gap-3 items-center justify-center">
-            <router-link @click="toggleNav" to="/" >Home</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Services' }">Services</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Story' }">Story</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Contact' }">Contact Us</router-link>
-            <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }">Login</router-link>
-            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }">Profile</router-link>
-            <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard' }">DashBoard</router-link>
+        <div class="no-underline flex gap-10 items-center justify-center">
+            <router-link @click="toggleNav" to="/" class="text-black no-underline" >Home</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-black no-underline">Services</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-black no-underline">Story</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-black no-underline">Contact Us</router-link>
+            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-black no-underline">Login</router-link>
+            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-black no-underline">Profile</router-link>
+            <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}" class="text-black no-underline">DashBoard</router-link>
         </div>
         <div>
             <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="">BOOK NOW</button></h1></router-link>

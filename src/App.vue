@@ -92,8 +92,8 @@ export default {
   /* background-color:#f5f5f5; */
   /* overflow-x: hidden; */
   /* width:100vw; */
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  /* color: white; */
 }
 
 #app {
@@ -101,21 +101,21 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color:  #012966;
+  /* color:  #012966; */
   
   
 }
 
-#nav {
+/* #nav {
   padding: 30px;
   
-}
+} */
 
 #nav a {
-  font-weight: bold;
-  color: white;
+  /* font-weight: bold; */
+  /* color: white;
   text-decoration:none;
-  background: transparent;
+  background: transparent; */
 }
 
 #nav a.router-link-exact-active {
@@ -126,7 +126,7 @@ export default {
 
 .btn {
   font-weight: bold;
-  color: white;
+  /* color: white; */
   text-decoration:none; 
   margin-top: -7px;
 }

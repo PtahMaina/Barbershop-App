@@ -1,9 +1,9 @@
 <template>
-  <div id="nav" class="fixed top-0 left-0 z-50 w-full bg-transparent " :class="{ active: isActive }">
+  <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ active: isActive }">
    
-    <div class="grid items-center grid-cols-3 ">
-        <div class="flex items-center justify-center w-full ">
-            <router-link class="navbar-brand" @click="toggleNav" to="/">
+    <div class="grid items-center justify-center grid-cols-3 mx-auto maxWidth ">
+        <div class="flex justify-start">
+            <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">
             <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/>
             </router-link>
         </div>

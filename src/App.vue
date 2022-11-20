@@ -146,5 +146,10 @@ font-family: 'Oswald', sans-serif;
 }
 
 
+.bgBlack{
+  background: #101010;
+}
+
+
 
 </style>

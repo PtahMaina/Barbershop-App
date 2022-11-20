@@ -56,28 +56,28 @@
       <h1 class="text-3xl font-semibold">Our Gallery</h1>
       <div class="grid items-start w-full grid-cols-3 mt-20">
           <div class="flex items-center justify-center w-full ">
-            <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="object-cover rounded-sm image1">
+            <img src="https://i.postimg.cc/Wp0qDvyM/Rectangle-4.png" alt="" class="object-cover rounded-sm image1">
           </div>
 
           <div class="flex items-center justify-center w-full ">
-              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt=""  class="object-cover rounded-sm image2">
+              <img src="https://i.postimg.cc/Mp3nkKc8/Rectangle-5.png" alt=""  class="object-cover rounded-sm image2">
           </div>
 
           <div class="flex items-center justify-center w-full">
-              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="object-cover rounded-sm image3">
+              <img src="https://i.postimg.cc/MGcvz2Rf/Rectangle-6.png" alt="" class="object-cover rounded-sm image3">
           </div>
       </div>
       <div class="grid items-end grid-cols-3 -mt-20">
           <div class="flex items-center justify-center w-full">
-              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="object-cover rounded-sm image4">
+              <img src="https://i.postimg.cc/YSJj9nfn/Rectangle-7.png" alt="" class="object-cover rounded-sm image4">
           </div>
 
           <div class="flex items-center justify-center w-full mt-28 ">
-              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="object-cover rounded-sm image5">
+              <img src="https://i.postimg.cc/7ZZ5QTZV/Rectangle-8.png" alt="" class="object-cover rounded-sm image5">
           </div>
 
           <div class="flex items-center justify-center w-full -mt-7">
-              <img src="https://i.postimg.cc/DzKJ60Zw/image.png" alt="" class="object-cover rounded-sm image6">
+              <img src="https://i.postimg.cc/xCM8bv60/Rectangle-9.png" alt="" class="object-cover rounded-sm image6">
           </div>
 
           

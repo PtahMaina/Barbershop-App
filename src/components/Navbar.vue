@@ -1,21 +1,21 @@
 <template>
-  <nav id="nav" class="sticky top-0 z-50 " :class="{ active: isActive }">
-    <div class="grid items-center justify-center grid-cols-3 p-2 mx-auto maxWidth">
-        <div class="flex items-center justify-start">
+  <div id="nav" class="fixed top-0 left-0 z-50 w-full bg-transparent " :class="{ active: isActive }">
+   
+    <div class="grid items-center grid-cols-3 ">
+        <div class="flex items-center justify-center w-full ">
             <router-link class="navbar-brand" @click="toggleNav" to="/">
-            <!-- <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/> -->
-            <h1>Logo</h1>
+            <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/>
             </router-link>
         </div>
 
         <div class="flex items-center justify-center gap-10 no-underline">
-            <router-link @click="toggleNav" to="/" class="text-black no-underline" >Home</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-black no-underline">Services</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-black no-underline">Story</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-black no-underline">Contact Us</router-link>
-            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-black no-underline">Login</router-link>
-            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-black no-underline">Profile</router-link>
-            <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}" class="text-black no-underline">DashBoard</router-link>
+            <router-link @click="toggleNav" to="/" class="text-white no-underline" >Home</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-white no-underline">Services</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-white no-underline">Story</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-white no-underline">Contact Us</router-link>
+            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-white no-underline">Login</router-link>
+            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-white no-underline">Profile</router-link>
+            <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}" class="text-white no-underline">DashBoard</router-link>
         </div>
 
         <div class="flex items-center justify-end">
@@ -24,7 +24,7 @@
         <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
 
     </div>
-  </nav>
+  </div>
 
   
   <button id="nav-btn" @click="toggleNav">

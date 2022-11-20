@@ -1,9 +1,9 @@
 <template>
-<main>
 <Navbar />
+<main>
   <router-view :key="$route.fullPath" :services="services" />
- <Footer />
  </main>
+ <Footer />
 </template>
 <script>
 import Navbar from "./components/Navbar.vue";
@@ -61,11 +61,11 @@ export default {
         discription:"If you looking to col-6our your hair then we offer semi-permanent or permanent col-6our.",
       },
          {
-           showForm: false,
+        showForm: false,
         title:"HOT TOWEL TRIM AND SHAPE",
         price: 85,
         img:"",
-        discription:"Relax while your beard is trimmed or shaped with a razor or clipper. ",
+        discription:"Relax while your beard is trimmed or shaped with a razor or clipper.",
       },
         {
            showForm: false,
@@ -139,5 +139,12 @@ font-family: 'Oswald', sans-serif;
 .maxWidth{
   max-width:1220px
 }
+
+
+.bgGrey{
+  background: #D9D9D9;
+}
+
+
 
 </style>

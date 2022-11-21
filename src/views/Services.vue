@@ -1,31 +1,90 @@
 <template>
-  <h1 class="head" style="font-weight: bold;color:#b18044">SERVICES</h1>
-  <div class="border"></div>
-    <div class="container d-flex justify-content-center">
-       <div class="row">
-           <!-- <h1>HAIR</h1> -->
-           <div class="col d-flex justify-content-center"  v-for="(service,i) of services" :key="service.title" >
-                <div class="content">
-                   <router-link style="text-decoration: none" @click="toggleBookingForm(i)" :to="{ name: 'BookingForm'}">
-                     <!-- <div class="image">     <img class="img" :src="service.img" /></div> -->
-                     <div class="title" style="font-size:30px"><span style="color:#b68345">{{service.title}}</span> | R{{service.price}}</div>
-                    <div class="discription">{{service.discription}}</div>
-                   </router-link>
-                </div>
-           </div>
-       </div>
+<div class="flex flex-col items-center justify-center">
+  <div class="">
+  <img src="https://i.postimg.cc/fTdGcJf2/sevice-banner.png" alt="" class="object-cover  banner">
+  </div>
+  <div class="absolute flex items-center justify bottom-96">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="font-bold text-white uppercase text-7xl">OUR SERVICES & PRICES</h1>
+       <!-- <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3> -->
+       <!-- <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="px-5 py-3">BOOK NOW</button></h1></router-link> -->
     </div>
+  </div>
+    <h1 class="text-3xl font-semibold">Hair </h1>
+</div>
+  <div class="mt-10">
+            <div class="w-full   mx-auto maxWidth"  v-for="(service,i) of services" :key="service.title" >
+                      <div class="grid grid-cols-2">
+                    <router-link class="no-underline " @click="toggleBookingFormHair(i)" :to="{ name: 'BookingForm'}">
+                      <div class="text-left flex flex-col mt-4">
+                        <h1 class="text-3xl font-medium  text-black">{{service.title}} </h1>
+                      <h1 class="text-base font-normal  text-black">{{service.discription}}</h1>
+                      </div>
+                    </router-link>
+                      <div class="flex items-end justify-end">
+                      <h1 class="text-base font-normal">R{{service.price}}</h1>
+                      </div>
+                      </div>
+            </div>
+            <div class="mt-10">
+           <h1>Beard</h1>
+                <div class="w-full   mx-auto maxWidth"  v-for="(beard,i) of beards" :key="beard.title" >
+                      <div class="grid grid-cols-2">
+                    <router-link class="no-underline " @click="toggleBookingFormBeard(i)" :to="{ name: 'BookingForm'}">
+                      <div class="text-left flex flex-col mt-4">
+                        <h1 class="text-3xl font-medium  text-black">{{beard.title}} </h1>
+                      <h1 class="text-base font-normal  text-black">{{beard.discription}}</h1>
+                      </div>
+                    </router-link>
+                      <div class="flex items-end justify-end">
+                      <h1 class="text-base font-normal">R{{beard.price}}</h1>
+                      </div>
+                      </div>
+            </div>
+            </div>
+    <div class="mt-10">
+      <h1>Treatment</h1>
+                     <div class="w-full   mx-auto maxWidth"  v-for="(treatment,i) of treatments" :key="treatment.title" >
+                      <div class="grid grid-cols-2">
+                    <router-link class="no-underline " @click="toggleBookingFormTreatment(i)" :to="{ name: 'BookingForm'}">
+                      <div class="text-left flex flex-col mt-4">
+                        <h1 class="text-3xl font-medium  text-black">{{treatment.title}} </h1>
+                      <h1 class="text-base font-normal  text-black">{{treatment.discription}}</h1>
+                      </div>
+                    </router-link>
+                      <div class="flex items-end justify-end">
+                      <h1 class="text-base font-normal">R{{treatment.price}}</h1>
+                      </div>
+                      </div>
+            </div>
+    </div>
+  </div>
 </template>
 
 <script>
+
 export default {
   props:[
-    "services"
+    "services",
+    "beards",
+    "treatments"
   ],
   methods: {
-    toggleBookingForm(position){
+    toggleBookingFormHair(position){
       this.services.forEach(service => service.showForm = false)
       this.services[position].showForm = !this.services[position].showForm
+    },
+
+    toggleBookingFormBeard(position){
+      this.beards.forEach(beard => beard.showForm = false)
+      this.beards[position].showForm = !this.beards[position].showForm
+      console.log(beards);
+    },
+
+    toggleBookingFormTreatment(position){
+      this.treatments.forEach(treatment => treatment.showForm = false)
+      this.treatments[position].showForm = !this.treatments[position].showForm
+
     }
   },
   
@@ -46,12 +105,12 @@ export default {
 </script>
 
 <style scoped>
-
+/* 
 .content {
   border: none;
   height:200px;
   width:400px !important;
-  /* border-radius:5px; */
+  border-radius:5px;
   padding-top: 10px;
   text-decoration: none !important;
   
@@ -65,7 +124,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin-bottom:50px; */
+  margin-bottom:50px;
 
 }
 .head{
@@ -94,6 +153,6 @@ export default {
      
    }
 
-}
+} */
 
 </style>

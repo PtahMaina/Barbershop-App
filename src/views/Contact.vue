@@ -1,9 +1,19 @@
 <template>
-    <h1 class="head" style="font-weight: bold;color:#b18044">CONTACT US</h1>
-    <div class="border"></div>
-    <div class="containe d-flex justify-content-center" id="contact">
-    
-        
+<div class="flex flex-col items-center justify-center">
+  <div class="">
+  <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover  banner">
+  </div>
+  <div class="absolute flex items-center justify bottom-96">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="font-bold text-white uppercase text-7xl">Contact Us</h1>
+       <!-- <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3> -->
+    </div>
+  </div>
+</div>
+<h1 class="font-semibold text-3xl">Chat with us</h1>
+<p class="text-base font-normal">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p>
+<div class="flex w-full ">
+    <div class="bg-red-300 w-full" id="contact">
           <form @submit.prevent="handleSubmit" id="contact-form" name="myForm" class="form"  role="form">
 
                 <div class="form-group">
@@ -18,7 +28,7 @@
 
                 <div class="form-group">
                     <label class="form-label" id="messageLabel" for="message"></label>
-                    <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your Message" tabindex="4" v-model="message"></textarea >                                 
+                    <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your Message" tabindex="4" v-model="message"></textarea >
                 </div>
 
                 <div class=" b text-center margin-top-25">
@@ -27,10 +37,11 @@
                 </div>
 
             </form>
-      
-       
- 
     </div>
+<div class="bg-red-200 w-full">
+
+</div>
+</div>
 </template>
 
 <script>
@@ -67,127 +78,5 @@ export default {
 </script>
 
 <style scoped>
-*{
-  scroll-behavior: smooth;
-}
-.head{
-    padding-top:100px;
-    
-}
 
-.form {
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-} 
-
-
-
-
-textarea#message.form-control {
-    height: 120px;
-}
-
-
-.containe {
-  display:flex;
-  padding: none;
-  /* margin-bottom:100px; */
-  margin-top: 100px;
-  height:100vh;
-}
-
-
-/* contact */
-
-/* 
-.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
-  padding: 0 20% 0 20%;
-} */
-
-.margin-top-25 {
-  margin-top: 25px;
-}
-
-.form-title {
-  padding: 25px;
-  font-size: 30px;
-  font-weight: 300;
-  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
-}
-
-.form-group .form-control {
-   display: block;
-    /* width: 100%; */
-    height: 48px;
-    padding: 10px 24px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    background-image: none;
-    border: solid 1px #b68345;
-    
-
-}
-
-
-.form-group .form-control:hover {
-	border: solid 1px#b68345;
-}
-
-
-.btn-mod.btn-large {
-    height: auto;
-    padding: 13px 52px;
-    font-size: 15px;
-    
-}
-
-.btn-mod.btn-border {
-    color: #fff;
-    background: #b68345;
-}
-
-
-
-.btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
-    color: black;
-    background:white;
-    outline: none;
-    
-}
-
-@media only screen and (max-width: 500px) {
-    .btn-mod.btn-large {
-       padding: 11px 15px;
-       font-size: 14px;
-    }
-  
-    .form-title {
-        font-size: 20px;
-  }
-  .containe{
-    padding: 80px;
-  }
-}
-
-
-
-
-
-.b{
-  display:flex;
-  justify-content:space-evenly;
-  
-  
-}
-
-.border{
-    border-top: 1px solid;
-    width: 100px;
-    display:inline-flex;
-    justify-content: center;
-}
 </style>

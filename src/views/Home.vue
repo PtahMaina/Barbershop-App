@@ -140,10 +140,7 @@ export default {
 <style scoped>
 
 
-.banner{
-  height: 650px;
-  width: 100vw;
-}
+
 
 /* .bannerOverlay{
    height: 647px;

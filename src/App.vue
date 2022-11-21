@@ -154,5 +154,9 @@ font-family: 'Oswald', sans-serif;
   color: #0F77F0;
 }
 
+.banner{
+  height: 650px;
+  width: 100vw;
+}
 
 </style>

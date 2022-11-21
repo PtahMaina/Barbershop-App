@@ -97,12 +97,6 @@ export default {
       },
        {
          showForm: false,
-        title:"SCISSOR CUT",
-        price: 70,
-        discription:"Scissors all round or complete re-style.Washed and styled.",
-      },
-       {
-         showForm: false,
         title:"Colour",
         price: 100,
         img:"",

@@ -16,8 +16,8 @@
             <div class="w-full   mx-auto maxWidth"  v-for="(service,i) of services" :key="service.title" >
                       <div class="grid grid-cols-2">
                     <router-link class="no-underline " @click="toggleBookingFormHair(i)" :to="{ name: 'BookingForm'}">
-                      <div class="text-left flex flex-col">
-                        <h1 class="text-3xl font-semibold  text-black">{{service.title}} </h1>
+                      <div class="text-left flex flex-col mt-4">
+                        <h1 class="text-3xl font-medium  text-black">{{service.title}} </h1>
                       <h1 class="text-base font-normal  text-black">{{service.discription}}</h1>
                       </div>
                     </router-link>
@@ -31,8 +31,8 @@
                 <div class="w-full   mx-auto maxWidth"  v-for="(beard,i) of beards" :key="beard.title" >
                       <div class="grid grid-cols-2">
                     <router-link class="no-underline " @click="toggleBookingFormBeard(i)" :to="{ name: 'BookingForm'}">
-                      <div class="text-left flex flex-col">
-                        <h1 class="text-3xl font-semibold  text-black">{{beard.title}} </h1>
+                      <div class="text-left flex flex-col mt-4">
+                        <h1 class="text-3xl font-medium  text-black">{{beard.title}} </h1>
                       <h1 class="text-base font-normal  text-black">{{beard.discription}}</h1>
                       </div>
                     </router-link>
@@ -47,8 +47,8 @@
                      <div class="w-full   mx-auto maxWidth"  v-for="(treatment,i) of treatments" :key="treatment.title" >
                       <div class="grid grid-cols-2">
                     <router-link class="no-underline " @click="toggleBookingFormTreatment(i)" :to="{ name: 'BookingForm'}">
-                      <div class="text-left flex flex-col">
-                        <h1 class="text-3xl font-semibold  text-black">{{treatment.title}} </h1>
+                      <div class="text-left flex flex-col mt-4">
+                        <h1 class="text-3xl font-medium  text-black">{{treatment.title}} </h1>
                       <h1 class="text-base font-normal  text-black">{{treatment.discription}}</h1>
                       </div>
                     </router-link>

@@ -150,6 +150,9 @@ font-family: 'Oswald', sans-serif;
   background: #101010;
 }
 
+.textBlue{
+  color: #0F77F0;
+}
 
 
 </style>

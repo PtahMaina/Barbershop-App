@@ -1,7 +1,7 @@
 <template>
 <div class="flex flex-col items-center justify-center">
   <div class="">
-  <img src="https://i.postimg.cc/yY98bncV/Group-1.png" alt="" class="object-cover w-screen banner">
+  <img src="https://i.postimg.cc/yY98bncV/Group-1.png" alt="" class="object-cover  banner">
   </div>
   <div class="absolute flex items-center justify bottom-96">
     <div class="flex flex-col items-center justify-center">
@@ -142,11 +142,12 @@ export default {
 
 .banner{
   height: 650px;
+  width: 100vw;
 }
 
-.bannerOverlay{
+/* .bannerOverlay{
    height: 647px;
-}
+} */
 
 .sectionHeight{
   height: 500px;

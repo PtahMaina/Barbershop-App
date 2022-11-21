@@ -1,0 +1,388 @@
+[
+    {
+      "title": "BIKES",
+      "handle": "/collections/giant-bikes",
+      "label": "Bikes",
+      "sub_collections": [
+        {
+          "sub_collections": [
+            {
+              "title": "ROAD BIKES",
+              "handle": "/collections/road-bikes",
+              "label": "E-bikes"
+            },
+            {
+              "sub_title": "Performance & Racing",
+              "handle": "/collections/road-bikes-performance-racing",
+              "label": "Performance & Racer Bikes"
+            },
+            {
+              "sub_title": "Triathlon",
+              "handle": "/collections/road-bikes-triathlon-time-trial",
+              "label": "Triathlon"
+            },
+            {
+              "sub_title": "City & Hybrid",
+              "handle": "/collections/road-bikes-city-hybrid",
+              "label": "City & Hybrid"
+            },
+            {
+              "view_title": "View All",
+              "handle": "/collections/road-bikes",
+              "label": "View All"
+            }
+          ]
+        },
+        {
+          "sub_collections": [
+            {
+              "title": "MOUNTAIN BIKES",
+              "handle": "/collections/mountain-bikes",
+              "label": "Mountain Bikes"
+            },
+            {
+              "sub_title": "Full Suspension",
+              "handle": "/collections/mountain-bikes-full-suspension",
+              "label": "Full Suspension"
+            },
+            {
+              "sub_title": "Hardtail",
+              "handle": "/collections/mountain-bikes-hardtail",
+              "label": "Hardtail"
+            },
+            {
+              "sub_title": "29'' ",
+              "handle": "/collections/mountain-bikes-29",
+              "label": "29'' "
+            },
+            {
+              "sub_title": "27.5'' ",
+              "handle": "/collections/mountain-bike-27-5",
+              "label": "27.5''"
+            },
+            {
+              "sub_title": "26'' ",
+              "handle": "/collections/mountain-bikes-26",
+              "label": "26''"
+            },
+            {
+              "sub_title": "Electric Mountain Bikes ",
+              "handle": "/collections/mountain-bikes-electric-mountain-bikes",
+              "label": "Electric Mountain Bikes"
+            },
+            {
+              "view_title": "View All",
+              "handle": "/collections/mountain-bikes",
+              "label": "View All"
+            }
+  
+          ]
+        },
+        {
+          "sub_collections": [
+            {
+              "title": "KIDS BIKES",
+              "handle": "/collections/kids-bikes",
+              "label": "Kids Bikes"
+            },
+            {
+              "sub_title": "2-6 Years (12''/16'')",
+              "handle": "/collections/kids-bikes-2-6-years",
+              "label": "2-6 Years (12''/16'')"
+            },
+            {
+              "sub_title": "5-9 Years (20'')",
+              "handle": "/collections/kids-bikes-5-9-years",
+              "label": "5-9 Years (20'')"
+            },
+            {
+              "sub_title": "7-12 Years (24'')",
+              "handle": "/collections/kids-bikes-7-12-years",
+              "label": "7-12 Years (24''"
+            },
+            {
+              "sub_title": "10-16 Years (26'')",
+              "handle": "/collections/kids-bikes-10-16-years",
+              "label": "10-16 Years (26'')"
+            },
+            {
+              "view_title": "View All",
+              "handle": "/collections/kids-bikes",
+              "label": "View All"
+            }
+          ]
+        },
+        {
+          "sub_collections": [
+            {
+              "title": "CROSS & GRAVEL BIKES",
+              "handle": "/collections/cross-gravel-bikes-gravel",
+              "label": "Cross & Gravel Bikes"
+            },
+            {
+              "sub_title": "Gravel",
+              "handle": "/collections/gravel-bikes",
+              "label": "Gravel"
+            }
+          ]
+        },          {
+          "sub_collections": [
+            {
+              "title": "ELECTRIC BIKES",
+              "handle": "/collections/electric-bikes-electric-mountain-bikes",
+              "label": "Electric Bikes "
+            },
+            {
+              "sub_title": "Electric Mountain Bikes ",
+              "handle": "/collections/electric-bikes-electric-mountain-bikes",
+              "label": "Electric Mountain Bikes "
+            }
+          ]
+        }
+      ]
+    },
+        {
+          "title": "GEAR",
+          "handle": "/collections/gear",
+          "label": "GEAR",
+          "sub_collections": [
+            {
+              "sub_collections": [
+                {
+                  "title": "BIKE GEAR",
+                  "handle": "/collections/bike-gear",
+                  "label": "Bike Gear"
+                },
+                {
+                  "sub_title": "Accessories",
+                  "handle": "/collections/accessories",
+                  "label": "Accessories"
+                },
+                {
+                  "sub_title": "Bags & Panniers",
+                  "handle": "/collections/bags-panniers",
+                  "label": "Bags & Panniers"
+                },
+                {
+                  "sub_title": "Bottles & Cages",
+                  "handle": "/collections/bottles-cages",
+                  "label": "Bottles & Cages"
+                },
+                {
+                  "sub_title": "Computers",
+                  "handle": "/collections/computers",
+                  "label": "Computers"
+                },
+                {
+                  "sub_title": "Fenders",
+                  "handle": "/collections/fenders",
+                  "label": "Fenders"
+                },
+                {
+                  "sub_title": "Lights",
+                  "handle": "/collections/lights",
+                  "label": "Lights"
+                },
+                {
+                  "sub_title": "Locks",
+                  "handle": "/collections/locks",
+                  "label": "Locks"
+                },
+                {
+                  "sub_title": "Racks",
+                  "handle": "/collections/racks",
+                  "label": "Racks"
+                },
+                {
+                  "sub_title": "Trainers",
+                  "handle": "/collections/trainers",
+                  "label": "Trainers"
+                },
+                {
+                  "view_title": "View All",
+                  "handle": "/collections/gear",
+                  "label": "View All"
+                }
+              ]
+            },
+            {
+              "sub_collections": [
+                {
+                  "title": "RIDE GEAR",
+                  "handle": "/collections/ride-gear",
+                  "label": "Ride Gear"
+                },
+                {
+                  "sub_title": "Bibs, Shorts & Tights",
+                  "handle": "/collections/bibs-shorts-tights",
+                  "label": "BIbs, Shorts & Tights"
+                },
+                {
+                  "sub_title": "Gloves",
+                  "handle": "/collections/gloves",
+                  "label": "Gloves"
+                },
+                {
+                  "sub_title": "Helmets",
+                  "handle": "/collections/helmets",
+                  "label": "Helmets"
+                },
+                {
+                  "sub_title": "Jerseys",
+                  "handle": "/collections/jerseys",
+                  "label": "Jerseys"
+                },
+                {
+                  "sub_title": "Socks",
+                  "handle": "/collections/socks",
+                  "label": "Socks"
+                },
+                {
+                  "view_title": "View All",
+                  "handle": "/collections/ride-gear",
+                  "label": "View All"
+                }
+  
+              ]
+            },
+            {
+              "sub_collections": [
+                {
+                  "title": "SERVICE GEAR",
+                  "handle": "/collections/service-gear",
+                  "label": "Service Gear"
+                },
+                {
+                  "sub_title": "Floor & Mini Pumps",
+                  "handle": "/collections/floor-mini-pumps",
+                  "label": "Floor & Mini Pumps"
+                },
+                {
+                  "sub_title": "Inflators & CO2",
+                  "handle": "/collections/inflators-co2",
+                  "label": "Inflators & CO2"
+                },
+                {
+                  "sub_title": "Mini Tools",
+                  "handle": "/collections/mini-tools",
+                  "label": "Mini Tools"
+                },
+                {
+                  "sub_title": "Service Tools",
+                  "handle": "/collections/service-parts",
+                  "label": "Service Parts"
+                },
+                {
+                  "sub_title": "Shop Tools",
+                  "handle": "/collections/shop-tools",
+                  "label": "Shop Tools"
+                },
+                {
+                  "sub_title": "Tubeless Accessories",
+                  "handle": "/collections/tubeless-accessories",
+                  "label": "Tubeless Accessories"
+                },
+                {
+                  "view_title": "View All",
+                  "handle": "/collections/service-gear",
+                  "label": "View All"
+                }
+              ]
+            },
+            {
+              "sub_collections": [
+                {
+                  "title": "Components",
+                  "handle": "/collections/components",
+                  "label": "Components"
+                },
+                {
+                  "sub_title": "Brakes",
+                  "handle": "/collections/brakes",
+                  "label": "Brakes"
+                },
+                {
+                  "sub_title": "Chainstay",
+                  "handle": "/collections/chainstay",
+                  "label": "Chainstay"
+                },
+                {
+                  "sub_title": "E-bike gear",
+                  "handle": "/collections/e-bike-gear",
+                  "label": "E-bike gear"
+                },
+                {
+                  "sub_title": "Grips & Tape",
+                  "handle": "/collections/grips-tape",
+                  "label": "Grips & Tape"
+                },
+                {
+                  "sub_title": "Handlebars",
+                  "handle": "/collections/handlebars",
+                  "label": "Handlebars"
+                },
+                {
+                  "sub_title": "Headsets",
+                  "handle": "/collections/headsets",
+                  "label": "Headsets"
+                },
+                {
+                  "sub_title": "Kickstands",
+                  "handle": "/collections/kickstands",
+                  "label": "Kickstands"
+                },
+                {
+                  "sub_title": "Pedals",
+                  "handle": "/collections/pedals",
+                  "label": "Pedals"
+                },
+                {
+                  "sub_title": "Saddles",
+                  "handle": "/collections/saddles",
+                  "label": "Saddles"
+                },
+                {
+                  "sub_title": "Seatposts",
+                  "handle": "/collections/seatposts",
+                  "label": "Seatposts"
+                },
+                {
+                  "sub_title": "Stems",
+                  "handle": "/collections/stems",
+                  "label": "Stems"
+                },
+                {
+                  "sub_title": "Tires",
+                  "handle": "/collections/tires",
+                  "label": "Tires"
+                },
+                {
+                  "sub_title": "Tubes",
+                  "handle": "/collections/tubes",
+                  "label": "Tubes"
+                },
+                {
+                  "sub_title": "Wheel Systems",
+                  "handle": "/collections/wheelsystems",
+                  "label": "Wheel Systems"
+                },
+                {
+                  "view_title": "View All",
+                  "handle": "/collections/components",
+                  "label": "View All"
+                }
+              ]
+            }
+          ]
+      },
+        {
+          "title": "STORES",
+          "handle": "/store-locator",
+          "label": "STORES"
+      },
+      {
+        "title": "CONTACT",
+        "handle": "/contact",
+        "label": "CONTACT"
+    }
+  ]

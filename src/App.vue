@@ -1,7 +1,7 @@
 <template>
 <Navbar />
 <main>
-  <router-view :key="$route.fullPath" :services="services" />
+  <router-view :key="$route.fullPath" :services="services"  :beards="beards" :treatments="treatments"/>
  </main>
  <Footer />
 </template>
@@ -14,17 +14,86 @@ export default {
        services:[
       {
         showForm: false,
-        title:"CLASSIC CUT",
+        title:"Classic Gents Cut",
         price: 100,
-        img:"",
-        discription:"Relax while your barber achieves your tailored look. If you’re looking for a bald fade or if your hair is currently longer than earlobe length please book from our other options.",
+        discription:"Short back and sides with a scissor cut top.",
       },
        {
          showForm: false,
-        title:"SKIN FADE",
+        title:"Skin Fade",
+        price: 90,
+        discription:"Blended down to zero/skin.",
+      },
+       {
+         showForm: false,
+        title:"Scissor Cut",
+        price: 70,
+        discription:"Scissors all round or to your needs",
+      },
+       {
+         showForm: false,
+        title:"Machine Cut",
+        price: 100,
+        discription:"Clippers all round at varied lengths.",
+      },
+        {
+           showForm: false,
+        title:"Buzz Cut",
+        price: 100,
+        discription:"All round  eqaul length ,clipper cut ",
+      },
+        {
+           showForm: false,
+        title:"Head Shave",
+        price: 100,
+        discription:"Head shave wiht hot towel and razor",
+      },
+    ],
+       beards:[
+      {
+        showForm: false,
+        title:"Cut-Throat Shave",
+        price: 100,
+        discription:"Cut-Throat with full shave with hot towel and razor",
+      },
+       {
+         showForm: false,
+        title:"Basic Beard Shape",
         price: 90,
         img:"",
-        discription:"Also known as a bald fade or a zero fade, this service requires a little extra time. Hair is faded from skin or “0” length to your desired length on top.",
+        discription:"Clipper or scissor shape for longer beards",
+      },
+       {
+         showForm: false,
+        title:"Hot Towel Shape",
+        price: 70,
+        discription:"Clipper or scissor for longer bears with  hot towel and razor",
+      },
+       {
+         showForm: false,
+        title:"Hot Towel Trim",
+        price: 100,
+        discription:"Clipper or scissor for shorter bears with  hot towel and razor",
+      },
+       {
+         showForm: false,
+        title:"Basic Beard Trim",
+        price: 100,
+        discription:"Clipper or scissor trim for short beards",
+      }
+    ],
+         treatments:[
+      {
+        showForm: false,
+        title:"Moisture Treatment",
+        price: 100,
+        discription:"Deep conditioning to rejuvenate and moiture hair and sculp",
+      },
+       {
+         showForm: false,
+        title:"Mycro Keratin",
+        price: 90,
+        discription:"Soothing gel based treatment to replace natural keratin proteins",
       },
        {
          showForm: false,
@@ -34,46 +103,18 @@ export default {
       },
        {
          showForm: false,
-        title:"MACHINE CUT",
+        title:"Colour",
         price: 100,
         img:"",
-        discription:"Clippers all round at varied lengths.",
+        discription:"Semi-permanent or permanent colour.",
       },
        {
          showForm: false,
-        title:"COLOUR",
+        title:"Proskin Shave",
         price: 100,
         img:"",
-        discription:"If you looking to col-6our your hair then we offer semi-permanent or permanent colour.",
-      },
-        {
-          showForm: false,
-        title:"HEAD SHAVE",
-        price: 50,
-        img:"",
-        discription:"Experience a traditional hot towel shave with a straight razor and warm shaving cream that will leave your face smooth to the touch.",
-      },
-        {
-          showForm: false,
-        title:"BEARD TRIM & SHAPE",
-        price: 95,
-        img:"",
-        discription:"If you looking to col-6our your hair then we offer semi-permanent or permanent col-6our.",
-      },
-         {
-        showForm: false,
-        title:"HOT TOWEL TRIM AND SHAPE",
-        price: 85,
-        img:"",
-        discription:"Relax while your beard is trimmed or shaped with a razor or clipper.",
-      },
-        {
-           showForm: false,
-        title:"BUZZ",
-        price: 100,
-        img:"",
-        discription:"Ask for a buzz cut if you're looking for a no-nonsense low maintenance look at a uniform length as close as you'd like.",
-      },
+        discription:"Flagskin hybrid between the Dermologica ProSkin treatment.",
+      }
     ]
     }
   },

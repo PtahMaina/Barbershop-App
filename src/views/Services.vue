@@ -11,85 +11,80 @@
     </div>
   </div>
     <h1 class="text-3xl font-semibold">Hair </h1>
-    <div class="grid grid-cols-2 w-full mx-auto maxWidth items-center">
-        <div class=" h-full w-full flex flex-col items-start justify-start gap-5 mt-10">
-          <div class="text-left">
-            <h1 class="text-2xl font-semibold">Classic Gents Cut</h1>
-            <p class="text-base font-normal">Short back and sides with a scissor cut top.</p>
-          </div>
-          <div class="text-left">
-            <h1 class="text-2xl font-semibold">Skin Fade</h1>
-            <p class="text-base font-normal">Blended down to zero/skin.</p>
-          </div>
-          <div class="text-left">
-            <h1 class="text-2xl font-semibold">Scissor Cut</h1>
-            <p class="text-base font-normal">Scissors all round or to your needs.</p>
-          </div>
-          <div class="text-left">
-            <h1 class="text-2xl font-semibold">Machine Cut</h1>
-            <p class="text-base font-normal">Clippers and round or to your needs.</p>
-          </div>
-          <div class="text-left">
-            <h1 class="text-2xl font-semibold">Buzz Cut</h1>
-            <p class="text-base font-normal">All round  eqaul length ,clipper cut.</p>
-          </div>
-          <div class="text-left">
-            <h1 class="text-2xl font-semibold">Head Shave</h1>
-            <p class="text-base font-normal">Head shave wiht hot towel and razor.</p>
-          </div>
-        </div>
-        <div class=" h-full w-full flex flex-col  gap-10 justify-evenly">
-            <div class="text-left flex flex-col  bg-red-300">
-              <h1 class="text-2xl font-semibold"></h1>
-            <p class="text-base font-normal">R 350</p>
-          </div>
-            <div class="text-left">
-            <p class="text-base font-normal">R 350</p>
-          </div>
-            <div class="text-left">
-            <p class="text-base font-normal">R 350</p>
-          </div>
-            <div class="text-left">
-            <p class="text-base font-normal">R 350</p>
-          </div>
-            <div class="text-left">
-            <p class="text-base font-normal">R 350</p>
-          </div>
-            <div class="text-left">
-            <p class="text-base font-normal">R 350</p>
-          </div>
-        </div>
-    </div>
 </div>
-
-
-  <!-- <h1 class="head" style="font-weight: bold;color:#b18044">SERVICES</h1>
-  <div class="border"></div>
-    <div class="container d-flex justify-content-center">
-       <div class="row">
-           <h1>HAIR</h1>
-           <div class="col d-flex justify-content-center"  v-for="(service,i) of services" :key="service.title" >
-                <div class="content">
-                   <router-link style="text-decoration: none" @click="toggleBookingForm(i)" :to="{ name: 'BookingForm'}">
-                     <div class="image">     <img class="img" :src="service.img" /></div>
-                     <div class="title" style="font-size:30px"><span style="color:#b68345">{{service.title}}</span> | R{{service.price}}</div>
-                    <div class="discription">{{service.discription}}</div>
-                   </router-link>
-                </div>
-           </div>
-       </div>
-    </div> -->
+  <div class="mt-10">
+            <div class="w-full   mx-auto maxWidth"  v-for="(service,i) of services" :key="service.title" >
+                      <div class="grid grid-cols-2">
+                    <router-link class="no-underline " @click="toggleBookingFormHair(i)" :to="{ name: 'BookingForm'}">
+                      <div class="text-left flex flex-col">
+                        <h1 class="text-3xl font-semibold  text-black">{{service.title}} </h1>
+                      <h1 class="text-base font-normal  text-black">{{service.discription}}</h1>
+                      </div>
+                    </router-link>
+                      <div class="flex items-end justify-end">
+                      <h1 class="text-base font-normal">R{{service.price}}</h1>
+                      </div>
+                      </div>
+            </div>
+            <div class="mt-10">
+           <h1>Beard</h1>
+                <div class="w-full   mx-auto maxWidth"  v-for="(beard,i) of beards" :key="beard.title" >
+                      <div class="grid grid-cols-2">
+                    <router-link class="no-underline " @click="toggleBookingFormBeard(i)" :to="{ name: 'BookingForm'}">
+                      <div class="text-left flex flex-col">
+                        <h1 class="text-3xl font-semibold  text-black">{{beard.title}} </h1>
+                      <h1 class="text-base font-normal  text-black">{{beard.discription}}</h1>
+                      </div>
+                    </router-link>
+                      <div class="flex items-end justify-end">
+                      <h1 class="text-base font-normal">R{{beard.price}}</h1>
+                      </div>
+                      </div>
+            </div>
+            </div>
+    <div class="mt-10">
+      <h1>Treatment</h1>
+                     <div class="w-full   mx-auto maxWidth"  v-for="(treatment,i) of treatments" :key="treatment.title" >
+                      <div class="grid grid-cols-2">
+                    <router-link class="no-underline " @click="toggleBookingFormTreatment(i)" :to="{ name: 'BookingForm'}">
+                      <div class="text-left flex flex-col">
+                        <h1 class="text-3xl font-semibold  text-black">{{treatment.title}} </h1>
+                      <h1 class="text-base font-normal  text-black">{{treatment.discription}}</h1>
+                      </div>
+                    </router-link>
+                      <div class="flex items-end justify-end">
+                      <h1 class="text-base font-normal">R{{treatment.price}}</h1>
+                      </div>
+                      </div>
+            </div>
+    </div>
+  </div>
 </template>
 
 <script>
+
 export default {
   props:[
-    "services"
+    "services",
+    "beards",
+    "treatments"
   ],
   methods: {
-    toggleBookingForm(position){
+    toggleBookingFormHair(position){
       this.services.forEach(service => service.showForm = false)
       this.services[position].showForm = !this.services[position].showForm
+    },
+
+    toggleBookingFormBeard(position){
+      this.beards.forEach(beard => beard.showForm = false)
+      this.beards[position].showForm = !this.beards[position].showForm
+      console.log(beards);
+    },
+
+    toggleBookingFormTreatment(position){
+      this.treatments.forEach(treatment => treatment.showForm = false)
+      this.treatments[position].showForm = !this.treatments[position].showForm
+
     }
   },
   
@@ -110,12 +105,12 @@ export default {
 </script>
 
 <style scoped>
-
+/* 
 .content {
   border: none;
   height:200px;
   width:400px !important;
-  /* border-radius:5px; */
+  border-radius:5px;
   padding-top: 10px;
   text-decoration: none !important;
   
@@ -129,7 +124,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin-bottom:50px; */
+  margin-bottom:50px;
 
 }
 .head{
@@ -158,6 +153,6 @@ export default {
      
    }
 
-}
+} */
 
 </style>

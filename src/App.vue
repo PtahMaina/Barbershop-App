@@ -194,4 +194,8 @@ font-family: 'Oswald', sans-serif;
   width: 100vw;
 }
 
+
+.bgLightGrey{
+  background: #1010101A;
+}
 </style>

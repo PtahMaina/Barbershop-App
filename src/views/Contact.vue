@@ -12,34 +12,31 @@
 </div>
 <h1 class="font-semibold text-3xl">Chat with us</h1>
 <p class="text-base font-normal">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p>
-<div class="flex w-full ">
-    <div class="bg-red-300 w-full" id="contact">
-          <form @submit.prevent="handleSubmit" id="contact-form" name="myForm" class="form"  role="form">
-
-                <div class="form-group">
-                    <label class="form-label" id="nameLabel" for="name"></label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" tabindex="1"  required v-model="name">
+<div class="flex w-full h-full  mx-auto maxWidth">
+    <div class="w-full mt-10" id="contact">
+          <form @submit.prevent="handleSubmit" id="contact-form" name="myForm" class="form  formWidth flex flex-col gap-4"  role="form">
+                <div class="w-full">
+                    <input type="text" class="w-full border-none py-3 rounded bgLightGrey" id="name" name="name" placeholder="Your Name" tabindex=""  required v-model="name">
                 </div>
-
-                <div class="form-group">
-                    <label class="form-label" id="emailLabel" for="email"></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required v-model="email">
+                <div class="w-full">
+                    <input type="email" class="w-full border-none py-3 rounded bgLightGrey" id="email" name="email" placeholder="Your Email" tabindex="" required v-model="email">
                 </div>
-
-                <div class="form-group">
-                    <label class="form-label" id="messageLabel" for="message"></label>
-                    <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your Message" tabindex="4" v-model="message"></textarea >
+                <div class="w-full">
+                    <input type="text" class="w-full border-none py-3 rounded bgLightGrey" id="phone" name="phone" placeholder="Your Phone Number" tabindex=""  required v-model="name">
                 </div>
-
-                <div class=" b text-center margin-top-25">
-                    <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
-                    <button type="reset" value="Reset" class="btn btn-mod btn-border btn-large">reset</button>
+                <div class="w-full">
+                    <textarea rows="6" cols="60" name="message" class="w-full border-none p-4 rounded bgLightGrey" id="message" placeholder="Your Message" tabindex="" v-model="message"></textarea >
                 </div>
-
+                <div class="">
+                    <button type="submit" class="w-full border-none py-3 rounded bgBlack text-white">Send Message</button>
+                    <!-- <button type="reset" value="Reset" class="btn btn-mod btn-border btn-large">reset</button> -->
+                </div>
             </form>
     </div>
-<div class="bg-red-200 w-full">
-
+<div class="w-full mt-10">
+        <div>
+          <img src="https://i.postimg.cc/pLHSZ1kq/Rectangle-10.png" alt="" class="w-80">
+        </div>
 </div>
 </div>
 </template>
@@ -78,5 +75,10 @@ export default {
 </script>
 
 <style scoped>
+
+.formWidth{
+  width: 70%;
+}
+
 
 </style>

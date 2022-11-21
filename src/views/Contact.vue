@@ -10,22 +10,22 @@
     </div>
   </div>
 </div>
-<h1 class="font-semibold text-3xl">Chat with us</h1>
+<h1 class="font-semibold text-3xl mt-14">Chat with us</h1>
 <p class="text-base font-normal">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p>
-<div class="flex w-full h-full  mx-auto maxWidth">
+<div class="flex w-full h-full mt-10 mx-auto maxWidth">
     <div class="w-full mt-10" id="contact">
-          <form @submit.prevent="handleSubmit" id="contact-form" name="myForm" class="form  formWidth flex flex-col gap-4"  role="form">
+          <form @submit.prevent="handleSubmit" id="contact-form" name="myForm" class="form  formWidth flex flex-col gap-6"  role="form">
                 <div class="w-full">
-                    <input type="text" class="w-full border-none py-3 rounded bgLightGrey" id="name" name="name" placeholder="Your Name" tabindex=""  required v-model="name">
+                    <input type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="name" name="name" placeholder="Your Name" tabindex=""  required v-model="name">
                 </div>
                 <div class="w-full">
-                    <input type="email" class="w-full border-none py-3 rounded bgLightGrey" id="email" name="email" placeholder="Your Email" tabindex="" required v-model="email">
+                    <input type="email" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="email" name="email" placeholder="Your Email" tabindex="" required v-model="email">
                 </div>
                 <div class="w-full">
-                    <input type="text" class="w-full border-none py-3 rounded bgLightGrey" id="phone" name="phone" placeholder="Your Phone Number" tabindex=""  required v-model="name">
+                    <input type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="phone" name="phone" placeholder="Your Phone Number" tabindex=""  required v-model="name">
                 </div>
                 <div class="w-full">
-                    <textarea rows="6" cols="60" name="message" class="w-full border-none p-4 rounded bgLightGrey" id="message" placeholder="Your Message" tabindex="" v-model="message"></textarea >
+                    <textarea rows="6" cols="60" name="message" class="w-full border-none py-5 p-2  rounded bgLightGrey" id="message" placeholder="Your Message" tabindex="" v-model="message"></textarea >
                 </div>
                 <div class="">
                     <button type="submit" class="w-full border-none py-3 rounded bgBlack text-white">Send Message</button>
@@ -35,7 +35,7 @@
     </div>
 <div class="w-full mt-10">
         <div>
-          <img src="https://i.postimg.cc/pLHSZ1kq/Rectangle-10.png" alt="" class="w-80">
+          <img src="https://i.postimg.cc/pLHSZ1kq/Rectangle-10.png" alt="" class="w-96">
         </div>
 </div>
 </div>
@@ -77,7 +77,7 @@ export default {
 <style scoped>
 
 .formWidth{
-  width: 70%;
+  width: 80%;
 }
 
 

@@ -3,7 +3,7 @@
   <div class="">
   <img src="https://i.postimg.cc/fTdGcJf2/sevice-banner.png" alt="" class="object-cover  banner">
   </div>
-  <div class="absolute flex items-center justify bottom-96">
+  <div class="absolute flex items-center justify bottom-96 pb-20">
     <div class="flex flex-col items-center justify-center">
       <h1 class="font-bold text-white uppercase text-7xl">OUR SERVICES & PRICES</h1>
        <!-- <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3> -->

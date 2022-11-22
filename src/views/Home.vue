@@ -15,7 +15,7 @@
   </div>
   <div class="w-full h-40 -m-2 bg-black">
     <div class="grid items-start grid-cols-3 mx-auto mt-5 text-white maxWidth ">
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2  text-left">
         <h1 class="text-2xl font-semibold">HOURS</h1>
         <p class="text-base font-normal">Tues-Saturday 9:00am-6:00pm</p>
         <p class="text-base font-normal">Closed Sun & Mon</p>
@@ -24,7 +24,7 @@
         <h1 class="text-2xl font-semibold">LOCATION</h1>
         <p  class="text-base font-normal">18 Chukker Road, Kenwyn, Cape Town 7780</p>
       </div>
-      <div class="">
+      <div class="text-right">
         <h1 class="text-2xl font-semibold">CONTACT US</h1>
         <p class="text-base font-normal">0761621649</p>
       </div>

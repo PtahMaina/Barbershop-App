@@ -3,7 +3,7 @@
   <div class="">
   <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover  banner">
   </div>
-  <div class="absolute flex items-center justify bottom-96">
+  <div class="absolute flex items-center justify bottom-96 pb-20">
     <div class="flex flex-col items-center justify-center">
       <h1 class="font-bold text-white uppercase text-7xl">Contact Us</h1>
        <!-- <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3> -->
@@ -22,7 +22,7 @@
                     <input type="email" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="email" name="email" placeholder="Your Email" tabindex="" required v-model="email">
                 </div>
                 <div class="w-full">
-                    <input type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="phone" name="phone" placeholder="Your Phone Number" tabindex=""  required v-model="name">
+                    <input type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="phone" name="phone" placeholder="Your Phone Number" tabindex=""  required v-model="phone">
                 </div>
                 <div class="w-full">
                     <textarea rows="6" cols="60" name="message" class="w-full border-none py-5 p-2  rounded bgLightGrey" id="message" placeholder="Your Message" tabindex="" v-model="message"></textarea >

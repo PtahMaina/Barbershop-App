@@ -25,8 +25,8 @@
       <!-- <button class="btn" id="edit" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">EDIT</button>
           <button class="btn" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">DELETE</button> -->
     </div>
-    <div class="grid grid-cols-3 justify-center items-center">
-      <div class="">
+    <div class="grid grid-cols-3 justify-center items-center mx-auto maxWidth">
+      <div class="text-left">
         <h1 class="font-semibold text-3xl">Email</h1>
         <span class="pro-detail">{{ currentUser.email }}</span>
       </div>
@@ -34,7 +34,7 @@
         <h1 class="font-semibold text-3xl">Name</h1>
         <span class="pro-detail">{{ currentUser.customername }}</span>
       </div>
-      <div>
+      <div class="text-right">
         <h1 class="font-semibold text-3xl">Phone</h1>
         <span class="pro-detail">{{ currentUser.phone_number }}</span>
       </div>

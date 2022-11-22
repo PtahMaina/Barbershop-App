@@ -30,7 +30,7 @@
       </div>
     </div>
   </div>
-  
+
     <div class="flex flex-col w-full mt-10 sectionHeight maxWidth">
       <div class="flex flex-col">
         <h1 class="text-3xl font-semibold">Our Core Focus</h1>
@@ -82,19 +82,11 @@
           <div class="flex items-center justify-center w-full -mt-7">
               <img src="https://i.postimg.cc/xCM8bv60/Rectangle-9.png" alt="" class="object-cover rounded-sm image6">
           </div>
-
-          
       </div>
-
-      
     </div>
 
 </div>
- 
-
   <!-- <img src="https://gentlemen-barberclubs.de/images/big/3.jpg" alt=""> -->
- 
- 
     <!-- <div class="spirit">
       <h1 class="energy d-flex justify-content-center" >THE ENERGY</h1>
       <div class="paragraph">
@@ -102,7 +94,7 @@
         We provide our customers with the best services possible.
         Our team of executives and well-informed barbers work to help you achieve your delighted look. 
         We flourish on good music, mindful conversations, and enhancing relations in our community.
-        </p>   
+        </p>
       </div>
       <div class="border"></div>
     </div> -->
@@ -124,18 +116,11 @@
       </div>
     </div>
     </div>   -->
-  
-  
-
-  
-
-  
- 
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 

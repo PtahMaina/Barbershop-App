@@ -1,5 +1,5 @@
 <template>
-  <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ 'text-white bgBlack h-16 p-2 transition-all duration-200 ': scrollPosition > 100}" >
+  <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ 'text-white bgBlack h-16 p-2 transition-all duration-200 ': scrollPosition > 100, active: isActive}" >
     <div class="flex flex-col md:grid items-center justify-center grid-cols-3 mx-auto maxWidth ">
         <div class="flex justify-start">
             <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">

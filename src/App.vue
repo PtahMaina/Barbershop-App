@@ -193,6 +193,10 @@ font-family: 'Oswald', sans-serif;
   height: 650px;
   width: 100vw;
 }
+.Logobanner{
+  height: 350px;
+  width: 100vw;
+}
 
 
 .bgLightGrey{

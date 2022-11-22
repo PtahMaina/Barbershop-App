@@ -1,6 +1,5 @@
 <template>
   <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ active: isActive }">
-   
     <div class="flex flex-col md:grid items-center justify-center grid-cols-3 mx-auto maxWidth ">
         <div class="flex justify-start">
             <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">
@@ -13,18 +12,16 @@
             <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-white no-underline">Services</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-white no-underline">Story</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-white no-underline">Contact Us</router-link>
-            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-white no-underline">Login</router-link>
-            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-white no-underline">Profile</router-link>
             <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}" class="text-white no-underline">DashBoard</router-link>
         </div>
 
         <div class="flex items-center justify-end">
-            <router-link :to="{ name: 'Login'}" ><button class="py-3 px-7">BOOK NOW</button></router-link>
+            <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-white no-underline">Login</router-link>
+           <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-white no-underline pr-1">{{ currentUser.customername }}</router-link>
+           <h1 class="text-white no-underline text-base font-normal cursor-pointer" v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
         </div>
-        <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
-
     </div>
-  </div>  
+  </div>
   <button id="nav-btn" @click="toggleNav">
     <i style="font-size: 20px" class="fas fa-bars"></i>
   </button>

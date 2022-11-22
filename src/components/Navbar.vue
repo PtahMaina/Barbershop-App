@@ -1,7 +1,7 @@
 <template>
   <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ active: isActive }">
    
-    <div class="grid items-center justify-center grid-cols-3 mx-auto maxWidth ">
+    <div class="flex flex-col md:grid items-center justify-center grid-cols-3 mx-auto maxWidth ">
         <div class="flex justify-start">
             <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">
             <img src="https://i.postimg.cc/CxjcxMXZ/LOGO-BABERSHOP-removebg-preview.png" alt="" class="h-10"/>
@@ -19,14 +19,12 @@
         </div>
 
         <div class="flex items-center justify-end">
-            <router-link :to="{ name: 'Login'}" > <h1 style="font-weight: bold;"><button class="">BOOK NOW</button></h1></router-link>
+            <router-link :to="{ name: 'Login'}" ><button class="py-3 px-7">BOOK NOW</button></router-link>
         </div>
         <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
 
     </div>
-  </div>
-
-  
+  </div>  
   <button id="nav-btn" @click="toggleNav">
     <i style="font-size: 20px" class="fas fa-bars"></i>
   </button>
@@ -139,12 +137,12 @@ img {
     height: 100%;
     left: -200vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: left 0.7s linear;
     gap: 40px;
     background: black;
+    opacity:1 ;
     z-index: 20;
   }
   #nav.active {

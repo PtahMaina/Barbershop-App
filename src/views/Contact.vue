@@ -11,7 +11,7 @@
   </div>
 </div>
 <h1 class="font-semibold text-3xl mt-14">Chat with us</h1>
-<p class="text-base font-normal">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p>
+<p class="text-base font-normal mt-5">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p>
 <div class="flex w-full h-full mt-10 mx-auto maxWidth">
     <div class="w-full mt-10" id="contact">
           <form @submit.prevent="handleSubmit" id="contact-form" name="myForm" class="form  formWidth flex flex-col gap-6"  role="form">

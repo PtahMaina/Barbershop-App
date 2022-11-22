@@ -1,57 +1,57 @@
 <template>
-    <div id="card">
-    <div id="card-content">
-      <div id="card-title">
-        <h1 style="font-weight: bold;color:#b18044">SIGN UP</h1>
-        <div class="border"></div>
- 
-      </div>
-      <Form @submit="handleRegister" :validation-schema="schema">
-        <div v-if="!successful">
-        
-                <div class="form-group">
-                    <label class="form-label" id="nameLabel" for="name"></label>
-                    <Field type="text" class="form-control" id="customername" name="customername" placeholder="Username" tabindex="1"  />
-                    <ErrorMessage name="customername" class="error-feedback" />
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" id="emailLabel" for="email"></label>
-                    <Field type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" />
-                    <ErrorMessage name="email" class="error-feedback" />
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" id="subjectLabel" for="sublect"></label>
-                    <Field type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Contact Number" tabindex="3" />
-                    <ErrorMessage name="phone_number" class="error-feedback" />
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" id="subjectLabel" for="sublect"></label>
-                    <Field type="text" class="form-control" id="password" name="password" placeholder="Password" tabindex="3"/>
-                    <ErrorMessage name="password" class="error-feedback" />
-                </div>
-
-                <div class=" b text-center margin-top-25">
-                    <button class="btn btn-mod btn-border btn-large">
-                       <span class="sign" v-show="!loading">SIGN UP</span>
-                      <span v-show="loading"><Loader/></span>
-                    </button>
-                </div>
-                <div class="form-group">
-                  <div v-if="message" class="alert alert-danger" role="alert">
-                      {{message}}
-                  </div>
-               </div>
-          <div class="signUp">
-              <h6> Already have an account?   <router-link :to="{ name: 'Login'}">Login</router-link></h6>      
-          </div>
-        
-        </div>
-      </Form>
+<div class="flex flex-col items-center justify-center">
+  <div class="">
+  <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover  banner">
+  </div>
+  <div class="absolute flex items-center justify bottom-96">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="font-bold text-white uppercase text-7xl">Sign Up</h1>
+       <!-- <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3> -->
     </div>
   </div>
+</div>
+
+      <h1 class="font-semibold text-3xl mt-14">Sign Up</h1>
+      <!-- <p class="text-base font-normal mt-5">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p> -->
+      <div class="flex w-full h-full mt-10 mx-auto maxWidth justify-center items-center">
+        <Form @submit="handleRegister" :validation-schema="schema"  class="flex w-1/2 gap-6  flex-col ">
+          <div v-if="!successful" class="flex flex-col gap-6">
+                  <div class="form-group">
+                      <Field type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="customername" name="customername" placeholder="Username" tabindex="1"  />
+                      <ErrorMessage name="customername" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                  </div>
+                  <div class="form-group">
+                      <Field type="email" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="email" name="email" placeholder="Your Email" tabindex="2" />
+                      <ErrorMessage name="email" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                  </div>
+                  <div class="form-group">
+                      <Field type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="phone_number" name="phone_number" placeholder="Phone Number" tabindex="3" />
+                      <ErrorMessage name="phone_number" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                  </div>
+                  <div class="form-group">
+                      <Field type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="password" name="password" placeholder="Password" tabindex="3"/>
+                      <ErrorMessage name="password" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                  </div>
+                  <div class="">
+                      <button class="w-full border-none py-3 rounded bgBlack text-white">
+                        <span class="sign" v-show="!loading">SIGN UP</span>
+                        <span v-show="loading"><Loader/></span>
+                      </button>
+                            <div class="flex justify-start mt-5">
+                                <h6 class="text-base font-normal"> Already have an account?   <router-link :to="{ name: 'Login'}">Login</router-link></h6>
+                            </div>
+                  </div>
+                  <div class="form-group">
+                    <div v-if="message" class="alert alert-danger" role="alert">
+                        {{message}}
+                    </div>
+                </div>
+          </div>
+        </Form>
+
+      </div>
+
+
 </template>
 
 <script>
@@ -150,7 +150,7 @@ export default {
 </script>
 
 <style scoped>
-
+/* 
 #card {
     display:flex;
     justify-content:center;
@@ -212,9 +212,9 @@ body {
   
   background: transparent;
 }
-/* #submit-btn:hover {
+#submit-btn:hover {
   box-shadow: 0px 1px 18px #1e90ff;
-} */
+}
 .form {
   align-items: left;
   display: flex;
@@ -279,7 +279,7 @@ h1.headin{
     padding: 10px 24px;
     font-size: 15px;
     font-weight: 400;
-    /* border-radius: 25px; */
+    border-radius: 25px;
     line-height: 1.6;
     color: #333;
     background-color: #fff;
@@ -314,7 +314,7 @@ h1.headin{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 4px 13px;
-    /* color: #fff; */
+    color: #fff;
     background: rgba(34,34,34, .9);
     border: 1px solid transparent;
     font-size: 11px;
@@ -393,7 +393,7 @@ h1.headin{
 .btn{
     
     padding: 25px 43px;
-    /* border-radius: 30px; */
+    border-radius: 30px;
 
     
 
@@ -413,5 +413,5 @@ h1.headin{
     width: 100px;
     display:inline-flex;
     justify-content: center;
-}
+} */
 </style>

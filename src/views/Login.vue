@@ -1,46 +1,51 @@
 <template>
-    <div id="card">
-    <div id="card-content">
-      <div id="card-title">
-        <h1 style="font-weight: bold;color:#b18044">LOGIN</h1>
-        <div class="border"></div>
-        </div>
-      <Form @submit="handleLogin" :validation-schema="schema">
- 
+<div class="flex flex-col items-center justify-center">
+  <div class="">
+  <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover  banner">
+  </div>
+  <div class="absolute flex items-center justify bottom-96">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="font-bold text-white uppercase text-7xl">Login</h1>
+       <!-- <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3> -->
+    </div>
+  </div>
+</div>
+ <h1 class="font-semibold text-3xl mt-14">Login to your account</h1>
+ <!-- <p class="text-base font-normal mt-5">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p> -->
+ <div class="flex w-full h-full mt-10 mx-auto maxWidth justify-center items-center">
+      <Form @submit="handleLogin" :validation-schema="schema" class="flex w-1/2 gap-6  flex-col ">
         <div class="form-group">
                     <label class="form-label" id="nameLabel" for="name"></label>
                     <!-- <Field type="text" class="form-control" id="name" name="customername"  tabindex="1" /> -->
-                    <Field name="email" type="text" class="form-control" placeholder="Email" />
-                    <ErrorMessage name="email" class="error-feedback" />
-                    
+                    <Field name="email" type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" placeholder="Email" />
+                    <ErrorMessage name="email" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
                 </div>
                 <div class="form-group">
                     <label class="form-label" id="subjectLabel" for="sublect"></label>
                     <!-- <Field type="text" class="form-control" id="subject" name="password"  tabindex="3"/> -->
-                    <Field name="password" type="password" class="form-control" placeholder="Password" />
-                    <ErrorMessage name="password" class="error-feedback"/>
+                    <Field name="password" type="password" class="w-full border-none py-4 p-2 rounded bgLightGrey" placeholder="Password" />
+                    <ErrorMessage name="password" class="error-feedback flex justify-start text-sm font-normal text-red-600"/>
                 </div>
                 <div class="form-group">
-                <div class=" b text-center margin-top-25">
-                    <button class="btn btn-mod btn-border btn-large" :disabled="loading">
+                    <button class="w-full border-none py-3 rounded bgBlack text-white" :disabled="loading">
                       <span class="log" v-show="!loading">LOGIN</span>
                       <span v-show="loading"><Loader/></span>
-
                     </button>
-                </div>
+                          <div class="flex justify-start mt-5">
+                          <h6 class="text-base font-normal"> Don't have an account yet?<router-link :to="{ name: 'SignUp'}">Sign Up</router-link></h6>
+                          </div>
                 </div>
                 <div class="form-group">
             <div v-if="message" class="alert alert-danger" role="alert">
                 {{message}}
             </div>
-            
         </div>
-        <div class="signUp">
-             <h6> Don't have an account yet?<router-link :to="{ name: 'SignUp'}">Sign Up</router-link></h6>
-        </div>
+  
       </Form>
-    </div>
-  </div>
+
+ </div>
+
+
  
 </template>
 
@@ -59,15 +64,13 @@ export default {
   },
   data() {
     const schema = yup.object().shape({
-    email: yup.string().required("username is required"),
+    email: yup.string().required("Email is required"),
     password: yup.string().required("Password is required")
     });
     return {
       loading: false,
       message: "",
       schema,
-    
-     
     };
   },
   computed: {
@@ -111,7 +114,7 @@ export default {
 </script>
 
 <style scoped>
-#card{
+/* #card{
     display:flex;
     justify-content:center;
 }
@@ -193,7 +196,7 @@ h1.headin{
   padding: none;
   margin-bottom:50px;
 }
-/* contact */
+contact
 #success-message {
   opacity: 0;
 }
@@ -210,7 +213,7 @@ h1.headin{
   padding: 25px;
   font-size: 30px;
   font-weight: 300;
-  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .form-group .form-control {
@@ -246,7 +249,7 @@ h1.headin{
 
 .btn-mod.btn-border {
     color: #fff;
-    /* border: 1px solid #1e90ff; */
+    border: 1px solid #1e90ff;
     background: #b68345;
 }
 
@@ -296,9 +299,9 @@ h1.headin{
     padding: 80px;
   }
 }
-/* .call{
+.call{
   margin-left: 35%;
-} */
+}
 
 .b{
   display:flex;
@@ -310,7 +313,7 @@ h1.headin{
 .btn{
     
     padding: 25px 43px;
-    /* border-radius: 30px; */
+    border-radius: 30px;
 
     
 
@@ -329,5 +332,5 @@ h1.headin{
     h1.headin{
     padding-top:50px;
 }
-}
+} */
 </style>

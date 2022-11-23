@@ -86,36 +86,6 @@
     </div>
 
 </div>
-  <!-- <img src="https://gentlemen-barberclubs.de/images/big/3.jpg" alt=""> -->
-    <!-- <div class="spirit">
-      <h1 class="energy d-flex justify-content-center" >THE ENERGY</h1>
-      <div class="paragraph">
-        <p>Here at The Urban Shave Barber Shop, we specialize in every barber specialty.
-        We provide our customers with the best services possible.
-        Our team of executives and well-informed barbers work to help you achieve your delighted look. 
-        We flourish on good music, mindful conversations, and enhancing relations in our community.
-        </p>
-      </div>
-      <div class="border"></div>
-    </div> -->
-  <!-- <div class="container pt-5">
-    <div class="row">
-      <div class="col">
-        <h2 >HOURS</h2>
-        <h6>Tues-Saturday 9:00am-6:00pm</h6>
-        <h6>Sat 9:00am-3:00p</h6>
-        <h6>Closed Sun & Mon</h6>
-      </div>
-      <div class="col">
-        <h2 >CONTACT US</h2>
-        <h6>0761621649</h6>
-      </div>
-      <div class="col">
-        <h2 >LOCATION</h2>
-        <h6>18 Chukker Road, Kenwyn, Cape Town 7780</h6>
-      </div>
-    </div>
-    </div>   -->
 </template>
 
 <script>

@@ -110,20 +110,20 @@
     </div>
 
     <div class="flex flex-col items-center justify-center w-full gap-2 mt-32 md:hidden">
-      <div class="flex justify-center w-full gap-2 px-4">
+      <div class="flex justify-center w-full gap-2">
         <img src="https://i.postimg.cc/mrVPxSHj/Rectangle-4.png" alt="" class="w-48">
         <img src="https://i.postimg.cc/B6VtbQN1/Rectangle-5.png" alt="" class="w-48">
       </div>
       <div>
-        <div class="flex ">
+        <div class="flex justify-center w-full">
           <img src="https://i.postimg.cc/FFYVZYM8/Rectangle-6.png" alt="" class="w-96">
         </div>
       </div>
-      <div class="flex justify-center w-full gap-2 px-4">
+      <div class="flex justify-center w-full gap-2 ">
         <img src="https://i.postimg.cc/NF2FHqPC/Rectangle-7.png" alt="" class="w-48">
         <img src="https://i.postimg.cc/bdXJ0C7y/Rectangle-9.png" alt="" class="w-48">
       </div>
-      <div class="w-full">
+      <div class="flex justify-center w-full ">
         <img src="https://i.postimg.cc/Vs2BHY16/Rectangle-8.png" alt="" class="w-96">
       </div>
              

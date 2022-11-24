@@ -27,7 +27,7 @@
         </div>
 
         <div class="flex flex-col items-center justify-center gap-10 no-underline md:grid md:grid-cols-4">
-            <router-link @click="toggleNav" to="/" class="text-white no-underline" >Home1</router-link>
+            <router-link @click="toggleNav" to="/" class="text-white no-underline" >Home</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-white no-underline">Services</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-white no-underline">Story</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-white no-underline">Contact Us</router-link>

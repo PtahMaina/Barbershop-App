@@ -1,7 +1,7 @@
 <template>
 <div class="flex flex-col items-center justify-center">
   <div class="">
-  <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover  banner">
+  <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover banner">
   </div>
   <div class="absolute flex items-center justify bottom-96">
     <div class="flex flex-col items-center justify-center">
@@ -10,24 +10,24 @@
     </div>
   </div>
 </div>
- <h1 class="font-semibold text-3xl mt-14">Login to your account</h1>
- <!-- <p class="text-base font-normal mt-5">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p> -->
- <div class="flex w-full h-full mt-10 mx-auto maxWidth justify-center items-center">
-      <Form @submit="handleLogin" :validation-schema="schema" class="flex w-1/2 gap-6  flex-col ">
+ <h1 class="text-3xl font-semibold mt-14">Login to your account</h1>
+ <!-- <p class="mt-5 text-base font-normal">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p> -->
+ <div class="flex items-center justify-center w-full h-full mx-auto mt-10 maxWidth">
+      <Form @submit="handleLogin" :validation-schema="schema" class="flex flex-col w-1/2 gap-6 ">
         <div class="form-group">
                     <label class="form-label" id="nameLabel" for="name"></label>
                     <!-- <Field type="text" class="form-control" id="name" name="customername"  tabindex="1" /> -->
-                    <Field name="email" type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" placeholder="Email" />
-                    <ErrorMessage name="email" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                    <Field name="email" type="text" class="w-full p-2 py-4 border-none rounded bgLightGrey" placeholder="Email" />
+                    <ErrorMessage name="email" class="flex justify-start text-sm font-normal text-red-600 error-feedback" />
                 </div>
                 <div class="form-group">
                     <label class="form-label" id="subjectLabel" for="sublect"></label>
                     <!-- <Field type="text" class="form-control" id="subject" name="password"  tabindex="3"/> -->
-                    <Field name="password" type="password" class="w-full border-none py-4 p-2 rounded bgLightGrey" placeholder="Password" />
-                    <ErrorMessage name="password" class="error-feedback flex justify-start text-sm font-normal text-red-600"/>
+                    <Field name="password" type="password" class="w-full p-2 py-4 border-none rounded bgLightGrey" placeholder="Password" />
+                    <ErrorMessage name="password" class="flex justify-start text-sm font-normal text-red-600 error-feedback"/>
                 </div>
                 <div class="form-group">
-                    <button class="w-full border-none py-3 rounded bgBlack text-white" :disabled="loading">
+                    <button class="w-full py-3 text-white border-none rounded bgBlack" :disabled="loading">
                       <span class="log" v-show="!loading">LOGIN</span>
                       <span v-show="loading"><Loader/></span>
                     </button>
@@ -114,223 +114,4 @@ export default {
 </script>
 
 <style scoped>
-/* #card{
-    display:flex;
-    justify-content:center;
-}
-    a {
-  text-decoration: none;
-  
-}
-.signUp{
-    padding-top: 30px;
-}
-.log{
-  background: transparent;
-}
-#card {
-
-  height: 460px;
-  margin: 6rem auto 8.1rem auto;
-  width: 330px;
-}
-#card-content {
-  padding: 12px ;
-}
-#card-title {
-
-  padding-bottom: 23px;
-  padding-top: 13px;
-  text-align: center;
-}
-#submit-btn {
-  
-  border: none;
- 
-  cursor: pointer;
-  
-  
-  height: 42.3px;
-  margin: 0 auto;
-  margin-top: 50px;
-  transition: 0.25s;
-  width: 100%;
-}
-#submit-btn:hover {
-  box-shadow: 0px 1px 18px #1e90ff;
-}
-.form {
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-}
-.form-border {
-  background:#1e90ff;
-  height: 1px;
-  width: 100%;
-}
-.form-content {
-
-  border: none;
-  outline: none;
-  padding-top: 14px;
-}
-
-
-
-textarea#message.form-control {
-    height: 120px;
-}
-h1.headin{
-    padding-top:110px;
-}
-:required:hover{
-  background-color:none;
-}
-
-*{
-  scroll-behavior: smooth;
-}
-.containe {
-  display:flex;
-  padding: none;
-  margin-bottom:50px;
-}
-contact
-#success-message {
-  opacity: 0;
-}
-
-.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
-  padding: 0 20% 0 20%;
-}
-
-.margin-top-25 {
-  margin-top: 25px;
-}
-
-.form-title {
-  padding: 25px;
-  font-size: 30px;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.form-group .form-control {
-   display: block;
- 
-    width: 100%;
-    height: 48px;
-    padding: 10px 24px;
-    font-size: 15px;
-    font-weight: 400;
- 
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    background-image: none;
-    border: solid 1px #b68345;
-    
-
-}
-
-
-.form-group .form-control:hover {
-	border: solid 1px#b68345;
-}
-
-
-.btn-mod.btn-large {
-    height: auto;
-    padding: 13px 52px;
-    font-size: 15px;
-    
-}
-
-.btn-mod.btn-border {
-    color: #fff;
-    border: 1px solid #1e90ff;
-    background: #b68345;
-}
-
-.btn-mod, a.btn-mod {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 4px 13px;
-    color: #fff;
-    background: rgba(34,34,34, .9);
-    border: 1px solid transparent;
-    font-size: 11px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-}
-
-.btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
-   color: black;
-    border-color:white ;
-    
-    outline: none;
-}
-
-@media only screen and (max-width: 500px) {
-    .btn-mod.btn-large {
-       padding: 11px 15px;
-       font-size: 14px;
-    }
-  
-    .form-title {
-        font-size: 20px;
-  }
-  .containe{
-    padding: 80px;
-  }
-}
-.call{
-  margin-left: 35%;
-}
-
-.b{
-  display:flex;
-  justify-content: space-around;
-  
-  
-}
-
-.btn{
-    
-    padding: 25px 43px;
-    border-radius: 30px;
-
-    
-
-
-}
-
-
-.border{
-    border-top: 1px solid;
-    width: 100px;
-    display:inline-flex;
-    justify-content: center;
-}
-
-@media only screen and (max-width: 494px) {
-    h1.headin{
-    padding-top:50px;
-}
-} */
 </style>

@@ -1,9 +1,9 @@
 <template>
 <div class="flex flex-col items-center justify-center">
   <div class="">
-  <img src="https://i.postimg.cc/fTdGcJf2/sevice-banner.png" alt="" class="object-cover  banner">
+  <img src="https://i.postimg.cc/fTdGcJf2/sevice-banner.png" alt="" class="object-cover banner">
   </div>
-  <div class="absolute flex items-center justify bottom-96 pb-20">
+  <div class="absolute flex items-center pb-20 justify bottom-96">
     <div class="flex flex-col items-center justify-center">
       <h1 class="font-bold text-white uppercase text-7xl">OUR SERVICES & PRICES</h1>
        <!-- <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3> -->
@@ -12,31 +12,31 @@
   </div>
     <h1 class="text-3xl font-semibold">Hair </h1>
 </div>
-  <div class="mt-10">
-            <div class="w-full   mx-auto maxWidth"  v-for="(service,i) of services" :key="service.title" >
-                      <div class="grid grid-cols-2">
+  <div class="px-4 mt-10 md:px-0">
+            <div class="w-full mx-auto maxWidth"  v-for="(service,i) of services" :key="service.title" >
+                      <div class="grid grid-cols-1 md:grid-cols-2">
                     <router-link class="no-underline " @click="toggleBookingFormHair(i)" :to="{ name: 'BookingForm'}">
-                      <div class="text-left flex flex-col mt-4">
-                        <h1 class="text-3xl font-medium  text-black">{{service.title}} </h1>
-                      <h1 class="text-base font-normal  text-black">{{service.discription}}</h1>
+                      <div class="flex flex-col mt-4 text-left">
+                        <h1 class="text-3xl font-medium text-black">{{service.title}} </h1>
+                      <h1 class="text-base font-normal text-black">{{service.discription}}</h1>
                       </div>
                     </router-link>
-                      <div class="flex items-end justify-end">
+                      <div class="flex items-center mt-1 md:mt-0 md:items-end md:justify-end">
                       <h1 class="text-base font-normal">R{{service.price}}</h1>
                       </div>
                       </div>
             </div>
             <div class="mt-10">
            <h1>Beard</h1>
-                <div class="w-full   mx-auto maxWidth"  v-for="(beard,i) of beards" :key="beard.title" >
-                      <div class="grid grid-cols-2">
+                <div class="w-full mx-auto maxWidth"  v-for="(beard,i) of beards" :key="beard.title" >
+                      <div class="grid grid-cols-1 md:grid-cols-2">
                     <router-link class="no-underline " @click="toggleBookingFormBeard(i)" :to="{ name: 'BookingForm'}">
-                      <div class="text-left flex flex-col mt-4">
-                        <h1 class="text-3xl font-medium  text-black">{{beard.title}} </h1>
-                      <h1 class="text-base font-normal  text-black">{{beard.discription}}</h1>
+                      <div class="flex flex-col mt-4 text-left">
+                        <h1 class="text-3xl font-medium text-black">{{beard.title}} </h1>
+                      <h1 class="text-base font-normal text-black">{{beard.discription}}</h1>
                       </div>
                     </router-link>
-                      <div class="flex items-end justify-end">
+                      <div class="flex items-center mt-1 md:mt-0 md:items-end md:justify-end">
                       <h1 class="text-base font-normal">R{{beard.price}}</h1>
                       </div>
                       </div>
@@ -44,15 +44,15 @@
             </div>
     <div class="mt-10">
       <h1>Treatment</h1>
-                     <div class="w-full   mx-auto maxWidth"  v-for="(treatment,i) of treatments" :key="treatment.title" >
-                      <div class="grid grid-cols-2">
+                     <div class="w-full mx-auto maxWidth"  v-for="(treatment,i) of treatments" :key="treatment.title" >
+                      <div class="grid grid-cols-1 md:grid-cols-2">
                     <router-link class="no-underline " @click="toggleBookingFormTreatment(i)" :to="{ name: 'BookingForm'}">
-                      <div class="text-left flex flex-col mt-4">
-                        <h1 class="text-3xl font-medium  text-black">{{treatment.title}} </h1>
-                      <h1 class="text-base font-normal  text-black">{{treatment.discription}}</h1>
+                      <div class="flex flex-col mt-4 text-left">
+                        <h1 class="text-3xl font-medium text-black">{{treatment.title}} </h1>
+                      <h1 class="text-base font-normal text-black">{{treatment.discription}}</h1>
                       </div>
                     </router-link>
-                      <div class="flex items-end justify-end">
+                      <div class="flex items-center mt-1 md:mt-0 md:items-end md:justify-end">
                       <h1 class="text-base font-normal">R{{treatment.price}}</h1>
                       </div>
                       </div>

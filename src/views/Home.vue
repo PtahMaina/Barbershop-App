@@ -31,7 +31,7 @@
     </div>
   </div>
 
-      <div class="flex flex-col">
+      <div class="flex flex-col mt-10">
         <h1 class="text-3xl font-semibold">Our Core Focus</h1>
       </div>
     <!-- <div class="hidden mx-auto mt-10 md:block sectionHeight md:maxWidth ">
@@ -54,28 +54,30 @@
       </div>
       </div>
     </div> -->
+<!-- 
+     <div class="mx-auto overflow-auto sectionHeight">
+      <div class="flex gap-4 mt-20 overflow-auto bg-purple-400">
+        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+          <h1>Men's Haircut</h1>
+          <p>Full style and cut to suit your needs, done by our professionals.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+          <h1>Treatment</h1>
+          <p>Get advice and treatment methods to keep your hair in that healthy state.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+          <h1>Beard Trim</h1>
+          <p>Keeping your beard in full shape and style, keeeping as silk and precise as you like it.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+          <h1>Wash</h1>
+          <p>Nouring your hair and sculp with a full wash and blow if need be.</p>
+        </div>
+      </div>
+    </div> -->
 
-    <div class="mx-auto mt-10 sectionHeight maxWidth">
-      <div class="flex w-full gap-4 mt-20 overflow-auto bg-yellow-600">
-      <div class="flex flex-col items-center justify-center w-full h-full bgGrey ">
-        <h1>Men's Haircut</h1>
-        <p>Full style and cut to suit your needs, done by our professionals.</p>
-      </div>
-      <div class="flex flex-col items-center justify-center w-full h-full bgGrey">
-        <h1>Treatment</h1>
-        <p>Get advice and treatment methods to keep your hair in that healthy state.</p>
-      </div>
-      <div class="flex flex-col items-center justify-center w-full h-full bgGrey ">
-        <h1>Beard Trim</h1>
-        <p>Keeping your beard in full shape and style, keeeping as silk and precise as you like it.</p>
-      </div>
-      <div class="flex flex-col items-center justify-center w-full h-full bgGrey">
-        <h1>Wash</h1>
-        <p>Nouring your hair and sculp with a full wash and blow if need be.</p>
-      </div>
-      </div>
-    </div>
 
+</div>
 
     <div class="w-full h-full mx-auto -mt-32 maxWidth">
       <h1 class="text-3xl font-semibold">Our Gallery</h1>
@@ -107,7 +109,26 @@
       </div>
     </div>
 
-</div>
+    <div class="flex flex-col items-center justify-center w-full gap-2 mt-32 md:hidden">
+      <div class="flex justify-center w-full gap-2 px-4">
+        <img src="https://i.postimg.cc/mrVPxSHj/Rectangle-4.png" alt="" class="w-48">
+        <img src="https://i.postimg.cc/B6VtbQN1/Rectangle-5.png" alt="" class="w-48">
+      </div>
+      <div>
+        <div class="flex ">
+          <img src="https://i.postimg.cc/FFYVZYM8/Rectangle-6.png" alt="" class="w-96">
+        </div>
+      </div>
+      <div class="flex justify-center w-full gap-2 px-4">
+        <img src="https://i.postimg.cc/NF2FHqPC/Rectangle-7.png" alt="" class="w-48">
+        <img src="https://i.postimg.cc/bdXJ0C7y/Rectangle-9.png" alt="" class="w-48">
+      </div>
+      <div class="w-full">
+        <img src="https://i.postimg.cc/Vs2BHY16/Rectangle-8.png" alt="" class="w-96">
+      </div>
+             
+
+    </div>
 </template>
 
 <script>

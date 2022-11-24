@@ -1,7 +1,7 @@
 <template>
   <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ 'text-white bgBlack h-16 p-2 transition-all duration-200 ': scrollPosition > 100, active: isActive}" >
-    <div class="flex flex-col md:grid md:items-center md:justify-center md:grid-cols-3 mx-auto maxWidth ">
-        <div class="flex md:justify-start justify-center">
+    <div class="flex flex-col mx-auto md:grid md:items-center md:justify-center md:grid-cols-3 maxWidth ">
+        <div class="flex justify-center md:justify-start">
             <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">
             <svg width="50" height="50" viewBox="0 0 289 127" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_73_436)">
@@ -26,8 +26,8 @@
             </router-link>
         </div>
 
-        <div class="md:grid md:grid-cols-4 flex flex-col  items-center justify-center gap-10 no-underline">
-            <router-link @click="toggleNav" to="/" class="text-white no-underline" >Home</router-link>
+        <div class="flex flex-col items-center justify-center gap-10 no-underline md:grid md:grid-cols-4">
+            <router-link @click="toggleNav" to="/" class="text-white no-underline" >Home1</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-white no-underline">Services</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-white no-underline">Story</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-white no-underline">Contact Us</router-link>
@@ -36,8 +36,8 @@
 
         <div class="flex items-center justify-end">
             <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-white no-underline">Login</router-link>
-           <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-white no-underline pr-1">{{ currentUser.customername }}</router-link>
-           <h1 class="text-white no-underline text-base font-normal cursor-pointer" v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
+           <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="pr-1 text-white no-underline">{{ currentUser.customername }}</router-link>
+           <h1 class="text-base font-normal text-white no-underline cursor-pointer" v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
         </div>
     </div>
   </div>
@@ -89,41 +89,6 @@ export default {
 </script>
 
 <style scoped>
-/* .fb {
-  position: absolute;
-  right: 200px;
-  padding-top: 3px;
-  padding-left: 10px;
-  font-size: 20px;
-  background: transparent;
-}
-.in {
-  position: absolute;
-  right: 170px;
-  padding-top: 3px;
-  padding-left: 10px;
-  font-size: 20px;
-  background: transparent;
-}
-.fab:hover {
-  color: #b68345;
-}
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-} */
-/* #nav {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 75px;
-  background: transparent;
-  box-shadow:8px 8px 15px #e4e4e4;
-} */
-
 img {
   background: transparent;
 }
@@ -132,7 +97,6 @@ img {
   top: 10px;
   right: 30px;
   background: transparent;
-  box-shadow:8px 8px 15px #e4e4e4;
   padding: 10px;
   border-radius: 50%;
   height: 50px;
@@ -142,19 +106,6 @@ img {
   display: none;
   overflow-x: hidden;
 }
-/* 
-.navbar-brand {
-  position: fixed;
-  left: 15px;
-  top: -10px;
-  background: transparent;
-} */
-
-/* img {
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
-} */
 
 .colorChange{
   background: red;
@@ -180,29 +131,7 @@ img {
   #nav-btn {
     display: block;
     z-index: 100;
-    /* margin-right:150px;
-        overflow-y: hidden; */
-  }
-  /* .fb {
-    position: absolute;
-    right: 200px;
-    padding-top: 3px;
-    top: 100px;
-    left: 140px;
-    font-size: 20px;
-    padding-left: 10px;
-    background: transparent;
-  }
-  .in {
-    position: absolute;
-    right: 170px;
-    padding-top: 3px;
-    top: 100px;
-    left: 200px;
-    font-size: 20px;
-    padding-left: 10px;
-    background: transparent;
-  } */
+  } 
 }
 </style>
 //

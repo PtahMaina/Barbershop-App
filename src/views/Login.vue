@@ -13,7 +13,7 @@
  <h1 class="text-3xl font-semibold mt-14">Login to your account</h1>
  <!-- <p class="mt-5 text-base font-normal">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p> -->
  <div class="flex items-center justify-center w-full h-full mx-auto mt-10 maxWidth">
-      <Form @submit="handleLogin" :validation-schema="schema" class="flex flex-col w-1/2 gap-6 ">
+      <Form @submit="handleLogin" :validation-schema="schema" class="flex flex-col w-full gap-6 px-4 md:w-1/2 md:px-0">
         <div class="form-group">
                     <label class="form-label" id="nameLabel" for="name"></label>
                     <!-- <Field type="text" class="form-control" id="name" name="customername"  tabindex="1" /> -->

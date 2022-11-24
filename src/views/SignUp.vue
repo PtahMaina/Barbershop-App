@@ -1,7 +1,7 @@
 <template>
 <div class="flex flex-col items-center justify-center">
   <div class="">
-  <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover  banner">
+  <img src="https://i.postimg.cc/fRKXZtHJ/contact-banner.png" alt="" class="object-cover banner">
   </div>
   <div class="absolute flex items-center justify bottom-96">
     <div class="flex flex-col items-center justify-center">
@@ -11,29 +11,29 @@
   </div>
 </div>
 
-      <h1 class="font-semibold text-3xl mt-14">Sign Up</h1>
-      <!-- <p class="text-base font-normal mt-5">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p> -->
-      <div class="flex w-full h-full mt-10 mx-auto maxWidth justify-center items-center">
-        <Form @submit="handleRegister" :validation-schema="schema"  class="flex w-1/2 gap-6  flex-col ">
+      <h1 class="text-3xl font-semibold mt-14">Sign Up</h1>
+      <!-- <p class="mt-5 text-base font-normal">For any enquiries, additional information or special booking requests, feel free to get in touch with us by filling in the form below.</p> -->
+      <div class="flex items-center justify-center w-full h-full mx-auto mt-10 maxWidth">
+        <Form @submit="handleRegister" :validation-schema="schema"  class="flex flex-col w-full gap-6 px-4 md:w-1/2 md:px-0 ">
           <div v-if="!successful" class="flex flex-col gap-6">
                   <div class="form-group">
-                      <Field type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="customername" name="customername" placeholder="Username" tabindex="1"  />
-                      <ErrorMessage name="customername" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                      <Field type="text" class="w-full p-2 py-4 border-none rounded bgLightGrey" id="customername" name="customername" placeholder="Username" tabindex="1"  />
+                      <ErrorMessage name="customername" class="flex justify-start text-sm font-normal text-red-600 error-feedback" />
                   </div>
                   <div class="form-group">
-                      <Field type="email" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="email" name="email" placeholder="Your Email" tabindex="2" />
-                      <ErrorMessage name="email" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                      <Field type="email" class="w-full p-2 py-4 border-none rounded bgLightGrey" id="email" name="email" placeholder="Your Email" tabindex="2" />
+                      <ErrorMessage name="email" class="flex justify-start text-sm font-normal text-red-600 error-feedback" />
                   </div>
                   <div class="form-group">
-                      <Field type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="phone_number" name="phone_number" placeholder="Phone Number" tabindex="3" />
-                      <ErrorMessage name="phone_number" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                      <Field type="text" class="w-full p-2 py-4 border-none rounded bgLightGrey" id="phone_number" name="phone_number" placeholder="Phone Number" tabindex="3" />
+                      <ErrorMessage name="phone_number" class="flex justify-start text-sm font-normal text-red-600 error-feedback" />
                   </div>
                   <div class="form-group">
-                      <Field type="text" class="w-full border-none py-4 p-2 rounded bgLightGrey" id="password" name="password" placeholder="Password" tabindex="3"/>
-                      <ErrorMessage name="password" class="error-feedback flex justify-start text-sm font-normal text-red-600" />
+                      <Field type="text" class="w-full p-2 py-4 border-none rounded bgLightGrey" id="password" name="password" placeholder="Password" tabindex="3"/>
+                      <ErrorMessage name="password" class="flex justify-start text-sm font-normal text-red-600 error-feedback" />
                   </div>
                   <div class="">
-                      <button class="w-full border-none py-3 rounded bgBlack text-white">
+                      <button class="w-full py-3 text-white border-none rounded bgBlack">
                         <span class="sign" v-show="!loading">SIGN UP</span>
                         <span v-show="loading"><Loader/></span>
                       </button>

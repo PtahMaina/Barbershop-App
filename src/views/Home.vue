@@ -34,8 +34,8 @@
       <div class="flex flex-col">
         <h1 class="text-3xl font-semibold">Our Core Focus</h1>
       </div>
-    <div class="mt-10 sectionHeight maxWidth mx-auto snap-x ">
-      <div class="md:grid md:grid-cols-4 flex gap-4 mt-20 w-full snap-center overflow-auto">
+    <div class="mt-10 sectionHeight md:maxWidth mx-auto ">
+      <div class="md:grid md:grid-cols-4 flex gap-4 mt-20 w-full overflow-auto">
       <div class="h-52 bgGrey flex flex-col items-center justify-center w-72">
         <h1>Men's Haircut</h1>
         <p>Full style and cut to suit your needs, done by our professionals.</p>
@@ -54,6 +54,7 @@
       </div>
       </div>
     </div>
+
 
     <div class="w-full h-full mx-auto -mt-32 maxWidth">
       <h1 class="text-3xl font-semibold">Our Gallery</h1>

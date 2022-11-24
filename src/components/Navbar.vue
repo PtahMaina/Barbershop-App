@@ -1,7 +1,7 @@
 <template>
-  <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ 'text-white bgBlack h-16 p-2 transition-all duration-200 ': scrollPosition > 100}" >
-    <div class="flex flex-col md:grid items-center justify-center grid-cols-3 mx-auto maxWidth ">
-        <div class="flex justify-start">
+  <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ 'text-white bgBlack h-16 p-2 transition-all duration-200 ': scrollPosition > 100, active: isActive}" >
+    <div class="flex flex-col md:grid md:items-center md:justify-center md:grid-cols-3 mx-auto maxWidth ">
+        <div class="flex md:justify-start justify-center">
             <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">
             <svg width="50" height="50" viewBox="0 0 289 127" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_73_436)">
@@ -26,7 +26,7 @@
             </router-link>
         </div>
 
-        <div class="flex items-center justify-center gap-10 no-underline">
+        <div class="md:grid md:grid-cols-4 flex flex-col  items-center justify-center gap-10 no-underline">
             <router-link @click="toggleNav" to="/" class="text-white no-underline" >Home</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-white no-underline">Services</router-link>
             <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-white no-underline">Story</router-link>
@@ -164,6 +164,7 @@ img {
     position: fixed;
     height: 100%;
     left: -200vw;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -143,8 +143,6 @@ export default {
   },
    methods:{
     handleSubmit(style){
-    
- 
     fetch(`https://barber-shopbackend.herokuapp.com/barbers/${this.barberName}/bookings`, {
   method: 'POST',
   body: JSON.stringify({

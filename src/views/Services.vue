@@ -65,9 +65,10 @@
 
 export default {
   props:[
+    "barberServices",
     "services",
     "beards",
-    "treatments"
+    "treatments",
   ],
   methods: {
     toggleBookingFormHair(position){
@@ -78,7 +79,7 @@ export default {
     toggleBookingFormBeard(position){
       this.beards.forEach(beard => beard.showForm = false)
       this.beards[position].showForm = !this.beards[position].showForm
-      console.log(beards);
+
     },
 
     toggleBookingFormTreatment(position){

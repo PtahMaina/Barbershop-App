@@ -30,34 +30,35 @@
       </div>
     </div>
   </div>
-  
-    <div class="flex flex-col w-full mt-10 sectionHeight maxWidth">
+
       <div class="flex flex-col">
         <h1 class="text-3xl font-semibold">Our Core Focus</h1>
       </div>
-      <div class="grid grid-cols-4 gap-4 mt-20">
-      <div class="px-10 py-10 bgGrey" >
+    <div class="mt-10 sectionHeight md:maxWidth mx-auto ">
+      <div class="md:grid md:grid-cols-4 flex gap-4 mt-20 w-full overflow-auto">
+      <div class="h-52 bgGrey flex flex-col items-center justify-center w-72">
         <h1>Men's Haircut</h1>
         <p>Full style and cut to suit your needs, done by our professionals.</p>
       </div>
-      <div class="px-10 py-10 bgGrey">
+      <div class=" h-52 bgGrey flex flex-col items-center justify-center w-72">
         <h1>Treatment</h1>
         <p>Get advice and treatment methods to keep your hair in that healthy state.</p>
       </div>
-      <div class="px-10 py-10 bgGrey">
+      <div class=" h-52 bgGrey flex flex-col items-center justify-center w-72">
         <h1>Beard Trim</h1>
         <p>Keeping your beard in full shape and style, keeeping as silk and precise as you like it.</p>
       </div>
-      <div class="px-10 py-10 bgGrey">
+      <div class=" h-52 bgGrey flex flex-col items-center justify-center w-72">
         <h1>Wash</h1>
         <p>Nouring your hair and sculp with a full wash and blow if need be.</p>
       </div>
       </div>
     </div>
 
+
     <div class="w-full h-full mx-auto -mt-32 maxWidth">
       <h1 class="text-3xl font-semibold">Our Gallery</h1>
-      <div class="grid items-start w-full grid-cols-3 mt-20">
+      <div class="md:grid hidden items-start w-full grid-cols-3 mt-20">
           <div class="flex items-center justify-center w-full ">
             <img src="https://i.postimg.cc/Wp0qDvyM/Rectangle-4.png" alt="" class="object-cover rounded-sm image1">
           </div>
@@ -70,7 +71,7 @@
               <img src="https://i.postimg.cc/MGcvz2Rf/Rectangle-6.png" alt="" class="object-cover rounded-sm image3">
           </div>
       </div>
-      <div class="grid items-end grid-cols-3 -mt-20">
+      <div class="md:grid hidden items-end grid-cols-3 -mt-20">
           <div class="flex items-center justify-center w-full">
               <img src="https://i.postimg.cc/YSJj9nfn/Rectangle-7.png" alt="" class="object-cover rounded-sm image4">
           </div>
@@ -82,60 +83,15 @@
           <div class="flex items-center justify-center w-full -mt-7">
               <img src="https://i.postimg.cc/xCM8bv60/Rectangle-9.png" alt="" class="object-cover rounded-sm image6">
           </div>
-
-          
       </div>
-
-      
     </div>
 
 </div>
- 
-
-  <!-- <img src="https://gentlemen-barberclubs.de/images/big/3.jpg" alt=""> -->
- 
- 
-    <!-- <div class="spirit">
-      <h1 class="energy d-flex justify-content-center" >THE ENERGY</h1>
-      <div class="paragraph">
-        <p>Here at The Urban Shave Barber Shop, we specialize in every barber specialty.
-        We provide our customers with the best services possible.
-        Our team of executives and well-informed barbers work to help you achieve your delighted look. 
-        We flourish on good music, mindful conversations, and enhancing relations in our community.
-        </p>   
-      </div>
-      <div class="border"></div>
-    </div> -->
-  <!-- <div class="container pt-5">
-    <div class="row">
-      <div class="col">
-        <h2 >HOURS</h2>
-        <h6>Tues-Saturday 9:00am-6:00pm</h6>
-        <h6>Sat 9:00am-3:00p</h6>
-        <h6>Closed Sun & Mon</h6>
-      </div>
-      <div class="col">
-        <h2 >CONTACT US</h2>
-        <h6>0761621649</h6>
-      </div>
-      <div class="col">
-        <h2 >LOCATION</h2>
-        <h6>18 Chukker Road, Kenwyn, Cape Town 7780</h6>
-      </div>
-    </div>
-    </div>   -->
-  
-  
-
-  
-
-  
- 
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 

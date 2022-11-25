@@ -8,7 +8,7 @@
       <h1 class="font-bold text-white uppercase text-7xl">Masters of Barbering</h1>
        <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3>
         <div class="flex items-center justify-end mt-5">
-            <router-link :to="{ name: 'Login'}" ><button class="py-3 px-7">BOOK NOW</button></router-link>
+            <router-link :to="{ name: 'Login'}" ><button class="py-3 px-7 cursor-pointer">BOOK NOW</button></router-link>
         </div>
        <!-- <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="px-5 py-3">BOOK NOW</button></h1></router-link> -->
     </div>
@@ -34,7 +34,7 @@
       <div class="flex flex-col mt-10">
         <h1 class="text-3xl font-semibold">Our Core Focus</h1>
       </div>
-    <!-- <div class="hidden mx-auto mt-10 md:block sectionHeight md:maxWidth ">
+    <div class="hidden mx-auto mt-10 md:block sectionHeight maxWidth ">
       <div class="flex w-full gap-4 mt-20 overflow-auto md:grid md:grid-cols-4">
       <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
         <h1>Men's Haircut</h1>
@@ -53,33 +53,52 @@
         <p>Nouring your hair and sculp with a full wash and blow if need be.</p>
       </div>
       </div>
-    </div> -->
-<!-- 
-     <div class="mx-auto overflow-auto sectionHeight">
-      <div class="flex gap-4 mt-20 overflow-auto bg-purple-400">
-        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+    </div>
+
+     <!-- <div class="mx-auto overflow-auto  ">
+      <div class="flex gap-4 mt-20 overflow-auto bg-purple-400  snap-x ">
+        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
           <h1>Men's Haircut</h1>
           <p>Full style and cut to suit your needs, done by our professionals.</p>
         </div>
-        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
           <h1>Treatment</h1>
           <p>Get advice and treatment methods to keep your hair in that healthy state.</p>
         </div>
-        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
           <h1>Beard Trim</h1>
           <p>Keeping your beard in full shape and style, keeeping as silk and precise as you like it.</p>
         </div>
-        <div class="flex flex-col items-center justify-center h-52 bgGrey w-72">
+        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
           <h1>Wash</h1>
           <p>Nouring your hair and sculp with a full wash and blow if need be.</p>
         </div>
       </div>
     </div> -->
-
-
 </div>
 
-    <div class="w-full h-full mx-auto -mt-32 maxWidth">
+<div class="flex md:hidden w-full overflow-x-auto overflow-y-hidden">
+  <div class="snap-center flex  gap-4 px-3">
+         <div class="bgGrey grid grid-cols-1 justify-center  w-56 h-52 ">
+             <h1 class="flex items-end justify-center">Men's Haircut</h1>
+          <p>Full style and cut to suit your needs, done by our professionals.</p>
+         </div>
+         <div class="bgGrey grid grid-cols-1 justify-center  w-56 h-52 ">
+             <h1  class="flex items-end justify-center">Treatment</h1>
+          <p>Get advice and treatment methods to keep your hair in that healthy state.</p>
+         </div>
+         <div class="bgGrey grid grid-cols-1 justify-center  w-56 h-52  ">
+             <h1  class="flex items-end justify-center">Beard Trim</h1>
+          <p>Keeping your beard in full shape and style, keeeping as silk and precise as you like it.</p>
+         </div>
+         <div class="bgGrey grid grid-cols-1 justify-center  w-56 h-52 ">
+             <h1  class="flex items-end justify-center">Wash</h1>
+          <p>Nouring your hair and sculp with a full wash and blow if need be.</p>
+         </div>
+  </div>
+</div>
+
+    <div class="w-full h-full mx-auto -mt-32 maxWidth md:block hidden">
       <h1 class="text-3xl font-semibold">Our Gallery</h1>
       <div class="items-start hidden w-full grid-cols-3 mt-20 md:grid">
           <div class="flex items-center justify-center w-full ">
@@ -109,15 +128,14 @@
       </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center w-full gap-2 mt-32 md:hidden">
+    <div class="flex flex-col items-center justify-center w-full gap-2 mt-32 md:hidden px-3 ">
+            <h1 class="text-3xl font-semibold">Our Gallery</h1>
       <div class="flex justify-center w-full gap-2">
         <img src="https://i.postimg.cc/mrVPxSHj/Rectangle-4.png" alt="" class="w-48">
         <img src="https://i.postimg.cc/B6VtbQN1/Rectangle-5.png" alt="" class="w-48">
       </div>
-      <div>
-        <div class="flex justify-center w-full">
+      <div class="flex justify-center w-full ">
           <img src="https://i.postimg.cc/FFYVZYM8/Rectangle-6.png" alt="" class="w-96">
-        </div>
       </div>
       <div class="flex justify-center w-full gap-2 ">
         <img src="https://i.postimg.cc/NF2FHqPC/Rectangle-7.png" alt="" class="w-48">

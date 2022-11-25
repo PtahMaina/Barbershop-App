@@ -4,7 +4,7 @@
       <img
         src="https://i.postimg.cc/yYWwpJnQ/Logo-Banner.png"
         alt=""
-        class="Logobanner"
+        class="Logobanner object-cover"
       />
     </div>
     <!-- <div class="absolute flex items-center justify bottom-96">

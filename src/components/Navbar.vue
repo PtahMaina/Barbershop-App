@@ -39,10 +39,10 @@
            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="pr-1 text-white no-underline md:text-base md:font-normal text-2xl font-semibold ">{{ currentUser.customername }}</router-link>
            <h1 class=" text-white no-underline cursor-pointer md:text-base md:font-normal text-2xl " v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
         </div>
-         <div class="items-center justify-start text-left md:hidden flex flex-col mt-40">
+         <div class="items-start justify-start text-left md:hidden flex flex-col mt-40">
             <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-left text-white no-underline md:text-base md:font-normal text-2xl font-medium">Login</router-link>
            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-left text-white no-underline md:text-base md:font-normal text-2xl font-semibold ">{{ currentUser.customername }}</router-link>
-           <h1 class=" text-white no-underline cursor-pointer md:text-base md:font-normal text-2xl " v-if="currentUser" @click="logOut"> Logout</h1>
+           <h1  class=" text-white no-underline cursor-pointer md:text-base md:font-normal text-2xl " v-if="currentUser" @click="logOut"> Logout</h1>
         </div>
     </div>
   </div>
@@ -73,7 +73,7 @@ export default {
     },
     logOut() {
       this.$store.dispatch("auth/logout");
-      this.$router.push("/login");
+      this.$router.push("/");
     },
     updateScroll() {
       this.scrollPosition = window.scrollY

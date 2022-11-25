@@ -1,5 +1,5 @@
 <template>
-    <div class="bgBlack fixed top-0 left-0 w-full z-50 md:hidden block " >
+    <div class="bgBlack fixed top-0 left-0 w-full z-50 md:hidden block">
         <div class="flex w-full justify-between items-center px-5 h-20">
             <div>
         <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">

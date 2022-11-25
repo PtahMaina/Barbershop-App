@@ -154,7 +154,7 @@ font-family: 'Oswald', sans-serif;
 } */
 
 #nav a.router-link-exact-active {
-  color: #0C6CB9;
+  color: #E1AD01;
   text-decoration: none;
   
 }
@@ -186,7 +186,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 .textBlue{
-  color: #0F77F0;
+  color: #E1AD01;
 }
 
 .banner{

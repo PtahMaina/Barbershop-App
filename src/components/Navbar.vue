@@ -1,7 +1,7 @@
 <template>
-  <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ 'text-white bgBlack h-16 p-2 transition-all duration-200 ': scrollPosition > 100, active: isActive}" >
-    <div class="flex flex-col mx-auto md:grid md:items-center md:justify-center md:grid-cols-3 maxWidth ">
-        <div class="flex justify-center md:justify-start">
+  <div id="nav" class="fixed top-0 left-0 z-50 w-full " :class="{ 'text-white bgBlack md:h-16 h-0 md:p-2 p-0 md:transition-all md:duration-200 overflow-hidden md:overflow-auto ': scrollPosition > 100, active: isActive}" >
+    <div class="flex flex-col  md:mx-auto mx-10 mt-32 md:mt-0 md:grid md:items-center md:justify-center md:grid-cols-3 maxWidth ">
+        <div class="md:flex hidden justify-center md:justify-start">
             <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">
             <svg width="50" height="50" viewBox="0 0 289 127" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_73_436)">
@@ -26,18 +26,23 @@
             </router-link>
         </div>
 
-        <div class="flex flex-col items-center justify-center gap-10 no-underline md:grid md:grid-cols-4">
-            <router-link @click="toggleNav" to="/" class="text-white no-underline" >Home</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-white no-underline">Services</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-white no-underline">Story</router-link>
-            <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-white no-underline">Contact Us</router-link>
-            <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}" class="text-white no-underline">DashBoard</router-link>
+        <div class="flex flex-col items-start gap-10 no-underline md:grid md:grid-cols-4">
+            <router-link @click="toggleNav" to="/" class="text-white no-underline md:text-base md:font-normal text-2xl font-semibold" >Home</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Services'}" class="text-white no-underline md:text-base md:font-normal text-2xl font-semibold">Services</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Story'}" class="text-white no-underline md:text-base md:font-normal text-2xl font-semibold">Story</router-link>
+            <router-link @click="toggleNav" :to="{ name: 'Contact'}" class="text-white no-underline md:text-base md:font-normal text-2xl font-semibold">Contact Us</router-link>
+            <router-link v-if="showAdmin" @click="toggleNav" :to="{ name: 'AdminDashBoard'}" class="text-white no-underline md:text-base md:font-normal text-2xl font-semibold">DashBoard</router-link>
         </div>
 
-        <div class="flex items-center justify-end">
-            <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-white no-underline">Login</router-link>
-           <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="pr-1 text-white no-underline">{{ currentUser.customername }}</router-link>
-           <h1 class="text-base font-normal text-white no-underline cursor-pointer" v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
+        <div class="items-center justify-end md:flex hidden">
+            <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-white no-underline md:text-base md:font-normal text-2xl font-medium">Login</router-link>
+           <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="pr-1 text-white no-underline md:text-base md:font-normal text-2xl font-semibold ">{{ currentUser.customername }}</router-link>
+           <h1 class=" text-white no-underline cursor-pointer md:text-base md:font-normal text-2xl " v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
+        </div>
+         <div class="items-center justify-start text-left md:hidden flex flex-col mt-40">
+            <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-left text-white no-underline md:text-base md:font-normal text-2xl font-medium">Login</router-link>
+           <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-left text-white no-underline md:text-base md:font-normal text-2xl font-semibold ">{{ currentUser.customername }}</router-link>
+           <h1 class=" text-white no-underline cursor-pointer md:text-base md:font-normal text-2xl " v-if="currentUser" @click="logOut"> Logout</h1>
         </div>
     </div>
   </div>
@@ -122,13 +127,13 @@ img {
     position: fixed;
     height: 100%;
     left: -200vw;
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: start; */
     transition: left 0.7s linear;
     gap: 40px;
-    background: black;
+    background: #101010;
     opacity:1;
     z-index: 20;
   }

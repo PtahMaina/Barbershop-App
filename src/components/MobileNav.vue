@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-black fixed top-0 left-0 w-full z-50 md:hidden block" >
-        <div class="flex w-full justify-between items-center px-5">
+    <div class="bgBlack fixed top-0 left-0 w-full z-50 md:hidden block " >
+        <div class="flex w-full justify-between items-center px-5 h-20">
             <div>
         <router-link class="flex items-center justify-center navbar-brand" @click="toggleNav" to="/">
             <svg width="50" height="50" viewBox="0 0 289 127" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -13,7 +13,7 @@
        <!-- <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="px-5 py-3">BOOK NOW</button></h1></router-link> -->
     </div>
   </div>
-  <div class="w-full h-40 -m-2 bg-black">
+  <div class="md:block hidden w-full h-40 -m-2 bg-black">
     <div class="grid items-start grid-cols-3 mx-auto mt-5 text-white maxWidth ">
       <div class="flex flex-col gap-2 text-left">
         <h1 class="text-2xl font-semibold">HOURS</h1>
@@ -31,7 +31,25 @@
     </div>
   </div>
 
-      <div class="flex flex-col mt-10">
+    <div class="block md:hidden w-full h-full -m-2 pt-10 pb-10 bg-black">
+    <div class="flex flex-col mx-auto mt-5 gap-10 text-white ">
+      <div class="flex flex-col gap-2 ">
+        <h1 class="text-2xl font-semibold">HOURS</h1>
+        <p class="text-base font-normal">Tues-Saturday 9:00am-6:00pm</p>
+        <p class="text-base font-normal">Closed Sun & Mon</p>
+      </div>
+      <div class="">
+        <h1 class="text-2xl font-semibold">LOCATION</h1>
+        <p  class="text-base font-normal">18 Chukker Road, Kenwyn, Cape Town 7780</p>
+      </div>
+      <div class="">
+        <h1 class="text-2xl font-semibold">CONTACT US</h1>
+        <p class="text-base font-normal">0761621649</p>
+      </div>
+    </div>
+  </div>
+
+      <div class="md:flex hidden flex-col mt-10">
         <h1 class="text-3xl font-semibold">Our Core Focus</h1>
       </div>
     <div class="hidden mx-auto mt-10 md:block sectionHeight maxWidth ">
@@ -54,30 +72,12 @@
       </div>
       </div>
     </div>
-
-     <!-- <div class="mx-auto overflow-auto  ">
-      <div class="flex gap-4 mt-20 overflow-auto bg-purple-400  snap-x ">
-        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
-          <h1>Men's Haircut</h1>
-          <p>Full style and cut to suit your needs, done by our professionals.</p>
-        </div>
-        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
-          <h1>Treatment</h1>
-          <p>Get advice and treatment methods to keep your hair in that healthy state.</p>
-        </div>
-        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
-          <h1>Beard Trim</h1>
-          <p>Keeping your beard in full shape and style, keeeping as silk and precise as you like it.</p>
-        </div>
-        <div class="flex flex-col items-center justify-center  bgGrey  snap-center">
-          <h1>Wash</h1>
-          <p>Nouring your hair and sculp with a full wash and blow if need be.</p>
-        </div>
-      </div>
-    </div> -->
 </div>
 
-<div class="flex md:hidden w-full overflow-x-auto overflow-y-hidden">
+  <div class="flex md:hidden flex-col mt-10">
+        <h1 class="text-3xl font-semibold">Our Core Focus</h1>
+      </div>
+<div class="flex md:hidden w-full overflow-x-auto overflow-y-hidden mt-10">
   <div class="snap-center flex  gap-4 px-3">
          <div class="bgGrey grid grid-cols-1 justify-center  w-56 h-52 ">
              <h1 class="flex items-end justify-center">Men's Haircut</h1>
@@ -128,8 +128,8 @@
       </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center w-full gap-2 mt-32 md:hidden px-3 ">
-            <h1 class="text-3xl font-semibold">Our Gallery</h1>
+    <div class="flex flex-col items-center justify-center w-full gap-2   mb-10 md:hidden px-3 ">
+            <h1 class="text-3xl font-semibold mt-10 mb-10 ">Our Gallery</h1>
       <div class="flex justify-center w-full gap-2">
         <img src="https://i.postimg.cc/mrVPxSHj/Rectangle-4.png" alt="" class="w-48">
         <img src="https://i.postimg.cc/B6VtbQN1/Rectangle-5.png" alt="" class="w-48">
@@ -144,8 +144,6 @@
       <div class="flex justify-center w-full ">
         <img src="https://i.postimg.cc/Vs2BHY16/Rectangle-8.png" alt="" class="w-96">
       </div>
-             
-
     </div>
 </template>
 

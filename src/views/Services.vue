@@ -47,7 +47,7 @@
       <h1>Treatment</h1>
                      <div class="w-full mx-auto maxWidth"  v-for="(treatment,i) of treatments" :key="treatment.title" >
                       <div class="grid grid-cols-1 md:grid-cols-2">
-                    <router-link class="no-underline " @click="toggleBookingFormTreatment(i)" :to="{ name: 'BookingForm'}">
+                    <router-link class="no-underline "  @click="toggleBookingFormTreatment(i)" :to="{ name: 'BookingForm'}">
                       <div class="flex flex-col mt-4 text-left">
                         <h1 class="text-3xl font-medium text-black">{{treatment.title}} </h1>
                       <h1 class="text-base font-normal text-black">{{treatment.discription}}</h1>
@@ -65,10 +65,10 @@
        <button @click="()=>TogglePopUp('btnTrigger')">Open</button>
       <PopUpBookingModal v-if="popupTriggers.btnTrigger" :togglePopUp="
       ()=>TogglePopUp('btnTrigger')">
-        <h1>btnTrigger</h1>
+  <BookingForm/> 
        </PopUpBookingModal>
 
-<!-- 
+<!-- s
       <PopUpBookingModal v-if="popupTriggers.timedTrigger"  :togglePopUp="
       ()=>TogglePopUp('timedTrigger')">
         <h1>timedTrigger</h1>
@@ -77,6 +77,7 @@
 
 <script>
 import PopUpBookingModal from "../components/PopUpBookingModal.vue"
+import BookingForm from "./BookingForm.vue"
 import { ref } from "vue"
 export default {
   setup() {
@@ -121,7 +122,7 @@ setTimeout(() => {
       this.treatments[position].showForm = !this.treatments[position].showForm
 
     }
-  },  components: { PopUpBookingModal } 
+  },  components: { PopUpBookingModal,BookingForm } 
   
 // name: "Services",
 // computed: {

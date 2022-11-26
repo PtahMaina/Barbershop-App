@@ -2,16 +2,18 @@
   <div class="popup">
     <div class="popupInner">
         <slot />
+        <!-- <BookingForm/> -->
         <button class="popCLose" @click="togglePopUp()">Close</button>
     </div>
   </div>
 </template>
 
 <script>
+import BookingForm from "../views/BookingForm.vue"
 export default {
     props:[
         "togglePopUp"
-    ]
+    ],  components: {BookingForm } 
 }
 </script>
 
@@ -31,6 +33,7 @@ export default {
 
 .popupInner{
 background: white;
-padding: 32px;
+width: 100%; 
+height: fit-content;
 }
 </style>

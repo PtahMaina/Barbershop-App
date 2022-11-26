@@ -11,6 +11,7 @@
     </div>
   </div>
     <h1 class="text-3xl font-semibold">Hair </h1>
+
 </div>
   <div class="px-4 mt-10 md:px-0">
             <div class="w-full mx-auto maxWidth"  v-for="(service,i) of services" :key="service.title" >
@@ -59,11 +60,44 @@
             </div>
     </div>
   </div>
+
+      <h1>Pop</h1>
+       <button @click="()=>TogglePopUp('btnTrigger')">Open</button>
+      <PopUpBookingModal v-if="popupTriggers.btnTrigger" :togglePopUp="
+      ()=>TogglePopUp('btnTrigger')">
+        <h1>btnTrigger</h1>
+       </PopUpBookingModal>
+
+<!-- 
+      <PopUpBookingModal v-if="popupTriggers.timedTrigger"  :togglePopUp="
+      ()=>TogglePopUp('timedTrigger')">
+        <h1>timedTrigger</h1>
+       </PopUpBookingModal> -->
 </template>
 
 <script>
-
+import PopUpBookingModal from "../components/PopUpBookingModal.vue"
+import { ref } from "vue"
 export default {
+  setup() {
+    const popupTriggers = ref ({
+      btnTrigger:false,
+      timedTrigger:false
+    })
+
+  const TogglePopUp = (trigger) => {
+    popupTriggers.value[trigger] = !popupTriggers.value[trigger]
+  }
+
+setTimeout(() => {
+  popupTriggers.value.timedTrigger = true
+}, 3000)
+   return {
+    PopUpBookingModal,
+    popupTriggers,
+    TogglePopUp
+   }
+  },
   props:[
     "barberServices",
     "services",
@@ -87,7 +121,7 @@ export default {
       this.treatments[position].showForm = !this.treatments[position].showForm
 
     }
-  },
+  },  components: { PopUpBookingModal } 
   
 // name: "Services",
 // computed: {

@@ -2,7 +2,6 @@
    <h1 class="head" style="font-weight: bold;color:#b18044">BOOKING</h1>
    <div class="border"></div>
           <div class="container" v-for="service of services" :key="service.title">
-            
             <div class="row" v-if="service.showForm">
                 <div class="title" style="font-size:30px"><span style="color:#b68345">{{service.title}}</span> | R{{service.price}}</div>
                 <div class="discription">{{service.discription}}</div>
@@ -29,17 +28,13 @@
                           <option value="session7">Session 7 - 3:00pm-4:00pm</option>
                           <option value="session8">Session 8 - 4:00pm-5:00pm</option>
                           <option value="session9">Session 9 - 5:00pm-6:00pm</option>
-                          <!-- <option value="session10">Session 10 6:00am-6:00pm</option> -->
                       </select>
                 </div>
                 <button class="btn">submit</button>
-
             </form>
             </div>
-   
           </div>
               <div class="container" v-for="beard of beards" :key="beard.title">
-            
             <div class="row" v-if="beard.showForm">
                 <div class="title" style="font-size:30px"><span style="color:#b68345">{{beard.title}}</span> | R{{beard.price}}</div>
                 <div class="discription">{{beard.discription}}</div>
@@ -66,17 +61,14 @@
                           <option value="session7">Session 7 - 3:00pm-4:00pm</option>
                           <option value="session8">Session 8 - 4:00pm-5:00pm</option>
                           <option value="session9">Session 9 - 5:00pm-6:00pm</option>
-                          <!-- <option value="session10">Session 10 6:00am-6:00pm</option> -->
                       </select>
                 </div>
                 <button class="btn">submit</button>
 
             </form>
             </div>
-   
           </div>
                 <div class="container" v-for="treatment of treatments" :key="treatment.title">
-            
             <div class="row" v-if="treatment.showForm">
                 <div class="title" style="font-size:30px"><span style="color:#b68345">{{treatment.title}}</span> | R{{treatment.price}}</div>
                 <div class="discription">{{treatment.discription}}</div>

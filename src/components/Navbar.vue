@@ -37,12 +37,12 @@
         <div class="items-center justify-end hidden md:flex">
             <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-2xl font-medium text-white no-underline md:text-base md:font-normal">Login</router-link>
            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="pr-1 text-2xl font-semibold text-white no-underline md:text-base md:font-normal ">{{ currentUser.customername }}</router-link>
-           <h1 class="text-2xl text-white no-underline cursor-pointer  md:text-base md:font-normal" v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
+           <h1 class="text-2xl text-white no-underline cursor-pointer md:text-base md:font-normal" v-if="currentUser" @click="logOut">  <span class="text-white "> | </span>  Logout</h1>
         </div>
          <div class="flex flex-col items-start justify-start mt-40 text-left md:hidden">
             <router-link v-if="!currentUser" @click="toggleNav" :to="{ name: 'Login' }" class="text-2xl font-medium text-left text-white no-underline md:text-base md:font-normal">Login</router-link>
            <router-link v-if="currentUser" @click="toggleNav" :to="{ name: 'Profile' }" class="text-2xl font-semibold text-left text-white no-underline md:text-base md:font-normal ">{{ currentUser.customername }}</router-link>
-           <h1  class="text-2xl text-white no-underline cursor-pointer  md:text-base md:font-normal" v-if="currentUser" @click="logOut"> Logout</h1>
+           <h1  class="text-2xl text-white no-underline cursor-pointer md:text-base md:font-normal" v-if="currentUser" @click="logOut"> Logout</h1>
         </div>
     </div>
   </div>
@@ -133,7 +133,7 @@ img {
     /* align-items: start; */
     transition: left 0.7s linear;
     gap: 40px;
-    background: #101010;
+    background: black;
     opacity:1;
     z-index: 20;
   }

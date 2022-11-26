@@ -8,7 +8,7 @@
       <h1 class="font-bold text-white uppercase text-7xl">Masters of Barbering</h1>
        <h3 class="text-xl font-semibold text-white">Lets Your Hair Do The Talking...</h3>
         <div class="flex items-center justify-end mt-5">
-            <router-link :to="{ name: 'Login'}" ><button class="py-3 text-xl font-semibold cursor-pointer px-7">Book Now</button></router-link>
+            <router-link :to="{ name: 'Login'}" ><button class="py-3 text-xl font-medium cursor-pointer px-7">Book Now</button></router-link>
         </div>
        <!-- <router-link :to="{ name: 'Login'}"> <h1 style="font-weight: bold;"><button class="px-5 py-3">BOOK NOW</button></h1></router-link> -->
     </div>

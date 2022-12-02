@@ -16,12 +16,12 @@
   <div class="px-4 mt-10 md:px-0">
             <div class="w-full mx-auto maxWidth"  v-for="(service,i) of services" :key="service.title" >
                       <div class="grid grid-cols-1 md:grid-cols-2">
-                    <router-link class="no-underline " @click="toggleBookingFormHair(i)" :to="{ name: 'BookingForm'}">
+                    <div class="no-underline " @click="toggleBookingFormHair(i)">
                       <div class="flex flex-col mt-4 text-left">
                         <h1 class="text-3xl font-medium text-black">{{service.title}} </h1>
                       <h1 class="text-base font-normal text-black">{{service.discription}}</h1>
                       </div>
-                    </router-link>
+                    </div>
                       <div class="flex items-center mt-1 md:mt-0 md:items-end md:justify-end">
                       <h1 class="text-base font-normal">R{{service.price}}</h1>
                       </div>
@@ -61,12 +61,11 @@
     </div>
   </div>
 
-      <h1>Pop</h1>
-       <button @click="()=>TogglePopUp('btnTrigger')">Open</button>
+      <!-- <h1>Pop</h1>
+       <button @click="()=>TogglePopUp('btnTrigger')">Open</button> -->
       <PopUpBookingModal v-if="popupTriggers.btnTrigger" :togglePopUp="
-      ()=>TogglePopUp('btnTrigger')">
-  <BookingForm/> 
-       </PopUpBookingModal>
+      ()=>TogglePopUp('btnTrigger')"/>
+       <!-- </PopUpBookingModal> -->
 
 <!-- s
       <PopUpBookingModal v-if="popupTriggers.timedTrigger"  :togglePopUp="

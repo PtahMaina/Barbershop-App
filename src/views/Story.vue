@@ -24,36 +24,36 @@
     <div class="flex justify-start">
         <div class="">
          <img src="https://i.postimg.cc/bJmFrdsY/Ellipse-1.png" alt="baby with headphones" class="object-cover w-56 h-56 rounded-full md:w-36 md:h-36 ">
-         <h1 class="text-2xl font-semibold">Mog Muneeb Davids</h1>
-         <p>079 876 1234</p>
+         <h1 class="text-2xl font-semibold">Name of the person in the pic</h1>
+         <p>0712 345 678</p>
       </div>
     </div>
     <div class="">
         <div class="">
          <img src="https://i.postimg.cc/FFnBQfMD/Ellipse-2.png" alt="baby with headphones" class="object-cover w-56 h-56 rounded-full md:w-36 md:h-36">
-         <h1 class="text-2xl font-semibold">Suhail Davids </h1>
-         <p>079 876 1234</p>
+         <h1 class="text-2xl font-semibold">Name of the person in the pic </h1>
+         <p>0712 345 678</p>
       </div>
     </div>
     <div class="flex justify-end ">
         <div class="">
          <img src="https://i.postimg.cc/rFBZKBF4/Ellipse-2-1.png" alt="baby with headphones" class="object-cover w-56 h-56 rounded-full md:w-36 md:h-36">
-        <h1 class="text-2xl font-semibold">Yaseen Davids</h1>
-         <p>079 876 1234</p>
+        <h1 class="text-2xl font-semibold">Name of the person in the pic</h1>
+         <p>0712 345 678</p>
       </div>
     </div>
     <div class="flex justify-start">
         <div class="">
          <img src="https://i.postimg.cc/2yJcdJQP/Ellipse-3.png" alt="baby with headphones" class="object-cover w-56 h-56 rounded-full md:w-36 md:h-36">
-        <h1 class="text-2xl font-semibold">Naaim Fredericks</h1>
-         <p>079 876 1234</p>
+        <h1 class="text-2xl font-semibold">Name of the person in the pic</h1>
+         <p>0712 345 678</p>
       </div>
     </div>
     <div class="">
         <div class="">
          <img src="https://i.postimg.cc/FsdnFrmm/Ellipse-3-1.png" alt="baby with headphones" class="object-cover w-56 h-56 rounded-full md:w-36 md:h-36">
-        <h1 class="text-2xl font-semibold">Leah Johnson</h1>
-         <p>079 876 1234</p>
+        <h1 class="text-2xl font-semibold">Name of the person in the pic</h1>
+         <p>0712 345 678</p>
       </div>
     </div>
   </div>

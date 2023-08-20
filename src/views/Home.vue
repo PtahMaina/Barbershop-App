@@ -22,7 +22,7 @@
       </div>
       <div class="">
         <h1 class="text-2xl font-semibold">LOCATION</h1>
-        <p  class="text-base font-normal">18 Chukker Road, Kenwyn, Cape Town 7780</p>
+        <p  class="text-base font-normal">Thika Road Near ByPass</p>
       </div>
       <div class="text-right">
         <h1 class="text-2xl font-semibold">CONTACT US</h1>
@@ -40,7 +40,7 @@
       </div>
       <div class="">
         <h1 class="text-2xl font-semibold">LOCATION</h1>
-        <p  class="text-base font-normal">18 Chukker Road, Kenwyn, Cape Town 7780</p>
+        <p  class="text-base font-normal">Thika Road Near ByPass</p>
       </div>
       <div class="">
         <h1 class="text-2xl font-semibold">CONTACT US</h1>

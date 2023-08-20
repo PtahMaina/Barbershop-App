@@ -3,7 +3,7 @@
    <div class="border"></div>
           <div class="container" v-for="service of services" :key="service.title">
             <div class="row" v-if="service.showForm">
-                <div class="title" style="font-size:30px"><span style="color:#b68345">{{service.title}}</span> | R{{service.price}}</div>
+                <div class="title" style="font-size:30px"><span style="color:#b68345">{{service.title}}</span> | KSH{{service.price}}</div>
                 <div class="discription">{{service.discription}}</div>
                      <form @submit.prevent="handleSubmit(service.title)" id="contact-form" name="myForm" class="form"  role="form">
 
@@ -36,7 +36,7 @@
           </div>
               <div class="container" v-for="beard of beards" :key="beard.title">
             <div class="row" v-if="beard.showForm">
-                <div class="title" style="font-size:30px"><span style="color:#b68345">{{beard.title}}</span> | R{{beard.price}}</div>
+                <div class="title" style="font-size:30px"><span style="color:#b68345">{{beard.title}}</span> | KSH{{beard.price}}</div>
                 <div class="discription">{{beard.discription}}</div>
                      <form @submit.prevent="handleSubmit(beard.title)" id="contact-form" name="myForm" class="form"  role="form">
 
@@ -70,7 +70,7 @@
           </div>
                 <div class="container" v-for="treatment of treatments" :key="treatment.title">
             <div class="row" v-if="treatment.showForm">
-                <div class="title" style="font-size:30px"><span style="color:#b68345">{{treatment.title}}</span> | R{{treatment.price}}</div>
+                <div class="title" style="font-size:30px"><span style="color:#b68345">{{treatment.title}}</span> | KSH{{treatment.price}}</div>
                 <div class="discription">{{treatment.discription}}</div>
                      <form @submit.prevent="handleSubmit(treatment.title)" id="contact-form" name="myForm" class="form"  role="form">
 

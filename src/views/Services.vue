@@ -23,7 +23,7 @@
                       </div>
                     </div>
                       <div class="flex items-center mt-1 md:mt-0 md:items-end md:justify-end">
-                      <h1 class="text-base font-normal">R{{service.price}}</h1>
+                      <h1 class="text-base font-normal">KSH{{service.price}}</h1>
                       </div>
                       </div>
             </div>
@@ -38,7 +38,7 @@
                       </div>
                     </router-link>
                       <div class="flex items-center mt-1 md:mt-0 md:items-end md:justify-end">
-                      <h1 class="text-base font-normal">R{{beard.price}}</h1>
+                      <h1 class="text-base font-normal">KSH{{beard.price}}</h1>
                       </div>
                       </div>
             </div>
@@ -54,7 +54,7 @@
                       </div>
                     </router-link>
                       <div class="flex items-center mt-1 md:mt-0 md:items-end md:justify-end">
-                      <h1 class="text-base font-normal">R{{treatment.price}}</h1>
+                      <h1 class="text-base font-normal">KSH{{treatment.price}}</h1>
                       </div>
                       </div>
             </div>

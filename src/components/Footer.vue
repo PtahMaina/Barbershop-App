@@ -41,7 +41,7 @@
         </div>
         <div class="flex flex-col px-4 text-white md:px-0 md:grid md:grid-cols-3">
            <div class="flex items-center justify-center">
-            <h1 class="text-base font-normal">18 Chukker Road, Kenwyn, Cape Town 7780</h1>
+            <h1 class="text-base font-normal">Thika Road,Near ByPass</h1>
            </div>
            <div class="flex items-center justify-center">
             <h1 class="text-base font-normal">theurbanshave@gmail.com</h1>
@@ -55,7 +55,7 @@
  </div>
  <div class="flex items-center h-16 mx-auto md:h-10 maxWidth">
  <div class="flex items-center justify-start">
-    <h1 class="text-sm font-normal">© 2022 The Urban Shave Barber Shop. All Rights Reserved. Built by: <span class="textBlue">Mogamat Muneeb Davids </span> 
+    <h1 class="text-sm font-normal">© 2023 The Urban Shave Barber Shop. All Rights Reserved. Built by: <span class="textBlue">Peter Maina </span> 
 </h1>
 
  </div>
